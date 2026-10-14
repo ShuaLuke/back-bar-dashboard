@@ -23,7 +23,21 @@ def shoot(url, out, w, h, scale):
 with tempfile.TemporaryDirectory() as tmp:
     tmp = pathlib.Path(tmp)
     shot = tmp / "dash.png"
-    shoot((root / "index.html").as_uri() + "#overview", shot, 1440, 900, 1)
+    # a copy of the page that opens the detail drawer on the top pairing, so the preview shows the drill-down
+    page_src = (root / "index.html").read_text()
+    counts = {}
+    for d in drinks:
+        names = sorted(x["name"] for x in d["ings"])
+        for i, a in enumerate(names):
+            for b in names[i + 1:]:
+                counts[(a, b)] = counts.get((a, b), 0) + 1
+    pair = max(counts, key=counts.get)
+    hook = ('<script>addEventListener("load", () => { document.body.classList.add("no-anim"); '
+            f'openDrawer({{ type: "pair", a: {json.dumps(pair[0])}, b: {json.dumps(pair[1])} }}); }});</script>'
+            '<style>.no-anim .drawer, .no-anim .drawer-scrim { transition: none !important; }</style>')
+    snap = tmp / "snap.html"
+    snap.write_text(page_src.replace("</body>", hook + "</body>"))
+    shoot(snap.as_uri() + "#overview", shot, 1200, 800, 1)  # og-card.html's crop assumes this size
     prices = [d["price"] for d in drinks if not d["zero"]]
     med = statistics.median(prices)
     fill = {

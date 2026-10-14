@@ -26,9 +26,10 @@ h1 span { background: linear-gradient(90deg, var(--accent-deep), var(--accent) 4
 .stats b.o { color: var(--accent); }
 .stats span { font-size: 15px; color: var(--muted); }
 .foot { position: absolute; left: 64px; bottom: 44px; font-family: "Geist Mono", monospace; font-size: 15px; color: var(--muted); }
-.shot { position: absolute; left: 590px; top: 70px; width: 820px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line);
+/* The screenshot is 1200px wide with a 236px sidebar; crop the sidebar and scale by 670/964 so the overview cards and the open drawer both fit. */
+.shot { position: absolute; left: 530px; top: 70px; width: 670px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line);
   box-shadow: 0 2px 4px rgba(20, 22, 31, 0.05), 0 30px 60px -20px rgba(20, 22, 31, 0.35); transform: rotate(-2deg); transform-origin: top left; background: #fff; }
-.shot img { display: block; width: 100%; }
+.shot img { display: block; width: 834px; margin-left: -164px; }
 </style>
 </head>
 <body>
