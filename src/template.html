@@ -1709,6 +1709,7 @@ function renderCostResults(ds) {
       <div class="sub" style="margin:0">What real data would unlock</div>
       <div class="unlock">
         <div><b>True pour cost per drink</b><span>Exact cost and margin for all ${DRINKS.length} drinks, not a guess by ingredient type.</span><span class="need">Needs: recipe specs (oz per ingredient) and invoice prices</span></div>
+        <div><b>The pour-cost table</b><span>One sheet makes most of this real: ingredient or SKU, bottle size, bottle cost, and oz poured per drink. It usually already exists as the bar manager's pour-cost spreadsheet or an export from R365, xtraCHEF or MarketMan. Missing pours fall back to standard specs, labeled as such.</span><span class="need">Needs: a one-time CSV, refreshed when prices change</span></div>
         <div><b>Menu engineering, for real</b><span>The simulated matrix above, filled with actual sales: what to promote, reprice or cut.</span><span class="need">Needs: sales counts per drink from the POS</span></div>
         <div><b>Drink + food pairing</b><span>Which dishes each drink is ordered with, so servers and menus can suggest pairings that people already choose.</span><span class="need">Needs: item-level POS checks (drinks and food on the same ticket)</span></div>
         <div><b>Spend and profit per table</b><span>Whether tables that order a drink spend more overall, and which drinks lead to a second round or dessert.</span><span class="need">Needs: check totals, covers and item-level sales</span></div>
