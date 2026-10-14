@@ -423,6 +423,20 @@ svg .tip-on { outline: none; stroke: var(--ink); stroke-width: 1.5; }
 .cbar i { display: block; height: 100%; }
 .pc-hi { color: var(--warn); font-weight: 600; }
 
+/* drawer */
+.drawer-scrim { position: fixed; inset: 0; z-index: 20; background: rgba(20, 22, 31, 0.28); opacity: 0; transition: opacity .2s; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 21; width: min(520px, 100vw); background: var(--surface); box-shadow: -20px 0 50px -20px rgba(20, 22, 31, 0.35);
+  display: flex; flex-direction: column; transform: translateX(100%); transition: transform .22s ease; }
+body.drawer-open .drawer { transform: none; }
+body.drawer-open .drawer-scrim { opacity: 1; }
+.drawer-bar { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.drawer-title { flex: 1; font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.drawer-x { font: inherit; font-size: 15px; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; color: var(--ink); }
+.drawer-x:hover { border-color: rgba(240, 89, 42, 0.4); color: var(--accent-deep); }
+.drawer-body { flex: 1; overflow-y: auto; border-radius: 0; min-height: 0; padding: 18px 20px 28px; }
+.drawer-body .drinks { max-height: none; }
+@media (max-width: 560px) { .drawer { width: 100vw; } .drawer-body { padding: 16px; } }
+.mix-stack i[data-fam], .mix-legend span[data-fam] { cursor: pointer; }
 /* pairing-map sub-maps */
 @media (min-width: 1101px) { .mx-grid { grid-template-columns: minmax(0, 1.35fr) minmax(360px, 1fr); } #matrix { width: 100%; height: auto; } }
 .cell.sel { stroke: var(--ink); stroke-width: 2.5; }
@@ -568,6 +582,11 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
     </section>
   </main>
 </div>
+<div class="drawer-scrim" id="drawer-scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+  <div class="drawer-bar"><button class="linkbtn" id="drawer-back">← Back</button><span id="drawer-title" class="drawer-title">Details</span><button class="drawer-x" id="drawer-x" aria-label="Close details">✕</button></div>
+  <div class="drawer-body ch-detail" id="drawer-body"></div>
+</aside>
 <div class="tip" id="tip" hidden></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
@@ -831,45 +850,16 @@ function renderPair(ds) {
   d3.selectAll("#matrix .cell").classed("sel", function () { const p = state.pair; if (!p) return false;
     const a = this.dataset.a, b = this.dataset.b; return p.length === 1 ? a === p[0] && b === p[0] : (a === p[0] && b === p[1]) || (a === p[1] && b === p[0]); });
   if (!state.pair) { out.innerHTML = '<p class="empty">Click a cell to see what else goes into drinks with both ingredients. Click a diagonal cell to see one ingredient\'s partners.</p>'; return; }
-  const go = pair => { state.pair = pair; hideTip(); renderPair(current()); };
-  const lookup = (a, b) => { state.ing = a; state.partner = b || null; renderSearch(current(), stats(current())); setView("ingredients"); };
-  // diagonal: one ingredient's partners
+  const go = t => { if (navCommon(t)) return; hideTip(); state.pair = t.type === "ing" ? [t.a] : [t.a, t.b]; renderPair(current()); };
+  const [a, b] = state.pair;
   if (state.pair.length === 1) {
-    const ing = state.pair[0], { withIng, ranked } = partnersOf(ds, ing), priced = withIng.filter(d => !d.zero);
-    const parts = ranked.slice(0, 16), more = ranked.length - parts.length;
-    out.innerHTML = `
-      <div class="fam-tag"><i class="dot" style="background:var(--f-${ING_FAM[ing]})"></i>${esc(ING_CAT[ing])}</div>
-      <h3>${esc(ing)}</h3>
-      <div class="facts"><span><b class="num">${withIng.length}</b> drinks</span><span>avg <b class="num">${priced.length ? money(d3.mean(priced, d => d.price)) : "—"}</b></span><span><b class="num">${ranked.length}</b> partners</span></div>
-      <div class="sub">What it pairs with, by category · band width = shared drinks</div>
-      ${parts.length ? fanMap({ id: ing, label: ing, color: famColor(ING_FAM[ing]), tip: ingTip(ds, null, ing) }, parts,
-        { left: ING_CAT[ing], right: "Partners", unit: "shared drinks", nodeTip: n => ingTip(ds, null, n), linkTip: n => pairTip(ds, ing, n) }) : '<p class="empty">No partners.</p>'}
-      ${more > 0 ? `<p class="hint">+${more} more partner${more === 1 ? "" : "s"}. Open the lookup for the full list.</p>` : ""}
-      <div><button class="linkbtn" id="mx-look">Open ${esc(ing)} in lookup →</button></div>`;
-    wireSubMap(out, (side, id) => side === "L" ? lookup(ing) : go([ing, id]), l => go([ing, l.b]));
-    document.getElementById("mx-look").onclick = () => lookup(ing);
-    return;
+    renderInspect(out, ds, stats(ds), { type: "ing", a }, go, { foot: `<div><button class="linkbtn" id="mx-look">Open ${esc(a)} in lookup →</button></div>` });
+    document.getElementById("mx-look").onclick = () => go({ type: "lookup", a });
+  } else {
+    renderInspect(out, ds, stats(ds), { type: "pair", a, b }, go, { crumbs: `<button class="linkbtn" id="mx-a">← ${esc(a)}</button><button class="linkbtn" id="mx-b">← ${esc(b)}</button>` });
+    document.getElementById("mx-a").onclick = () => go({ type: "ing", a });
+    document.getElementById("mx-b").onclick = () => go({ type: "ing", a: b });
   }
-  // pair: what else goes in, then the drinks
-  const [a, b] = state.pair, hits = ds.filter(d => has(d, a) && has(d, b)), priced = hits.filter(d => !d.zero);
-  const co = new Map(); hits.forEach(d => d.ings.forEach(i => { if (i.name !== a && i.name !== b) co.set(i.name, (co.get(i.name) || 0) + 1); }));
-  const parts = [...co].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])).slice(0, 16), label = `${a} + ${b}`;
-  const trio = n => hits.filter(d => has(d, n));
-  out.innerHTML = `
-    <div class="crumbs"><button class="linkbtn" id="mx-a">← ${esc(a)}</button><button class="linkbtn" id="mx-b">← ${esc(b)}</button></div>
-    <div class="fam-tag"><i class="dot" style="background:var(--f-${ING_FAM[a]})"></i><i class="dot" style="background:var(--f-${ING_FAM[b]})"></i>Pairing</div>
-    <h3>${esc(label)}</h3>
-    <div class="facts"><span><b class="num">${hits.length}</b> drink${hits.length === 1 ? "" : "s"}</span><span>avg <b class="num">${priced.length ? money(d3.mean(priced, d => d.price)) : "—"}</b></span><span>at <b>${[...new Set(hits.map(d => d.restaurant))].map(esc).join(", ")}</b></span></div>
-    ${parts.length ? `<div class="sub">What else goes in · band width = drinks</div>` + fanMap({ id: "__pair", label, color: famColor(ING_FAM[a]),
-        tip: `<b>${esc(label)}</b><div class="tt-k">${plural(hits.length, "drink")}</div><div class="tt-hint">Click to open in lookup</div>` }, parts,
-      { left: "This pair", right: "Also in the glass", unit: "extra ingredients",
-        nodeTip: n => `<b>${esc(n)}</b> <span class="tt-k">${esc(ING_CAT[n])}</span><div class="tt-k">in ${trio(n).length} of ${hits.length} of these drinks</div><div class="tt-hint">Click to see its partners</div>`,
-        linkTip: n => `<b>${esc(label)} + ${esc(n)}</b><div class="tt-k">${plural(trio(n).length, "drink")}</div>` + ttList(trio(n).map(ttDrink), 6) }) : ""}
-    <div class="sub">The drinks</div>
-    ${drinkList(hits, state.pair)}`;
-  wireSubMap(out, (side, id) => side === "L" ? lookup(a, b) : go([id]), l => go([l.b]));
-  document.getElementById("mx-a").onclick = () => go([a]);
-  document.getElementById("mx-b").onclick = () => go([b]);
 }
 
 /* chord */
@@ -1098,10 +1088,81 @@ function wireSubMap(box, onNode, onLink) {
   });
   svg.querySelectorAll(".sm-link").forEach(p => act(p, () => { hideTip(); onLink({ a: p.dataset.a, b: p.dataset.b }); }));
 }
+
+/* inspector: one renderer for ingredient, pair and category detail, used by the pairing map panel,
+   the matrix panel and the overview drawer. nav(target) decides what a click inside it does.
+   targets: {type:"ing", a} · {type:"pair", a, b} · {type:"fam", a} · {type:"famPair", a, b} · {type:"lookup", a, b?} */
+function famLinks(S, f, min, hidden) {
+  const acc = new Map();
+  S.pair.forEach((v, k) => { if (v < min) return; const [a, b] = k.split("|");
+    [[a, b], [b, a]].forEach(([x, y]) => { if (ING_FAM[x] !== f || ING_FAM[y] === f || hidden.has(ING_FAM[y])) return;
+      const key = x + "|" + ING_FAM[y]; if (!acc.has(key)) acc.set(key, { a: x, b: ING_FAM[y], v: 0, with: [] });
+      const l = acc.get(key); l.v += v; l.with.push([y, v]); }); });
+  return [...acc.values()];
+}
+function renderInspect(box, ds, S, t, nav, o = {}) {
+  const min = o.min || 1, hidden = o.hidden || new Set(), crumbs = o.crumbs || "", foot = o.foot || "";
+  const head = (tag, title, facts) => `${crumbs ? `<div class="crumbs">${crumbs}</div>` : ""}<div class="fam-tag">${tag}</div><h3>${esc(title)}</h3><div class="facts">${facts}</div>`;
+  const avg = list => { const p = list.filter(d => !d.zero); return p.length ? money(d3.mean(p, d => d.price)) : "—"; };
+  let wire = () => {};
+  if (t.type === "ing") {
+    const ing = t.a, { withIng, ranked } = partnersOf(ds, ing);
+    const shown = ranked.filter(([n, c]) => c >= min && !hidden.has(ING_FAM[n])), parts = shown.slice(0, 16), more = shown.length - parts.length;
+    box.innerHTML = head(`<i class="dot" style="background:var(--f-${ING_FAM[ing]})"></i>${esc(ING_CAT[ing] || "")}`, ing,
+        `<span><b class="num">${withIng.length}</b> drinks</span><span>avg <b class="num">${avg(withIng)}</b></span><span><b class="num">${ranked.length}</b> partners</span>`)
+      + `<div class="sub">What it pairs with, by category · band width = shared drinks</div>`
+      + (parts.length ? fanMap({ id: ing, label: ing, color: famColor(ING_FAM[ing]), tip: ingTip(ds, S, ing) }, parts,
+          { left: ING_CAT[ing], right: "Partners", unit: "shared drinks", nodeTip: n => ingTip(ds, S, n), linkTip: n => pairTip(ds, ing, n) }) : '<p class="empty">No partners in these drinks.</p>')
+      + (more > 0 ? `<p class="hint">+${more} more partner${more === 1 ? "" : "s"} in fewer drinks.</p>` : "") + foot;
+    wire = () => wireSubMap(box, (side, id) => nav(side === "L" ? { type: "lookup", a: ing } : { type: "pair", a: ing, b: id }), l => nav({ type: "pair", a: ing, b: l.b }));
+  } else if (t.type === "pair") {
+    const { a, b } = t, hits = ds.filter(d => has(d, a) && has(d, b)), label = `${a} + ${b}`;
+    const co = new Map(); hits.forEach(d => d.ings.forEach(i => { if (i.name !== a && i.name !== b) co.set(i.name, (co.get(i.name) || 0) + 1); }));
+    const parts = [...co].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])).slice(0, 16), trio = n => hits.filter(d => has(d, n));
+    box.innerHTML = head(`<i class="dot" style="background:var(--f-${ING_FAM[a]})"></i><i class="dot" style="background:var(--f-${ING_FAM[b]})"></i>Pairing`, label,
+        `<span><b class="num">${hits.length}</b> drink${hits.length === 1 ? "" : "s"}</span><span>avg <b class="num">${avg(hits)}</b></span><span>at <b>${[...new Set(hits.map(d => d.restaurant))].map(esc).join(", ") || "—"}</b></span>`)
+      + (parts.length ? `<div class="sub">What else goes in · band width = drinks</div>` + fanMap({ id: "__pair", label, color: famColor(ING_FAM[a]),
+          tip: `<b>${esc(label)}</b><div class="tt-k">${plural(hits.length, "drink")}</div><div class="tt-hint">Click to open in lookup</div>` }, parts,
+          { left: "This pair", right: "Also in the glass", unit: "extra ingredients",
+            nodeTip: n => `<b>${esc(n)}</b> <span class="tt-k">${esc(ING_CAT[n])}</span><div class="tt-k">in ${trio(n).length} of ${hits.length} of these drinks</div><div class="tt-hint">Click to see its partners</div>`,
+            linkTip: n => `<b>${esc(label)} + ${esc(n)}</b><div class="tt-k">${plural(trio(n).length, "drink")}</div>` + ttList(trio(n).map(ttDrink), 6) }) : "")
+      + `<div class="sub">The drinks</div>${drinkList(hits, [a, b])}` + foot;
+    wire = () => wireSubMap(box, (side, id) => nav(side === "L" ? { type: "lookup", a, b } : { type: "ing", a: id }), l => nav({ type: "ing", a: l.b }));
+  } else if (t.type === "fam") {
+    const f = t.a, links = famLinks(S, f, min, hidden).map(l => ({ ...l, tip: `<b>${esc(l.a)} + ${esc(FAM_NAME[l.b])}</b><div class="tt-k">${plural(l.v, "pairing")}</div>`
+      + ttList(l.with.sort((x, y) => y[1] - x[1]).map(([n, c]) => `${esc(n)} <span class="tt-k">${plural(c, "drink")}</span>`), 6) + '<div class="tt-hint">Click to open this pair of categories</div>' }));
+    const L = [...new Set(links.map(l => l.a))].map(n => ({ id: n, label: n, color: famColor(f), tip: ingTip(ds, S, n) }));
+    const R = [...new Set(links.map(l => l.b))].map(k => ({ id: k, label: FAM_NAME[k], color: famColor(k),
+      tip: `<b>${esc(FAM_NAME[k])}</b><div class="tt-k">${plural(d3.sum(links.filter(l => l.b === k), l => l.v), "pairing")} with ${esc(FAM_NAME[f])}</div><div class="tt-hint">Click to open this pair of categories</div>` }));
+    const drinksIn = ds.filter(d => d.ings.some(x => ING_FAM[x.name] === f)).length;
+    box.innerHTML = head(`<i class="dot" style="background:var(--f-${f})"></i>Category`, FAM_NAME[f],
+        `<span><b class="num">${drinksIn}</b> drinks use it</span><span><b class="num">${[...S.cnt.keys()].filter(n => ING_FAM[n] === f).length}</b> ingredients</span>`)
+      + `<div class="sub">What's inside, and what it pairs with · band width = pairings</div>`
+      + (links.length ? subMap(L, R, links, { left: FAM_NAME[f], right: "Other categories" }) : '<p class="empty">No links at this threshold.</p>')
+      + `<p class="hint">Click an ingredient to see its partners, or a category to open that pair.</p>` + foot;
+    wire = () => wireSubMap(box, (side, id) => nav(side === "L" ? { type: "ing", a: id } : { type: "famPair", a: f, b: id }), l => nav({ type: "famPair", a: f, b: l.b }));
+  }
+  wire();
+}
+// what a click does outside the pairing map: open the lookup, or jump to the map for a category pair
+function navCommon(t) {
+  if (t.type === "lookup") { state.ing = t.a; state.partner = t.b || null; renderSearch(current(), stats(current())); setView("ingredients"); return true; }
+  if (t.type === "famPair") { setMode("fam", { type: "rib", a: t.a, b: t.b }); setView("map"); return true; }
+  return false;
+}
 function renderChordDetail(ds, S, keys, M) {
   const box = document.getElementById("ch-detail"), sel = state.chSel, fam = state.chMode === "fam", min = state.chMin;
   const back = fam ? "" : `<button class="linkbtn" id="ch-up">← All categories</button>`;
   box.parentElement.classList.toggle("sm-on", !!sel);
+  const mapNav = t => {
+    if (t.type === "lookup") return navCommon(t);
+    if (t.type === "famPair") { state.chSel = { type: "rib", a: t.a, b: t.b }; return renderChord(current(), stats(current())); }
+    if (t.type === "fam") { state.chSel = { type: "arc", a: t.a }; return renderChord(current(), stats(current())); }
+    const keep = fam ? [] : [...state.chPins];
+    if (t.type === "ing") setMode("ing", { type: "arc", a: t.a }, keep.concat(t.a));
+    else setMode("ing", { type: "rib", a: t.a, b: t.b }, keep.concat(t.a, t.b));
+  };
+
   // nothing selected: strongest links in view
   if (!sel) {
     const links = [];
@@ -1120,29 +1181,9 @@ function renderChordDetail(ds, S, keys, M) {
           <span class="val">${v}</span></div>`).join("") || '<p class="empty">No links at this threshold.</p>'}</div>`;
     wireBars(box, "data-link", v => { const [a, b] = v.split("|"); state.chSel = { type: "rib", a, b }; renderChord(current(), stats(current())); });
   }
-  // category arc: sub-map of its ingredients against the other categories
+  // category arc
   else if (fam && sel.type === "arc") {
-    const f = sel.a, acc = new Map();
-    S.pair.forEach((v, k) => { if (v < min) return; const [a, b] = k.split("|");
-      [[a, b], [b, a]].forEach(([x, y]) => { if (ING_FAM[x] !== f || ING_FAM[y] === f || state.chHidden.has(ING_FAM[y])) return;
-        const key = x + "|" + ING_FAM[y]; if (!acc.has(key)) acc.set(key, { a: x, b: ING_FAM[y], v: 0, with: [] });
-        const l = acc.get(key); l.v += v; l.with.push([y, v]); }); });
-    const links = [...acc.values()].map(l => ({ ...l, tip: `<b>${esc(l.a)} + ${esc(FAM_NAME[l.b])}</b><div class="tt-k">${plural(l.v, "pairing")}</div>`
-      + ttList(l.with.sort((x, y) => y[1] - x[1]).map(([n, c]) => `${esc(n)} <span class="tt-k">${plural(c, "drink")}</span>`), 6) + '<div class="tt-hint">Click to open this pair of categories</div>' }));
-    const L = [...new Set(links.map(l => l.a))].map(n => ({ id: n, label: n, color: famColor(f), tip: ingTip(ds, S, n) }));
-    const R = [...new Set(links.map(l => l.b))].map(k => ({ id: k, label: FAM_NAME[k], color: famColor(k),
-      tip: `<b>${esc(FAM_NAME[k])}</b><div class="tt-k">${plural(d3.sum(links.filter(l => l.b === k), l => l.v), "pairing")} with ${esc(FAM_NAME[f])}</div><div class="tt-hint">Click to open this pair of categories</div>` }));
-    const drinksIn = ds.filter(d => d.ings.some(x => ING_FAM[x.name] === f)).length;
-    box.innerHTML = `
-      <div class="crumbs"><button class="linkbtn" id="ch-clear">← Overview</button></div>
-      <div class="fam-tag"><i class="dot" style="background:var(--f-${f})"></i>Category</div>
-      <h3>${esc(FAM_NAME[f])}</h3>
-      <div class="facts"><span><b class="num">${drinksIn}</b> drinks use it</span><span><b class="num">${[...S.cnt.keys()].filter(n => ING_FAM[n] === f).length}</b> ingredients</span></div>
-      <div class="sub">What's inside, and what it pairs with · band width = pairings</div>
-      ${links.length ? subMap(L, R, links, { left: FAM_NAME[f], right: "Other categories" }) : '<p class="empty">No links at this threshold.</p>'}
-      <p class="hint">Click an ingredient to see its partners, or a category to open that pair.</p>`;
-    wireSubMap(box, (side, id) => side === "L" ? setMode("ing", { type: "arc", a: id }, [id]) : (state.chSel = { type: "rib", a: f, b: id }, renderChord(current(), stats(current()))),
-      l => { state.chSel = { type: "rib", a: f, b: l.b }; renderChord(current(), stats(current())); });
+    renderInspect(box, ds, S, { type: "fam", a: sel.a }, mapNav, { min, hidden: state.chHidden, crumbs: `<button class="linkbtn" id="ch-clear">← Overview</button>` });
   }
   // category ribbon: sub-map of the ingredient pairs behind it
   else if (fam) {
@@ -1167,52 +1208,20 @@ function renderChordDetail(ds, S, keys, M) {
         <span class="name">${esc(l.a)} + ${esc(l.b)}</span><span class="track"><span class="fill" style="display:block;width:${l.v / top[0].v * 100}%;background:linear-gradient(90deg, var(--f-${fa}), var(--f-${fb}))"></span></span><span class="val">${l.v}</span></div>`).join("")}</div>`;
     const openPair = (a, b) => setMode("ing", { type: "rib", a, b }, [a, b]);
     wireBars(box, "data-ip", p => { const [a, b] = p.split("|"); openPair(a, b); });
-    wireSubMap(box, (side, id) => setMode("ing", { type: "arc", a: id }, [id]), l => openPair(l.a, l.b));
+    wireSubMap(box, (side, id) => mapNav({ type: "ing", a: id }), l => mapNav({ type: "pair", a: l.a, b: l.b }));
     const famBtn = (id, f) => { const b = document.getElementById(id); if (b) b.onclick = () => { state.chSel = { type: "arc", a: f }; renderChord(current(), stats(current())); }; };
     famBtn("ch-fa", fa); famBtn("ch-fb", fb);
   }
-  // ingredient arc: fan of its partners, grouped by category
+  // ingredient arc
   else if (sel.type === "arc") {
-    const ing = sel.a, { withIng, ranked } = partnersOf(ds, ing);
-    const priced = withIng.filter(d => !d.zero), MAXP = 16;
-    const shown = ranked.filter(([n, c]) => c >= min && !state.chHidden.has(ING_FAM[n]));
-    const parts = shown.slice(0, MAXP), more = shown.length - parts.length;
-    const openPair = p => { state.chPins.add(ing); state.chPins.add(p); state.chSel = { type: "rib", a: ing, b: p }; renderChord(current(), stats(current())); };
-    box.innerHTML = `
-      <div class="crumbs">${back}<button class="linkbtn" id="ch-clear">Clear selection</button></div>
-      <div class="fam-tag"><i class="dot" style="background:var(--f-${ING_FAM[ing]})"></i>${esc(ING_CAT[ing])}</div>
-      <h3>${esc(ing)}</h3>
-      <div class="facts"><span><b class="num">${withIng.length}</b> drinks</span><span>avg <b class="num">${priced.length ? money(d3.mean(priced, d => d.price)) : "—"}</b></span><span><b class="num">${ranked.length}</b> partners</span></div>
-      <div class="sub">What it pairs with, by category · band width = shared drinks</div>
-      ${parts.length ? fanMap({ id: ing, label: ing, color: famColor(ING_FAM[ing]), tip: ingTip(ds, S, ing) }, parts,
-        { left: ING_CAT[ing], right: "Partners", unit: "shared drinks", nodeTip: n => ingTip(ds, S, n), linkTip: n => pairTip(ds, ing, n) }) : '<p class="empty">No partners at this threshold.</p>'}
-      ${more > 0 ? `<p class="hint">+${more} more partner${more === 1 ? "" : "s"} in fewer drinks. Open the lookup for the full list.</p>` : ""}
-      <div><button class="linkbtn" id="ch-search">Open ${esc(ing)} in lookup →</button></div>`;
-    wireSubMap(box, (side, id) => side === "L" ? document.getElementById("ch-search").click() : openPair(id), l => openPair(l.b));
-    document.getElementById("ch-search").onclick = () => { state.ing = ing; state.partner = null; renderSearch(current(), stats(current())); setView("ingredients"); };
+    renderInspect(box, ds, S, { type: "ing", a: sel.a }, mapNav, { min, hidden: state.chHidden,
+      crumbs: `${back}<button class="linkbtn" id="ch-clear">Clear selection</button>`, foot: `<div><button class="linkbtn" id="ch-search">Open ${esc(sel.a)} in lookup →</button></div>` });
+    document.getElementById("ch-search").onclick = () => navCommon({ type: "lookup", a: sel.a });
   }
-  // ingredient ribbon: what else goes into the drinks that use both, then the drinks
+  // ingredient ribbon
   else {
-    const hits = ds.filter(d => [sel.a, sel.b].every(p => d.ings.some(i => i.name === p)));
-    const priced = hits.filter(d => !d.zero);
-    const co = new Map(); hits.forEach(d => d.ings.forEach(i => { if (i.name !== sel.a && i.name !== sel.b) co.set(i.name, (co.get(i.name) || 0) + 1); }));
-    const parts = [...co].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])).slice(0, 16);
-    const label = `${sel.a} + ${sel.b}`;
-    const trio = n => hits.filter(d => has(d, n));
-    const openIng = n => { state.chPins.add(n); state.chSel = { type: "arc", a: n }; renderChord(current(), stats(current())); };
-    box.innerHTML = `
-      <div class="crumbs">${back}<button class="linkbtn" id="ch-a">← ${esc(sel.a)}</button><button class="linkbtn" id="ch-b">← ${esc(sel.b)}</button></div>
-      <div class="fam-tag"><i class="dot" style="background:var(--f-${ING_FAM[sel.a]})"></i><i class="dot" style="background:var(--f-${ING_FAM[sel.b]})"></i>Pairing</div>
-      <h3>${esc(label)}</h3>
-      <div class="facts"><span><b class="num">${hits.length}</b> drink${hits.length === 1 ? "" : "s"}</span><span>avg <b class="num">${priced.length ? money(d3.mean(priced, d => d.price)) : "—"}</b></span><span>at <b>${[...new Set(hits.map(d => d.restaurant))].map(esc).join(", ")}</b></span></div>
-      ${parts.length ? `<div class="sub">What else goes in · band width = drinks</div>` + fanMap({ id: "__pair", label, color: famColor(ING_FAM[sel.a]),
-          tip: `<b>${esc(label)}</b><div class="tt-k">${plural(hits.length, "drink")}</div><div class="tt-hint">Click to open in lookup</div>` }, parts,
-        { left: "This pair", right: "Also in the glass", unit: "extra ingredients",
-          nodeTip: n => `<b>${esc(n)}</b> <span class="tt-k">${esc(ING_CAT[n])}</span><div class="tt-k">in ${trio(n).length} of ${hits.length} of these drinks</div><div class="tt-hint">Click to see all its partners</div>`,
-          linkTip: n => `<b>${esc(label)} + ${esc(n)}</b><div class="tt-k">${plural(trio(n).length, "drink")}</div>` + ttList(trio(n).map(ttDrink), 6) }) : ""}
-      <div class="sub">The drinks</div>
-      ${drinkList(hits, [sel.a, sel.b])}`;
-    wireSubMap(box, (side, id) => side === "L" ? (state.ing = sel.a, state.partner = sel.b, renderSearch(current(), stats(current())), setView("ingredients")) : openIng(id), l => openIng(l.b));
+    renderInspect(box, ds, S, { type: "pair", a: sel.a, b: sel.b }, mapNav, {
+      crumbs: `${back}<button class="linkbtn" id="ch-a">← ${esc(sel.a)}</button><button class="linkbtn" id="ch-b">← ${esc(sel.b)}</button>` });
     document.getElementById("ch-a").onclick = () => { state.chSel = { type: "arc", a: sel.a }; renderChord(current(), stats(current())); };
     document.getElementById("ch-b").onclick = () => { state.chSel = { type: "arc", a: sel.b }; renderChord(current(), stats(current())); };
   }
@@ -1783,7 +1792,7 @@ function renderOverview(ds, S) {
 
   // tooltip content
   const tPair = (a, b, v) => { const hits = ds.filter(d => has(d, a) && has(d, b));
-    return `<b>${esc(a)} + ${esc(b)}</b><div class="tt-k">${v} of ${ds.length} drinks (${pct(v, ds.length)}) · ${plural(new Set(hits.map(d => d.restaurant)).size, "restaurant")}</div>` + ttList(hits.map(ttDrink), 8); };
+    return `<b>${esc(a)} + ${esc(b)}</b><div class="tt-k">${v} of ${ds.length} drinks (${pct(v, ds.length)}) · ${plural(new Set(hits.map(d => d.restaurant)).size, "restaurant")}</div>` + ttList(hits.map(ttDrink), 8) + '<div class="tt-hint">Click for what else goes in</div>'; };
   const tRest = x => { const c = x.d.filter(d => !d.zero).sort((a, b) => b.price - a.price);
     return `<b>${esc(x.r)}</b>` + ttRows([["Cocktails", c.length], ["Zero-proof", x.z], ["Price range", x.lo == null ? "—" : `${money(x.lo)}–${money(x.hi)}`], ["Median cocktail", x.med == null ? "—" : money(x.med)],
       ["Ingredients used", new Set(x.d.flatMap(d => d.ings.map(i => i.name))).size]])
@@ -1791,11 +1800,11 @@ function renderOverview(ds, S) {
   const tIng = (n, v) => { const { withIng, ranked } = partnersOf(ds, n), p = withIng.filter(d => !d.zero);
     return `<b>${esc(n)}</b> <span class="tt-k">${esc(ING_CAT[n])}</span>` + ttRows([["Drinks", `${v} of ${ds.length} (${pct(v, ds.length)})`], ["Restaurants", new Set(withIng.map(d => d.restaurant)).size],
       ["Avg cocktail price", p.length ? money(d3.mean(p, d => d.price)) : "—"]])
-      + `<div class="tt-k" style="margin-top:4px">Top partners</div>` + ttList(ranked.slice(0, 3).map(([m, c]) => `${esc(m)} <span class="tt-k">${c}</span>`)); };
+      + `<div class="tt-k" style="margin-top:4px">Top partners</div>` + ttList(ranked.slice(0, 3).map(([m, c]) => `${esc(m)} <span class="tt-k">${c}</span>`)) + '<div class="tt-hint">Click for its pairing map</div>'; };
   const tFam = m => { const inside = [...S.cnt].filter(([n]) => ING_FAM[n] === m.f).sort((a, b) => b[1] - a[1]);
     const nd = ds.filter(d => d.ings.some(i => ING_FAM[i.name] === m.f)).length;
     return `<b>${esc(m.l)}</b>` + ttRows([["Share of uses", pct(m.v, totalUse)], ["Ingredient uses", m.v], ["Distinct ingredients", inside.length], ["Drinks using it", `${nd} (${pct(nd, ds.length)})`]])
-      + `<div class="tt-k" style="margin-top:4px">Most used</div>` + ttList(inside.slice(0, 4).map(([n, c]) => `${esc(n)} <span class="tt-k">${c}</span>`)); };
+      + `<div class="tt-k" style="margin-top:4px">Most used</div>` + ttList(inside.slice(0, 4).map(([n, c]) => `${esc(n)} <span class="tt-k">${c}</span>`)) + '<div class="tt-hint">Click for what\'s inside</div>'; };
   const tFresh = `<b>${fresh1.length} fresh items in only one drink</b>` + ttList(fresh1.map(r => `${esc(r.name)} <span class="tt-k">${esc(r.drinks[0].drink)}, ${esc(r.drinks[0].restaurant)}</span>`), 10);
   const tZp = `<b>Zero-proof prices by restaurant</b>` + ttRows(RESTS.map(r => { const z = zAll.filter(d => d.restaurant === r);
     return [esc(r), z.length ? `${money(d3.min(z, d => d.price))}–${money(d3.max(z, d => d.price))}` : "none"]; }));
@@ -1839,8 +1848,8 @@ function renderOverview(ds, S) {
     <div class="card span-4">
       <div class="card-head"><h2>Category mix</h2><button class="card-link" data-go="map">Explore →</button></div>
       <div class="card-body" style="display:grid;gap:10px;align-content:start">
-        <div class="mix-stack" role="img" aria-label="Share of ingredient uses by category">${mix.map(m => `<i ${tipAttr(tFam(m))} style="width:${m.v / totalUse * 100}%;background:var(--f-${m.f})"></i>`).join("")}</div>
-        <div class="mix-legend">${mix.map(m => `<span tabindex="0" ${tipAttr(tFam(m))}><i class="dot" style="background:var(--f-${m.f})"></i>${esc(m.l)}<b>${Math.round(m.v / totalUse * 100)}%</b></span>`).join("")}</div>
+        <div class="mix-stack" role="img" aria-label="Share of ingredient uses by category">${mix.map(m => `<i data-fam="${m.f}" role="button" aria-label="${esc(m.l)}" ${tipAttr(tFam(m))} style="width:${m.v / totalUse * 100}%;background:var(--f-${m.f})"></i>`).join("")}</div>
+        <div class="mix-legend">${mix.map(m => `<span tabindex="0" role="button" data-fam="${m.f}" ${tipAttr(tFam(m))}><i class="dot" style="background:var(--f-${m.f})"></i>${esc(m.l)}<b>${Math.round(m.v / totalUse * 100)}%</b></span>`).join("")}</div>
       </div>
       <p class="hint">Share of all ingredient uses across the selected drinks.</p>
     </div>
@@ -1862,15 +1871,61 @@ function renderOverview(ds, S) {
     if (el.dataset.go === "map") setMode("fam", null);
     setView(el.dataset.go);
   }));
-  grid.querySelectorAll("[data-pair]").forEach(el => act(el, () => { const [a, b] = el.dataset.pair.split("|"); setMode("ing", { type: "rib", a, b }, [a, b]); setView("map"); }));
-  grid.querySelectorAll("[data-ing]").forEach(el => act(el, () => { state.ing = el.dataset.ing; state.partner = null; renderSearch(current(), stats(current())); setView("ingredients"); }));
+  grid.querySelectorAll("[data-pair]").forEach(el => act(el, () => { const [a, b] = el.dataset.pair.split("|"); openDrawer({ type: "pair", a, b }); }));
+  grid.querySelectorAll("[data-ing]").forEach(el => act(el, () => openDrawer({ type: "ing", a: el.dataset.ing })));
+  grid.querySelectorAll("[data-fam]").forEach(el => act(el, () => openDrawer({ type: "fam", a: el.dataset.fam })));
   grid.querySelectorAll("[data-rest]").forEach(el => act(el, () => { ops.rest = el.dataset.rest; setView("gaps"); }));
 }
+
+/* overview drawer: opens the inspector over the dashboard, with its own back stack */
+const drawer = { stack: [], opener: null };
+const dEl = id => document.getElementById(id);
+function drawerLabel(t) { return t.type === "fam" ? FAM_NAME[t.a] : t.type === "pair" ? `${t.a} + ${t.b}` : t.a; }
+function openDrawer(t, push = true) {
+  if (dEl("drawer").hidden) { drawer.stack = []; drawer.opener = document.activeElement; }
+  if (push) drawer.stack.push(t);
+  dEl("drawer").hidden = false; dEl("drawer-scrim").hidden = false;
+  requestAnimationFrame(() => document.body.classList.add("drawer-open"));
+  renderDrawer();
+  dEl("drawer-x").focus({ preventScroll: true });
+}
+function renderDrawer() {
+  const t = drawer.stack[drawer.stack.length - 1]; if (!t) return closeDrawer();
+  const ds = current(), S = stats(ds), body = dEl("drawer-body");
+  hideTip();
+  dEl("drawer-back").hidden = drawer.stack.length < 2;
+  dEl("drawer-title").textContent = drawer.stack.length > 1 ? drawerLabel(drawer.stack[drawer.stack.length - 2]) + " ›" : "Details";
+  renderInspect(body, ds, S, t, nt => { if (nt.type === "lookup" || nt.type === "famPair") { closeDrawer(); navCommon(nt); } else { drawer.stack.push(nt); renderDrawer(); body.scrollTop = 0; } },
+    { foot: `<div class="crumbs" style="margin-top:6px"><button class="linkbtn" id="drawer-map">Open in pairing map →</button>${t.type !== "fam" ? `<button class="linkbtn" id="drawer-look">Open in lookup →</button>` : ""}</div>` });
+  dEl("drawer-map").onclick = () => { closeDrawer();
+    if (t.type === "fam") setMode("fam", { type: "arc", a: t.a }); else if (t.type === "ing") setMode("ing", { type: "arc", a: t.a }, [t.a]); else setMode("ing", { type: "rib", a: t.a, b: t.b }, [t.a, t.b]);
+    setView("map"); };
+  const lk = dEl("drawer-look"); if (lk) lk.onclick = () => { closeDrawer(); navCommon({ type: "lookup", a: t.a, b: t.b }); };
+}
+function closeDrawer() {
+  if (dEl("drawer").hidden) return;
+  document.body.classList.remove("drawer-open"); hideTip();
+  dEl("drawer").hidden = true; dEl("drawer-scrim").hidden = true;
+  if (drawer.opener && drawer.opener.isConnected) drawer.opener.focus({ preventScroll: true });
+}
+dEl("drawer-x").onclick = closeDrawer;
+dEl("drawer-scrim").onclick = closeDrawer;
+dEl("drawer-back").onclick = () => { drawer.stack.pop(); renderDrawer(); };
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !dEl("drawer").hidden) { e.stopImmediatePropagation(); closeDrawer(); } }, true);
+// keep focus inside the open drawer
+dEl("drawer").addEventListener("keydown", e => {
+  if (e.key !== "Tab") return;
+  const f = [...dEl("drawer").querySelectorAll('button:not([hidden]), [tabindex="0"]')].filter(el => el.offsetParent !== null || el.getBBox);
+  if (!f.length) return; const first = f[0], last = f[f.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
 
 function render() {
   const ds = current(), S = stats(ds);
   if (state.pair && !state.pair.every(p => S.cnt.has(p))) state.pair = null;
   renderControls(); renderScope(ds); renderStrip(ds, S); renderOverview(ds, S); renderSearch(ds, S); renderMatrix(ds, S); renderChord(ds, S); renderOps(); renderCosts(ds);
+  if (!dEl("drawer").hidden) renderDrawer();
 }
 render();
 { let v0 = (location.hash || "").slice(1); if (!VIEWS[v0]) { try { v0 = localStorage.getItem("ja-view"); } catch (e) {} } setView(VIEWS[v0] ? v0 : "overview", { keepScroll: true }); }

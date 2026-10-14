@@ -13,7 +13,7 @@ An interactive dashboard of the cocktail and zero-proof menus at five José Andr
 - **Cost & sales (what if)**: a preview of margin and sales analysis. Costs are adjustable *assumptions* per ingredient type. Sales are a seeded *random simulated* sample (menu-engineering matrix, top sellers, drink + food pairing, check lift). Lists what real recipe, invoice and POS data would unlock
 - **Pairing map sub-maps**: click a category arc or ribbon to see the ingredients behind it as a two-column link diagram (or a small chord for pairs within one category). In the Ingredients view, an ingredient shows its partners grouped by category, and a pair shows what else goes into its drinks. The pairing matrix detail panel uses the same diagrams: a cell shows what else goes in, a diagonal cell shows partners
 
-On a desktop the Overview fits on one screen. Hover any stat for details. On a phone, tap once for details and again to open.
+On a desktop the Overview fits on one screen. Clicking an ingredient, pairing or category on it opens a detail drawer with the same sub-maps, without leaving the dashboard. Hover any stat for details. On a phone, tap once for details and again to open.
 
 ## Run it
 Open `index.html` in a browser. It needs an internet connection for D3 (cdnjs) and fonts (Google Fonts).
