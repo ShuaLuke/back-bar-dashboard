@@ -419,6 +419,9 @@ svg .tip-on { outline: none; stroke: var(--ink); stroke-width: 1.5; }
 .pc-hi { color: var(--warn); font-weight: 600; }
 
 /* pairing-map sub-maps */
+@media (min-width: 1101px) { .mx-grid { grid-template-columns: minmax(0, 1.35fr) minmax(360px, 1fr); } #matrix { width: 100%; height: auto; } }
+.cell.sel { stroke: var(--ink); stroke-width: 2.5; }
+@media (min-width: 1101px) { .mx-grid .pair-out { max-height: calc(100vh - 140px); overflow-y: auto; } }
 .fam-sum { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; color: var(--muted); }
 .fam-sum span { display: inline-flex; align-items: center; gap: 5px; }
 .fam-sum b { font-family: var(--mono); font-weight: 500; font-size: 11px; color: var(--ink); }
@@ -509,7 +512,7 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
       </div>
       <div class="mx-grid">
         <div class="scroll"><svg id="matrix" role="img" aria-label="Ingredient co-occurrence matrix"></svg></div>
-        <div class="pair-out ch-detail" id="pair-out"><p class="empty">Click a cell to list the drinks that use both ingredients.</p></div>
+        <div class="pair-out ch-detail" id="pair-out"></div>
       </div>
     </section>
 
@@ -787,7 +790,7 @@ function topIngs(S, n) {
 function renderMatrix(ds, S) {
   const ings = topIngs(S, state.mxN), n = ings.length;
   const cell = 22, left = 150, top = 150, W = left + n * cell + 80, H = top + n * cell + 10;
-  const svg = d3.select("#matrix").attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`);
+  const svg = d3.select("#matrix").attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`).style("max-width", W + "px");
   svg.selectAll("*").remove();
   let max = 1; ings.forEach((a, i) => ings.forEach((b, j) => { if (i !== j) max = Math.max(max, S.get(a, b)); }));
   const heat = css("--heat");
@@ -799,7 +802,7 @@ function renderMatrix(ds, S) {
   });
   ings.forEach((a, i) => ings.forEach((b, j) => {
     const v = i === j ? S.cnt.get(a) : S.get(a, b);
-    const r = g.append("rect").attr("class", "cell").attr("x", j * cell + 1).attr("y", i * cell + 1).attr("width", cell - 2).attr("height", cell - 2).attr("rx", 3);
+    const r = g.append("rect").attr("class", "cell").attr("data-a", a).attr("data-b", b).attr("x", j * cell + 1).attr("y", i * cell + 1).attr("width", cell - 2).attr("height", cell - 2).attr("rx", 3);
     if (i === j) r.attr("fill", "none").attr("stroke", css("--line")).attr("stroke-dasharray", "2 2");
     else r.attr("fill", v ? `rgba(${heat},${0.15 + 0.85 * v / max})` : css("--bg"));
     if (i !== j && v) g.append("text").attr("x", j * cell + cell / 2).attr("y", i * cell + cell / 2 + 4).attr("text-anchor", "middle")
@@ -807,7 +810,8 @@ function renderMatrix(ds, S) {
       .style("fill", v / max > 0.55 ? css("--bg") : css("--ink")).text(v);
     r.on("mousemove", e => showTip(e, i === j ? `<b>${esc(a)}</b><br>${v} drinks` : `<b>${esc(a)} + ${esc(b)}</b><br>${v} drink${v === 1 ? "" : "s"}`))
      .on("mouseleave", hideTip)
-     .on("click", () => { state.pair = i === j ? [a] : [a, b]; renderPair(ds); });
+     .on("click", () => { state.pair = i === j ? [a] : [a, b]; hideTip(); renderPair(ds);
+       if (matchMedia("(max-width: 1100px)").matches) document.getElementById("pair-out").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" }); });
   }));
   ings.forEach((a, i) => {
     g.append("text").attr("class", "mx-label").attr("x", -18).attr("y", i * cell + cell / 2 + 4).attr("text-anchor", "end").text(a)
@@ -819,9 +823,48 @@ function renderMatrix(ds, S) {
 }
 function renderPair(ds) {
   const out = document.getElementById("pair-out");
-  if (!state.pair) { out.innerHTML = '<p class="empty">Click a cell to list the drinks that use both ingredients.</p>'; return; }
-  const hits = ds.filter(d => state.pair.every(p => d.ings.some(i => i.name === p)));
-  out.innerHTML = `<div class="sub">${state.pair.map(esc).join(" + ")} · ${hits.length} drink${hits.length === 1 ? "" : "s"}</div>` + drinkList(hits, state.pair);
+  d3.selectAll("#matrix .cell").classed("sel", function () { const p = state.pair; if (!p) return false;
+    const a = this.dataset.a, b = this.dataset.b; return p.length === 1 ? a === p[0] && b === p[0] : (a === p[0] && b === p[1]) || (a === p[1] && b === p[0]); });
+  if (!state.pair) { out.innerHTML = '<p class="empty">Click a cell to see what else goes into drinks with both ingredients. Click a diagonal cell to see one ingredient\'s partners.</p>'; return; }
+  const go = pair => { state.pair = pair; hideTip(); renderPair(current()); };
+  const lookup = (a, b) => { state.ing = a; state.partner = b || null; renderSearch(current(), stats(current())); setView("ingredients"); };
+  // diagonal: one ingredient's partners
+  if (state.pair.length === 1) {
+    const ing = state.pair[0], { withIng, ranked } = partnersOf(ds, ing), priced = withIng.filter(d => !d.zero);
+    const parts = ranked.slice(0, 16), more = ranked.length - parts.length;
+    out.innerHTML = `
+      <div class="fam-tag"><i class="dot" style="background:var(--f-${ING_FAM[ing]})"></i>${esc(ING_CAT[ing])}</div>
+      <h3>${esc(ing)}</h3>
+      <div class="facts"><span><b class="num">${withIng.length}</b> drinks</span><span>avg <b class="num">${priced.length ? money(d3.mean(priced, d => d.price)) : "—"}</b></span><span><b class="num">${ranked.length}</b> partners</span></div>
+      <div class="sub">What it pairs with, by category · band width = shared drinks</div>
+      ${parts.length ? fanMap({ id: ing, label: ing, color: famColor(ING_FAM[ing]), tip: ingTip(ds, null, ing) }, parts,
+        { left: ING_CAT[ing], right: "Partners", unit: "shared drinks", nodeTip: n => ingTip(ds, null, n), linkTip: n => pairTip(ds, ing, n) }) : '<p class="empty">No partners.</p>'}
+      ${more > 0 ? `<p class="hint">+${more} more partner${more === 1 ? "" : "s"}. Open the lookup for the full list.</p>` : ""}
+      <div><button class="linkbtn" id="mx-look">Open ${esc(ing)} in lookup →</button></div>`;
+    wireSubMap(out, (side, id) => side === "L" ? lookup(ing) : go([ing, id]), l => go([ing, l.b]));
+    document.getElementById("mx-look").onclick = () => lookup(ing);
+    return;
+  }
+  // pair: what else goes in, then the drinks
+  const [a, b] = state.pair, hits = ds.filter(d => has(d, a) && has(d, b)), priced = hits.filter(d => !d.zero);
+  const co = new Map(); hits.forEach(d => d.ings.forEach(i => { if (i.name !== a && i.name !== b) co.set(i.name, (co.get(i.name) || 0) + 1); }));
+  const parts = [...co].sort((x, y) => y[1] - x[1] || x[0].localeCompare(y[0])).slice(0, 16), label = `${a} + ${b}`;
+  const trio = n => hits.filter(d => has(d, n));
+  out.innerHTML = `
+    <div class="crumbs"><button class="linkbtn" id="mx-a">← ${esc(a)}</button><button class="linkbtn" id="mx-b">← ${esc(b)}</button></div>
+    <div class="fam-tag"><i class="dot" style="background:var(--f-${ING_FAM[a]})"></i><i class="dot" style="background:var(--f-${ING_FAM[b]})"></i>Pairing</div>
+    <h3>${esc(label)}</h3>
+    <div class="facts"><span><b class="num">${hits.length}</b> drink${hits.length === 1 ? "" : "s"}</span><span>avg <b class="num">${priced.length ? money(d3.mean(priced, d => d.price)) : "—"}</b></span><span>at <b>${[...new Set(hits.map(d => d.restaurant))].map(esc).join(", ")}</b></span></div>
+    ${parts.length ? `<div class="sub">What else goes in · band width = drinks</div>` + fanMap({ id: "__pair", label, color: famColor(ING_FAM[a]),
+        tip: `<b>${esc(label)}</b><div class="tt-k">${plural(hits.length, "drink")}</div><div class="tt-hint">Click to open in lookup</div>` }, parts,
+      { left: "This pair", right: "Also in the glass", unit: "extra ingredients",
+        nodeTip: n => `<b>${esc(n)}</b> <span class="tt-k">${esc(ING_CAT[n])}</span><div class="tt-k">in ${trio(n).length} of ${hits.length} of these drinks</div><div class="tt-hint">Click to see its partners</div>`,
+        linkTip: n => `<b>${esc(label)} + ${esc(n)}</b><div class="tt-k">${plural(trio(n).length, "drink")}</div>` + ttList(trio(n).map(ttDrink), 6) }) : ""}
+    <div class="sub">The drinks</div>
+    ${drinkList(hits, state.pair)}`;
+  wireSubMap(out, (side, id) => side === "L" ? lookup(a, b) : go([id]), l => go([l.b]));
+  document.getElementById("mx-a").onclick = () => go([a]);
+  document.getElementById("mx-b").onclick = () => go([b]);
 }
 
 /* chord */
@@ -1675,7 +1718,7 @@ function renderCostResults(ds) {
 const VIEWS = {
   overview: { sec: "overview", title: "Overview", sub: "Cocktail and zero-proof menus at five José Andrés restaurants in Washington, DC." },
   ingredients: { sec: "ingredients", title: "Ingredient lookup", sub: "Partners are ranked by the number of drinks that use both. Click one to filter the drink list." },
-  matrix: { sec: "matrix", title: "Pairing matrix", sub: "The most-used ingredients, grouped by category. Each number is how many drinks use both. Click a cell to list them." },
+  matrix: { sec: "matrix", title: "Pairing matrix", sub: "The most-used ingredients, grouped by category. Each number is how many drinks use both. Click a cell to see what else goes in, or a diagonal cell for one ingredient's partners." },
   map: { sec: "map", title: "Pairing map", sub: "Ribbon width is the number of shared drinks. Click an arc or a ribbon for details, or a category to see the ingredients inside it." },
   prep: { sec: "ops", tab: "prep", title: "Prep & inventory", sub: "Which ingredients each bar has to stock and prep, and which ones only one drink uses. Based on menus only." },
   price: { sec: "ops", tab: "price", title: "Pricing", sub: "Every drink by restaurant, and the same style of drink compared across locations." },
