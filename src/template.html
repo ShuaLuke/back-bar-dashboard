@@ -657,7 +657,7 @@ const money = v => v == null || Number.isNaN(v) ? "—" : "$" + (Number.isIntege
 const m2 = v => "$" + (+v).toFixed(2);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 
-const state = { rests: new Set(RESTS), zero: true, ing: "Mezcal", partner: null, mxN: 24, chMode: "fam", pair: null,
+const state = { rests: new Set(RESTS.filter(r => REST_GROUP[r] === HOME)), zero: true, // default view: the home group only; other groups toggle on in the sidebar ing: "Mezcal", partner: null, mxN: 24, chMode: "fam", pair: null,
   chN: 30, chMin: 1, chHidden: new Set(), chSel: null, chPins: new Set() };
 try { const s = JSON.parse(localStorage.getItem("ja-pairs") || "{}"); if (s.mxN) state.mxN = s.mxN; if (s.chN) state.chN = s.chN; } catch (e) {}
 function save() { try { localStorage.setItem("ja-pairs", JSON.stringify({ mxN: state.mxN, chN: state.chN })); } catch (e) {} }
@@ -2009,7 +2009,7 @@ function renderH2H() {
 
 /* dashboard shell */
 const VIEWS = {
-  overview: { sec: "overview", title: "Overview", sub: "Cocktail and zero-proof menus across Washington, DC restaurant groups. Use the filters to pick groups or restaurants." },
+  overview: { sec: "overview", title: "Overview", sub: "Cocktail and zero-proof menus, José Andrés Group by default. Tick other groups or restaurants in the sidebar to widen the view; Compare groups and Head to head always show everyone." },
   ingredients: { sec: "ingredients", title: "Ingredient lookup", sub: "Partners are ranked by the number of drinks that use both. Click one to filter the drink list." },
   matrix: { sec: "matrix", title: "Pairing matrix", sub: "The most-used ingredients, grouped by category. Each number is how many drinks use both. Click a cell to see what else goes in, or a diagonal cell for one ingredient's partners." },
   map: { sec: "map", title: "Pairing map", sub: "Ribbon width is the number of shared drinks. Click an arc or a ribbon for details, or a category to see the ingredients inside it." },
