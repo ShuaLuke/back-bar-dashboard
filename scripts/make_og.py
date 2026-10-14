@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory() as tmp:
     page_src = (root / "index.html").read_text()
     groups = list(dict.fromkeys(d["group"] for d in drinks))
     a, b = groups[0], (groups[2] if len(groups) > 2 else groups[-1])  # José Andrés vs STARR when both exist
-    hook = ('<script>addEventListener("load", () => { '
+    hook = ('<script>window.__notour = true; addEventListener("load", () => { '
             f'h2h.a = "g:" + {json.dumps(a)}; h2h.b = "g:" + {json.dumps(b)}; renderH2H(); setView("h2h"); }});</script>')
     snap = tmp / "snap.html"
     snap.write_text(page_src.replace("</body>", hook + "</body>"))

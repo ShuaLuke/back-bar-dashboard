@@ -456,6 +456,25 @@ svg .tip-on { outline: none; stroke: var(--ink); stroke-width: 1.5; }
 .gtable th .dot { margin-right: 4px; vertical-align: 1px; }
 .gtable td.n { font-size: 12.5px; }
 .view[data-view="groups"] { gap: 20px; }
+/* tour */
+.tour { position: fixed; inset: 0; z-index: 30; }
+.tour-spot { position: fixed; border-radius: 14px; box-shadow: 0 0 0 9999px rgba(20, 22, 31, 0.5), 0 0 0 3px rgba(255, 255, 255, 0.9); transition: top .25s, left .25s, width .25s, height .25s; pointer-events: none; }
+.tour-spot.none { box-shadow: 0 0 0 9999px rgba(20, 22, 31, 0.5); width: 0 !important; height: 0 !important; }
+.tour-card { position: fixed; width: min(360px, calc(100vw - 24px)); background: var(--surface); border-radius: 16px; padding: 18px 20px 16px; box-shadow: 0 24px 60px -20px rgba(20, 22, 31, 0.5); display: grid; gap: 8px; z-index: 31; }
+.tour-card h3 { font-size: 17px; margin: 0; padding-right: 28px; }
+.tour-card p { font-size: 13.5px; color: #3c3f4b; line-height: 1.5; }
+.tour-card p b { font-weight: 600; color: var(--ink); }
+.tour-step { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+.tour-x { position: absolute; top: 10px; right: 10px; font: inherit; font-size: 14px; width: 28px; height: 28px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; color: var(--muted); }
+.tour-x:hover { color: var(--accent-deep); border-color: rgba(240, 89, 42, 0.4); }
+.tour-nav { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 6px; }
+.tour-nav .linkbtn[hidden] { display: none; }
+.tour-next { font: inherit; font-size: 13px; font-weight: 600; color: #fff; background: var(--accent); border: 0; border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+.tour-next:hover { background: var(--accent-deep); }
+.tour-dots { display: flex; gap: 5px; }
+.tour-dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); }
+.tour-dots i.on { background: var(--accent); }
+@media (max-width: 560px) { .tour-card { left: 12px !important; right: 12px; bottom: 12px; top: auto !important; width: auto; } }
 /* drawer */
 .drawer-scrim { position: fixed; inset: 0; z-index: 20; background: rgba(20, 22, 31, 0.28); opacity: 0; transition: opacity .2s; }
 .drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 21; width: min(520px, 100vw); background: var(--surface); box-shadow: -20px 0 50px -20px rgba(20, 22, 31, 0.35);
@@ -531,6 +550,7 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
     </details>
     <div class="side-foot">
       <button class="nav-link" data-view="about">About the data</button>
+      <button class="nav-link" id="tour-btn">Take a tour</button>
       <span>Menus read Oct 13–14, 2026</span>
       <p class="disclaim">Unofficial fan project. Not affiliated with José Andrés Group or its restaurants. Menus and prices change; check with each restaurant.</p>
     </div>
@@ -625,6 +645,16 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
       </ul>
     </section>
   </main>
+</div>
+<div class="tour" id="tour" hidden>
+  <div class="tour-spot" id="tour-spot"></div>
+  <div class="tour-card" id="tour-card" role="dialog" aria-modal="true" aria-labelledby="tour-title">
+    <button class="tour-x" id="tour-x" aria-label="Leave the tour">✕</button>
+    <div class="tour-step" id="tour-step"></div>
+    <h3 id="tour-title"></h3>
+    <p id="tour-text"></p>
+    <div class="tour-nav"><button class="linkbtn" id="tour-back">← Back</button><span class="tour-dots" id="tour-dots"></span><button class="tour-next" id="tour-next">Next →</button></div>
+  </div>
 </div>
 <div class="drawer-scrim" id="drawer-scrim" hidden></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
@@ -2223,6 +2253,69 @@ function render() {
 document.getElementById("about-sources").innerHTML = GROUPS.map(g => `<li><b>${esc(g)}</b>: ${RESTS.filter(r => REST_GROUP[r] === g).map(r => `${esc(r)} (${DRINKS.filter(d => d.restaurant === r).length})`).join(", ")}</li>`).join("");
 render();
 { let v0 = (location.hash || "").slice(1); if (!VIEWS[v0]) { try { v0 = localStorage.getItem("ja-view"); } catch (e) {} } setView(VIEWS[v0] ? v0 : "overview", { keepScroll: true }); }
+
+/* tour: a spotlight walkthrough. Each step may switch view and names a target element to frame. */
+const TOUR = [
+  { title: "Welcome to Well & Call", text: "An unofficial look at what four DC restaurant groups put in their cocktails, read from their public menus. This takes about a minute. Leave any time with ✕ or Esc." },
+  { target: "#rest-controls", title: "Start with José Andrés", text: "The dashboard opens on <b>José Andrés Group</b> only. Tick another group or a single restaurant here to widen or narrow every page." },
+  { target: "#strip", title: "Hover anything", text: "Every number has details behind it. <b>Hover</b> a stat on a computer, or <b>tap</b> it on a phone (tap again to open it)." },
+  { target: ".ov-grid .card:first-child", title: "Click to drill in", text: "Pairings, ingredients and categories open a side panel with a <b>sub-map</b>: what else goes into those drinks, and what pairs with what, without leaving the page." },
+  { view: "map", target: "#chord", title: "The pairing map", text: "Ribbons are shared drinks. Click a category to see the ingredients inside it, or a ribbon to see which pairs link two categories, then keep drilling." },
+  { view: "prep", target: "#ops-prep .ops-tiles", title: "Prep & inventory", text: "What each bar has to stock, and the <b>fresh items used in only one drink</b>, the likeliest waste. Built from menus alone, so the kitchen's shared produce isn't counted." },
+  { view: "h2h", target: ".h2h-pick", title: "Head to head", text: "Pick any two restaurants, or two groups, and compare them: prices, what they build drinks from, and the ingredients and pairings only one of them uses." },
+  { view: "costs", target: "#cost-assume", title: "Cost & sales: a what-if", text: "There's no cost or sales data yet, so this tab runs on <b>adjustable assumptions and a random sample</b>, clearly labeled. It shows what plugging into a POS would make real." },
+  { view: "overview", title: "That's the tour", text: "Sources and caveats are under <b>About the data</b>. You can replay this from <b>Take a tour</b> at the bottom of the sidebar." }
+];
+const tour = { i: -1 };
+const tEl = id => document.getElementById(id);
+function tourStart() { if (window.__notour) return; closeDrawer(); hideTip(); tour.i = 0; tEl("tour").hidden = false; tourShow(); }
+function tourEnd() { tEl("tour").hidden = true; tour.i = -1; try { localStorage.setItem("ja-tour-done", "1"); } catch (e) {} removeEventListener("resize", tourPlace); }
+function tourShow() {
+  const st = TOUR[tour.i]; if (!st) return tourEnd();
+  if (st.view) setView(st.view);
+  tEl("tour-step").textContent = `Step ${tour.i + 1} of ${TOUR.length}`;
+  tEl("tour-title").textContent = st.title; tEl("tour-text").innerHTML = st.text;
+  tEl("tour-back").hidden = tour.i === 0;
+  tEl("tour-next").textContent = tour.i === TOUR.length - 1 ? "Done" : "Next →";
+  tEl("tour-dots").innerHTML = TOUR.map((x, k) => `<i class="${k === tour.i ? "on" : ""}"></i>`).join("");
+  const el = st.target && document.querySelector(st.target);
+  if (el) el.scrollIntoView({ block: "center", behavior: reduceMotion ? "auto" : "smooth" });
+  // let the view switch and scroll settle before measuring
+  setTimeout(tourPlace, el ? 320 : 0);
+  addEventListener("resize", tourPlace);
+  tEl("tour-next").focus({ preventScroll: true });
+}
+function tourPlace() {
+  const st = TOUR[tour.i]; if (!st) return;
+  const spot = tEl("tour-spot"), card = tEl("tour-card"), el = st.target && document.querySelector(st.target);
+  const pad = 8;
+  if (!el) { spot.className = "tour-spot none"; card.style.left = Math.max(12, innerWidth / 2 - card.offsetWidth / 2) + "px"; card.style.top = Math.max(12, innerHeight / 2 - card.offsetHeight / 2) + "px"; return; }
+  const r = el.getBoundingClientRect();
+  spot.className = "tour-spot";
+  spot.style.left = (r.left - pad) + "px"; spot.style.top = (r.top - pad) + "px"; spot.style.width = (r.width + pad * 2) + "px"; spot.style.height = (r.height + pad * 2) + "px";
+  const cw = card.offsetWidth, ch = card.offsetHeight;
+  let left = r.left, top = r.bottom + pad + 12;                       // below the target by default
+  if (top + ch > innerHeight - 12) top = r.top - pad - 12 - ch;       // or above it
+  if (top < 12) { top = Math.max(12, Math.min(r.top, innerHeight - ch - 12)); left = r.right + pad + 12; } // or beside it
+  if (left + cw > innerWidth - 12) left = Math.max(12, r.right - cw);
+  if (left + cw > innerWidth - 12) left = innerWidth - cw - 12;
+  card.style.left = left + "px"; card.style.top = top + "px";
+}
+tEl("tour-btn").onclick = tourStart;
+tEl("tour-x").onclick = tourEnd;
+tEl("tour-next").onclick = () => { tour.i += 1; tourShow(); };
+tEl("tour-back").onclick = () => { tour.i = Math.max(0, tour.i - 1); tourShow(); };
+tEl("tour").addEventListener("click", e => { if (e.target === tEl("tour")) tourEnd(); });
+document.addEventListener("keydown", e => {
+  if (tEl("tour").hidden) return;
+  if (e.key === "Escape") { e.stopImmediatePropagation(); tourEnd(); }
+  else if (e.key === "ArrowRight" || e.key === "Enter") { e.preventDefault(); tEl("tour-next").click(); }
+  else if (e.key === "ArrowLeft") { e.preventDefault(); tEl("tour-back").click(); }
+}, true);
+// first visit: start the tour once the page has rendered
+{ let seen = false; try { seen = !!localStorage.getItem("ja-tour-done"); } catch (e) {}
+  if (!seen && !location.hash.includes("notour")) setTimeout(tourStart, 600); }
+
 const mq = matchMedia("(prefers-color-scheme: dark)"); mq.addEventListener && mq.addEventListener("change", render);
 new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 </script>
