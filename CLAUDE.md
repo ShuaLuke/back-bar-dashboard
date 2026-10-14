@@ -6,7 +6,7 @@ Static, single-page dashboard. No framework, no bundler. D3 v7.8.5 is loaded fro
 - Data changes: edit `data/drinks_raw.tsv`, then run `scripts/normalize.py` before building. Add a rule to `RULES` in normalize.py for any new ingredient wording. The script fails loudly on unmapped ingredients.
 - Each drink in drinks.json has `ings` (deduped canonical ingredients with `cat`) and `parts` (every menu ingredient line as `[raw, canonical]`, used for display).
 - Categories (`cat`) roll up to 9 families via `CAT2FAM` in the template. Family colors are the `--f-*` CSS tokens.
-- Light theme only, by design. Brand: "Back Bar" (placeholder name), aperitivo orange `--accent`, teal `--teal`, fonts Geist + Geist Mono.
+- Light theme only, by design. Brand: "Well & Call" (bar slang: a well drink is the house pour, a call drink names the brand; the repo keeps its original `back-bar-dashboard` name so the Pages URL stays put), aperitivo orange `--accent`, teal `--teal`, fonts Geist + Geist Mono.
 - Main JS entry points: `render()` re-renders everything on filter change; `setView(name)` switches views (`overview`, `ingredients`, `matrix`, `map`, `prep`, `price`, `gaps`, `costs`, `about`). `renderChord`, `renderOps`, `renderOverview` and `renderCosts` each own one view.
 - `og.png` (link preview, 1200x630) is rendered by `scripts/make_og.py` from `src/og-card.html` plus a headless screenshot of the built page with the detail drawer opened on the top pairing (see the `hook` in make_og.py). Re-run it after visible Overview or data changes. og:image URLs point at https://shualuke.github.io/back-bar-dashboard/.
 - Template content above `<!--BODY-->` is emitted into `<head>` by build.py.
