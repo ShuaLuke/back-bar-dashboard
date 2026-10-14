@@ -24,21 +24,15 @@ def shoot(url, out, w, h, scale):
 with tempfile.TemporaryDirectory() as tmp:
     tmp = pathlib.Path(tmp)
     shot = tmp / "dash.png"
-    # a copy of the page that opens the detail drawer on the top pairing, so the preview shows the drill-down
+    # a copy of the page that opens Head to head on the first two groups, so the preview shows the comparison
     page_src = (root / "index.html").read_text()
-    counts = {}
-    for d in drinks:
-        names = sorted(x["name"] for x in d["ings"])
-        for i, a in enumerate(names):
-            for b in names[i + 1:]:
-                counts[(a, b)] = counts.get((a, b), 0) + 1
-    pair = max(counts, key=counts.get)
-    hook = ('<script>addEventListener("load", () => { document.body.classList.add("no-anim"); '
-            f'openDrawer({{ type: "pair", a: {json.dumps(pair[0])}, b: {json.dumps(pair[1])} }}); }});</script>'
-            '<style>.no-anim .drawer, .no-anim .drawer-scrim { transition: none !important; }</style>')
+    groups = list(dict.fromkeys(d["group"] for d in drinks))
+    a, b = groups[0], (groups[2] if len(groups) > 2 else groups[-1])  # José Andrés vs STARR when both exist
+    hook = ('<script>addEventListener("load", () => { '
+            f'h2h.a = "g:" + {json.dumps(a)}; h2h.b = "g:" + {json.dumps(b)}; renderH2H(); setView("h2h"); }});</script>')
     snap = tmp / "snap.html"
     snap.write_text(page_src.replace("</body>", hook + "</body>"))
-    shoot(snap.as_uri() + "#overview", shot, 1200, 800, 1)  # og-card.html's crop assumes this size
+    shoot(snap.as_uri() + "#h2h", shot, 1200, 800, 1)  # og-card.html's crop assumes this size
     prices = [d["price"] for d in drinks if not d["zero"] and d["price"] is not None]
     med = statistics.median(prices)
     fill = {
