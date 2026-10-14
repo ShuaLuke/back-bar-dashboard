@@ -10,7 +10,8 @@ An interactive dashboard of the cocktail and zero-proof menus at five José Andr
 - **Pairing matrix**: co-occurrence heatmap of the top 16/24/32 ingredients
 - **Pairing map**: interactive chord diagram (categories ⇄ ingredients, drill-down, filters)
 - **Prep & inventory / Pricing / Menu gaps**: operations views built from the menus alone
-- **With cost data**: a what-if preview of margin analysis. Uses adjustable *assumed* costs per ingredient type, not real costs, and lists what real recipe, invoice and sales data would unlock
+- **Cost & sales (what if)**: a preview of margin and sales analysis. Costs are adjustable *assumptions* per ingredient type. Sales are a seeded *random simulated* sample (menu-engineering matrix, top sellers, drink + food pairing, check lift). Lists what real recipe, invoice and POS data would unlock
+- **Pairing map sub-maps**: click a category arc or ribbon to see the ingredients behind it as a two-column link diagram (or a small chord for pairs within one category)
 
 On a desktop the Overview fits on one screen. Hover any stat for details. On a phone, tap once for details and again to open.
 

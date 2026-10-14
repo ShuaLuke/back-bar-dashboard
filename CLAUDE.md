@@ -11,6 +11,7 @@ Static, single-page dashboard. No framework, no bundler. D3 v7.8.5 is loaded fro
 - `og.png` (link preview, 1200x630) is rendered by `scripts/make_og.py` from `src/og-card.html` plus a screenshot of the built page. Re-run it after visible Overview or data changes. og:image URLs point at https://shualuke.github.io/back-bar-dashboard/.
 - Template content above `<!--BODY-->` is emitted into `<head>` by build.py.
 - Tooltips: give any element `data-tip="<html>"` (use `tipAttr()`, `ttRows()`, `ttList()`). One delegated handler does hover on desktop, tap-to-show / tap-again-to-open on touch, and focus for keyboard.
-- The `costs` view uses made-up, adjustable per-ingredient-type costs (`COST_DEFAULT`). Keep it labeled as assumed, never as real restaurant costs.
+- The `costs` view uses made-up, adjustable per-ingredient-type costs (`COST_DEFAULT`) and a seeded random sales simulation (`simulate()`, `sim.seed`). Keep both labeled as assumed/simulated, never as real restaurant costs or sales.
+- Pairing map detail panel draws sub-maps with `subMap()` (two-column links) and `subChord()` (within one category), wired by `wireSubMap()`.
 - Overview must fit one desktop screen (no page scroll) at 1280×720 and up; check this after layout changes.
 - Good next steps: split the template into css/js modules, add Vite, and add a monthly menu re-scrape to track changes.
