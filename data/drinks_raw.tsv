@@ -1,0 +1,86 @@
+restaurant	section	drink	price	ingredients
+Oyamel	Margaritas	Oyamel	16	Salt Air; Milagro Blanco; Magdala; lime
+Oyamel	Margaritas	Classic	15	Hornitos blanco; Magdala; lime
+Oyamel	Margaritas	Reposado Margarita	17	Hornitos Reposado; Magdala; lime
+Oyamel	Margaritas	Mezcal Margarita	17	Mezcal Amarás Verde; Magdala; lime
+Oyamel	Margaritas	Pepino Serrano Margarita	16	Espolón Blanco; Magdala; cucumber; lime; serrano chile
+Oyamel	Margaritas	Daisy de Grana	18	Milagro Blanco; Magdala; housemade grenadine; lime; Salt Air
+Oyamel	Margaritas	Estilo Ron Cooper	18	Olmeca Altos Blanco; Magdala; lime; Oaxacan sea salt; Del Maguey Vida Puebla Mezcal
+Oyamel	Cócteles de la Casa	Escribo	18	Bosscal Damiana; Green Chartreuse; hoja santa; lime; tomatillo
+Oyamel	Cócteles de la Casa	Negroni Bourdain	18	Montelobos Espadín; Aperol; Cynar; Dolin Sweet Vermouth
+Oyamel	Cócteles de la Casa	Chixculub Punch	17	Uruapan Charanda; banana leaf; Luxardo Sangue Morlacco Cherry; Velvet Falernum; brûléed lime
+Oyamel	Cócteles de la Casa	El Mago	16	El Mago Sotol; Aperol; Uruapan Charanda; tamarind-pineapple shrub; lime
+Oyamel	Cócteles de la Casa	Baja Gin & Tonic	17	Las Californias Nativo; Chinola Passionfruit; Dolin Blanc; thyme; Mexican oregano; Fever-tree tonic
+Oyamel	Cócteles de la Casa	Molito Old Fashioned	23	Bahnez Espadin-Barril; molito; Aztec chocolate bitters; apple and whiskey oak aromatic cloud
+Oyamel	Cócteles de la Casa	Mojito Dorado	16	Don Q; lime; mint; lime air
+Oyamel	Cócteles de la Casa	Amor Cafeinado	18	Quiereme Mucho Espadín; Cynar; allspice; Oaxacan Chocolate; espresso
+Oyamel	Beer Cocktails	Michelada Original	13	Tecate; sangrita de tomate; lime
+Oyamel	Beer Cocktails	Michelada Cubano	14	Tecate; sangrita de tomate; habañero; lime
+Oyamel	Beer Cocktails	Michelada El Bajío	14	Tecate; Mexican maggi; worcestershire; picante; lime; sal de gusano
+Oyamel	Zero-proof	Limonada	6	sparkling water; lime
+Jaleo	Sangría	Sangría Roja La Sueca	12	red wine sangría
+Jaleo	Sangría	Sangría de Cava	14	cava sangría
+Jaleo	Sangría	Sangría Rosada	14	rosé sangría
+Jaleo	Cocktails	Carajillo Old Fashioned	18	Sir Davis Rye; Torres 10; Licor 43; Mr. Black
+Jaleo	Cocktails	Cuba Libre	15	Bacardi 8; Mexican Coca-Cola; Angostura; lime
+Jaleo	Cocktails	Bee's Knees with Oloroso	16	Gin; lemon; honey; oloroso sherry
+Jaleo	Cocktails	Margarita Donostiarra	17	Arbol infused tequila; mezcal; bay leaf; lime; sherry salt
+Jaleo	Cocktails	El Compadre	17	Bourbon; Aperol; lemon
+Jaleo	Cocktails	Jarana	16	Amontillado; Yzaguirre Rojo Reserva; Lustau brandy; Campari
+Jaleo	Cocktails	Sweet Bay	17	Gin; Green Chartreuse; bay leaf; lime
+Jaleo	Cocktails	Media Combinación	14	Yzaguirre rojo vermouth; Cynar; Gin; Angostura Bitters
+Jaleo	Cocktails	Adonis	15	Oloroso; Yzaguirre Rojo Reserva; orange bitters
+Jaleo	Gin-Tonics	Ultimate	17	Hendrick's Gin; Fever-Tree Indian tonic; juniper; lemon; lime
+Jaleo	Gin-Tonics	Mediterranean	17	Gin Mare; Fever-Tree Mediterranean tonic; sweet vermouth; dry vermouth; lemon; lime; thyme
+Jaleo	Gin-Tonics	Triple Orange	17	Gin Mare; Fever-Tree tonic; marmalade; rosemary; orange bitters
+Jaleo	Gin-Tonics	Del Norte	17	Nordés Gin; Fever-Tree Mediterranean tonic; blood orange
+Jaleo	Zero-proof	Sangría 0.0	10	non-alcoholic sangría
+Jaleo	Zero-proof	La Seviyá	10	passion fruit; thyme
+Jaleo	Zero-proof	La Fresita	10	strawberry; lemon
+Jaleo	Zero-proof	Lemonade, Bay leaf soda	6	lemon; bay leaf; soda water
+Jaleo	Beer Cocktails	Clara (porrón)	23	lager; Kas Limón
+Zaytinya	Specialty Cocktails	Mediterranean Gin & Tonic	16	Stray Dog gin; sweet vermouth; dry vermouth; Mediterranean tonic; lemon; lime; thyme
+Zaytinya	Specialty Cocktails	Pomona	15	Ouzo; lemon; pomegranate; Moroccan mint
+Zaytinya	Specialty Cocktails	3 PM in Istanbul	16	Vodka; lemon lavender mint tisane; aperol; vanilla; lime; grapefruit
+Zaytinya	Specialty Cocktails	Pom Fili	14	Red wine; vodka; pomegranate; allspice dram
+Zaytinya	Specialty Cocktails	Za'atar Margarita	16	Milagro tequila; lime; Magdala orange liqueur; za'atar air
+Zaytinya	Specialty Cocktails	Minoan Sour	16	Tsipouro; lemon; egg white; olive oil
+Zaytinya	Specialty Cocktails	Sidecar to Tangier	16	Metaxa 5; rose petals; cardamom; cumin; honey; lemon
+Zaytinya	Specialty Cocktails	Dancing Tree Martini	16	Olive leaf gin; Otto's Athens vermouth; Scrappy's lavender bitters
+Zaytinya	Specialty Cocktails	Ankara Rye Club	16	Sazerac rye whisky; thyme; cumin; vermouth rouge
+Zaytinya	Specialty Cocktails	Continental Sour	18	Old Forester bourbon; Oloroso; citrus; red wine
+Zaytinya	Specialty Cocktails	Glykopikro	16	Olive leaf gin; greek vermouth; Campari; Salt
+Zaytinya	Specialty Cocktails	Melissa Old Fashioned	18	Elijah Craig bourbon; Mastiha; Honey; Angostura bitters
+Zaytinya	Specialty Cocktails	Midnight in Cyprus	17	Metaxa 5; Mavrodaphne of Patras; J Rieger caffe amaro; Ouzo; Espresso
+Zaytinya	Specialty Cocktails	Manna	15	Greek brandy; Benedictine; Mastiha; labneh honey
+Zaytinya	Specialty Cocktails	Magic Carpet	16	Fords gin; apricot liqueur; elderflower; vanilla; Greek yogurt
+Zaytinya	Zero-proof	Aegean Sunset	8	cardamom; lime; peach; cherry
+Zaytinya	Zero-proof	Cucumber-Mint Cooler	8	cucumber; mint
+Zaytinya	Zero-proof	Lemonatha	7	lemon; water; orange blossom
+Zaytinya	Zero-proof	Ayran	6	yogurt; water; salt; lime
+China Chilcano	Clásicos de Perú	Pisco Sour	16	Caravedo pisco; lime; egg white; Angostura bitters
+China Chilcano	Clásicos de Perú	Chilcano	15	Caravedo pisco; lime; Angostura bitters; ginger ale
+China Chilcano	Clásicos de Perú	Pisco Punch	15	Caravedo pisco; pineapple; lemon; orange bitters
+China Chilcano	Clásicos de Perú	Passiflora	16	Caravedo torontel pisco; Milagro tequila; orange liqueur; lime; passionfruit salt air
+China Chilcano	More Cocktails	Highball	13	Suntory Toki Whiskey; club soda; grapefruit peel
+China Chilcano	More Cocktails	Bullet Train to Tokyo	14	Yeti Sake; cucumber pisco; rocoto pisco; lime
+China Chilcano	More Cocktails	5-Spice Old Fashioned	16	J. Rieger whiskey; Chinese five spice; Angostura bitters
+China Chilcano	More Cocktails	Lychee Chuhai	16	Hamada Daiyame 25 shochu; elderflower liqueur; lychee; Toki bubbles
+China Chilcano	More Cocktails	Kyuri San	16	Cilantro rum; cucumber pisco; Green Chartreuse; lime
+China Chilcano	More Cocktails	Pisco y Coco	16	Caravedo torontel pisco; citrus; coconut; highball bubbles
+China Chilcano	Zero-proof	Refresco de Maracuyá	7	passion fruit; water
+China Chilcano	Zero-proof	Chicha Morada	7	purple corn; pineapple; spices
+Bazaar Meat	Cocktails	Ultimate G&T	18	hendrick's gin; fever tree indian tonic; citrus; juniper berry; lemon verbena
+Bazaar Meat	Cocktails	Continental Sour	18	sazerac rye; lemon; sugar; tempranillo red wine; oloroso sherry
+Bazaar Meat	Cocktails	Melon Cloud	24	maestro dobel diamante tequila; artonic melon aperitif; chai syrup; lemon
+Bazaar Meat	Cocktails	Watermelon Report	18	lemongrass infused tito's vodka; watermelon; mandarin orange; cilantro; lime
+Bazaar Meat	All-Time Classics	Nitro Caipirinha	16	avuá prata cachaça; lime; sugar; liquid nitrogen
+Bazaar Meat	All-Time Classics	Salt Air Margarita	18	olmeca altos blanco tequila; orange liqueur; lime; salt air
+Bazaar Meat	Aperitifs & Spirit-Forward	Foggy Hill	18	del maguey vida mezcal; yzaguirre 1884 gran reserva vermouth; cynar; aperol; orange-thyme aromatic cloud
+Bazaar Meat	Aperitifs & Spirit-Forward	Ben Franklin's Milk Punch	20	torres 20 spanish brandy; lemon; nutmeg; dairy
+Bazaar Meat	Aperitifs & Spirit-Forward	Black Friar	20	sazerac rye; vida mezcal; amaro; yellow chartreuse; aperol; PX
+Bazaar Meat	Aperitifs & Spirit-Forward	Freezer Martini	22	olive oil fat washed gin (or vodka); blanc vermouth; dry vermouth
+Bazaar Meat	Aperitifs & Spirit-Forward	Stamp Collector Sazerac	45	whistlepig 15 year rye whiskey; pierre ferrand cognac; sugar; peychaud's bitters; absinthe
+Bazaar Meat	Zero-proof	Emerald Coin	18	seedlip grove; honeydew; lemongrass; lime; celery
+Bazaar Meat	Zero-proof	Squaring the Circle	16	kentucky 74; lyre's amaretti; maple; cumin tincture
+Bazaar Meat	Zero-proof	Aperitif in the Alps	18	Ghia non-alcoholic bitter aperitif; orange zest syrup
