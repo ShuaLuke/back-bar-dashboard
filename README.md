@@ -2,7 +2,7 @@
 
 > Unofficial fan project. Not affiliated with, endorsed by or connected to José Andrés, José Andrés Group or any of the restaurants. Menus and prices change.
 
-An interactive dashboard of the cocktail and zero-proof menus at Washington, DC restaurants, read from each restaurant's own website on Oct 13–14, 2026. It started with five José Andrés Group restaurants (Oyamel, Jaleo, Zaytinya, China Chilcano, Bazaar Meat) and now also covers STARR Restaurants and Fabio Trabocchi Restaurants, so the groups can be compared.
+An interactive dashboard of the cocktail and zero-proof menus at Washington, DC restaurants, read from each restaurant's own website on Oct 13–14, 2026. It started with five José Andrés Group restaurants (Oyamel, Jaleo, Zaytinya, China Chilcano, Bazaar Meat) and now also covers STARR Restaurants, Fabio Trabocchi Restaurants and Neighborhood Restaurant Group (ChurchKey, The Sovereign, Iron Gate), so the groups can be compared.
 
 ## Views
 - **Overview**: KPIs, top pairings, by-restaurant price spread, most-used ingredients, category mix, signals

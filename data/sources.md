@@ -76,3 +76,31 @@ Captured 2026-10-14. All menus read from the restaurants' own sites (WordPress s
 - Ingredient wording kept as printed on the menus (lowercase, menu spellings such as "demarara", "barcardi", "bahnez" preserved).
 
 Name check (Claude, Oct 14): the two image-words in the El Presidente PDF are a donkey and an elephant, so the drinks are "Big Ass Margarita" and "The Elephant In The Room".
+
+
+## NRG menu sources (read 2026-10-14)
+
+All menus are Wix-hosted PDFs linked from each restaurant's homepage (no HTML menu pages; /menus returns 404). PDFs were downloaded to scratchpad/menus/pdfs/.
+
+## ChurchKey — 11 drinks
+- https://www.churchkeydc.com/_files/ugd/e9c881_9aac0857f392404cbd8448bee44db334.pdf ("Drafts + Drinks", Fall; page 2 "CKDC Wines + Cocktails") — 8 cocktails
+- https://www.churchkeydc.com/_files/ugd/5c8ca5_73dd61e85a324b9f95e91e2656f6e36a.pdf (Happy Hour M-F 4-6) — 3 added (Daquiri, Old Fashioned, Manhattan at $8); HH Martini skipped as duplicate of Classic Martini
+- "Alcohol Free" section is NA beer/kombucha only — excluded. No zero-proof cocktails.
+
+## Birch & Barley — not captured
+- Closed July 2024; replaced by Mallard (https://www.mallarddc.com/) in the same space. Not on neighborhoodrestaurantgroup.com/ourbrands. Skipped.
+
+## The Sovereign — 16 drinks
+- https://www.thesovereigndc.com/_files/ugd/422236_0e6d2639b48c4e6ea41262c0f6489b95.pdf (Wine & cocktails) — 8 "Spirited" + 2 "Free-Spirited" (zero-proof)
+- https://www.thesovereigndc.com/_files/ugd/422236_20b0fc53f57c4d08a910ae1dd9665492.pdf (Brunch) — 4 brunch cocktails; build-your-own mimosa/spritz bars (serve 4-6) excluded as pitchers
+- https://www.thesovereigndc.com/_files/ugd/422236_2d9536fbeaaa483796a6f61b557859d4.pdf (Happy hour) — Americano and Pastis Spritz at $6, no ingredients listed; Belgian Sour and Getting Alsace-y already captured
+
+## Iron Gate — 12 drinks
+- https://www.irongaterestaurantdc.com/_files/ugd/41d8eb_7e032fa9ea8349f582cd38b26b50ad22.pdf (Dinner; cocktails + "Spirit Free Drinks" on the menu) — 8 cocktails, 4 spirit-free
+- Wine PDF (ea7e5d_abed9b50f1604e94830f40226f869d42.pdf) is a 20-page wine book, not read.
+
+## Bluejacket / The Arsenal — 0 drinks (no cocktail menu online)
+- Site button "whiskeys, wines & cocktails" links to https://www.bluejacketdc.com/_files/ugd/ea7e5d_58ee9dcafa9e4e8a9753cda6c753eb0a.pdf, which is the same file as "retail offerings": PDF title "Bluejacket Retail Can Menu 10.9.26", contents are beer to-go + merch only. The cocktail menu appears to be mislinked on the site.
+- Dinner PDF https://www.bluejacketdc.com/_files/ugd/ea7e5d_58fc54a3b8534ec19197e4b8291a10ad.pdf read: food and dessert only, no drinks.
+- Brunch PDF (ea7e5d_7085c2a18b1f44f3838838d8bf5ba8ac.pdf): food only. Drafts PDF (ea7e5d_808023c79edc4dc4ba60793e534b381a.pdf): beer only.
+- The Arsenal has no separate website or cocktail list (only appears in the OpenTable slug). Skipped.
