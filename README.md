@@ -24,6 +24,7 @@ Push the repo to GitHub, then go to Settings → Pages → Deploy from a branch 
 ```
 python3 scripts/normalize.py data/drinks_raw.tsv data/drinks.json   # raw menu rows -> normalized ingredients
 python3 scripts/build.py                                            # template + data -> index.html
+python3 scripts/make_og.py                                          # optional: re-render og.png (link preview) with headless Chrome
 ```
 
 ## Files

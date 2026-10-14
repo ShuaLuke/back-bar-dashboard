@@ -8,6 +8,7 @@ Static, single-page dashboard. No framework, no bundler. D3 v7.8.5 is loaded fro
 - Categories (`cat`) roll up to 9 families via `CAT2FAM` in the template. Family colors are the `--f-*` CSS tokens.
 - Light theme only, by design. Brand: "Back Bar" (placeholder name), aperitivo orange `--accent`, teal `--teal`, fonts Geist + Geist Mono.
 - Main JS entry points: `render()` re-renders everything on filter change; `setView(name)` switches views (`overview`, `ingredients`, `matrix`, `map`, `prep`, `price`, `gaps`, `costs`, `about`). `renderChord`, `renderOps`, `renderOverview` and `renderCosts` each own one view.
+- `og.png` (link preview, 1200x630) is rendered by `scripts/make_og.py` from `src/og-card.html` plus a screenshot of the built page. Re-run it after visible Overview or data changes. og:image URLs point at https://shualuke.github.io/back-bar-dashboard/.
 - Template content above `<!--BODY-->` is emitted into `<head>` by build.py.
 - Tooltips: give any element `data-tip="<html>"` (use `tipAttr()`, `ttRows()`, `ttList()`). One delegated handler does hover on desktop, tap-to-show / tap-again-to-open on touch, and focus for keyboard.
 - The `costs` view uses made-up, adjustable per-ingredient-type costs (`COST_DEFAULT`). Keep it labeled as assumed, never as real restaurant costs.
