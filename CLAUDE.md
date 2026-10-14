@@ -12,6 +12,6 @@ Static, single-page dashboard. No framework, no bundler. D3 v7.8.5 is loaded fro
 - Template content above `<!--BODY-->` is emitted into `<head>` by build.py.
 - Tooltips: give any element `data-tip="<html>"` (use `tipAttr()`, `ttRows()`, `ttList()`). One delegated handler does hover on desktop, tap-to-show / tap-again-to-open on touch, and focus for keyboard.
 - The `costs` view uses made-up, adjustable per-ingredient-type costs (`COST_DEFAULT`) and a seeded random sales simulation (`simulate()`, `sim.seed`). Keep both labeled as assumed/simulated, never as real restaurant costs or sales.
-- Pairing map detail panel draws sub-maps with `subMap()` (two-column links) and `subChord()` (within one category), wired by `wireSubMap()`.
+- Pairing map detail panel draws sub-maps with `subMap()` (two-column links), `fanMap()` (one node to many, grouped by category: ingredient partners, or what else is in a pair's drinks) and `subChord()` (within one category), wired by `wireSubMap()`.
 - Overview must fit one desktop screen (no page scroll) at 1280×720 and up; check this after layout changes.
 - Good next steps: split the template into css/js modules, add Vite, and add a monthly menu re-scrape to track changes.
