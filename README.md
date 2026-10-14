@@ -10,6 +10,7 @@ An interactive dashboard of the cocktail and zero-proof menus at Washington, DC 
 - **Pairing matrix**: co-occurrence heatmap of the top 16/24/32 ingredients
 - **Pairing map**: interactive chord diagram (categories ⇄ ingredients, drill-down, filters)
 - **Prep & inventory / Pricing / Menu gaps**: operations views built from the menus alone, for whichever restaurants are selected
+- **Head to head**: pick any two restaurants (or two groups) and compare side by side: stats, what they build drinks from, price dots on a shared axis, shared vs. exclusive ingredients and pairings, same-style pricing
 - **Compare groups**: group-vs-group view: price, zero-proof share, what drinks are built from, signature ingredients, common ground, same-style pricing, and pairings other groups use that one doesn't
 - **Cost & sales (what if)**: a preview of margin and sales analysis. Costs are adjustable *assumptions* per ingredient type. Sales are a seeded *random simulated* sample (menu-engineering matrix, top sellers, drink + food pairing, check lift). Lists what real recipe, invoice and POS data would unlock
 - **Pairing map sub-maps**: click a category arc or ribbon to see the ingredients behind it as a two-column link diagram (or a small chord for pairs within one category). In the Ingredients view, an ingredient shows its partners grouped by category, and a pair shows what else goes into its drinks. The pairing matrix detail panel uses the same diagrams: a cell shows what else goes in, a diagonal cell shows partners
