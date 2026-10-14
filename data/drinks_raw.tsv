@@ -1,86 +1,244 @@
-restaurant	section	drink	price	ingredients
-Oyamel	Margaritas	Oyamel	16	Salt Air; Milagro Blanco; Magdala; lime
-Oyamel	Margaritas	Classic	15	Hornitos blanco; Magdala; lime
-Oyamel	Margaritas	Reposado Margarita	17	Hornitos Reposado; Magdala; lime
-Oyamel	Margaritas	Mezcal Margarita	17	Mezcal Amarás Verde; Magdala; lime
-Oyamel	Margaritas	Pepino Serrano Margarita	16	Espolón Blanco; Magdala; cucumber; lime; serrano chile
-Oyamel	Margaritas	Daisy de Grana	18	Milagro Blanco; Magdala; housemade grenadine; lime; Salt Air
-Oyamel	Margaritas	Estilo Ron Cooper	18	Olmeca Altos Blanco; Magdala; lime; Oaxacan sea salt; Del Maguey Vida Puebla Mezcal
-Oyamel	Cócteles de la Casa	Escribo	18	Bosscal Damiana; Green Chartreuse; hoja santa; lime; tomatillo
-Oyamel	Cócteles de la Casa	Negroni Bourdain	18	Montelobos Espadín; Aperol; Cynar; Dolin Sweet Vermouth
-Oyamel	Cócteles de la Casa	Chixculub Punch	17	Uruapan Charanda; banana leaf; Luxardo Sangue Morlacco Cherry; Velvet Falernum; brûléed lime
-Oyamel	Cócteles de la Casa	El Mago	16	El Mago Sotol; Aperol; Uruapan Charanda; tamarind-pineapple shrub; lime
-Oyamel	Cócteles de la Casa	Baja Gin & Tonic	17	Las Californias Nativo; Chinola Passionfruit; Dolin Blanc; thyme; Mexican oregano; Fever-tree tonic
-Oyamel	Cócteles de la Casa	Molito Old Fashioned	23	Bahnez Espadin-Barril; molito; Aztec chocolate bitters; apple and whiskey oak aromatic cloud
-Oyamel	Cócteles de la Casa	Mojito Dorado	16	Don Q; lime; mint; lime air
-Oyamel	Cócteles de la Casa	Amor Cafeinado	18	Quiereme Mucho Espadín; Cynar; allspice; Oaxacan Chocolate; espresso
-Oyamel	Beer Cocktails	Michelada Original	13	Tecate; sangrita de tomate; lime
-Oyamel	Beer Cocktails	Michelada Cubano	14	Tecate; sangrita de tomate; habañero; lime
-Oyamel	Beer Cocktails	Michelada El Bajío	14	Tecate; Mexican maggi; worcestershire; picante; lime; sal de gusano
-Oyamel	Zero-proof	Limonada	6	sparkling water; lime
-Jaleo	Sangría	Sangría Roja La Sueca	12	red wine sangría
-Jaleo	Sangría	Sangría de Cava	14	cava sangría
-Jaleo	Sangría	Sangría Rosada	14	rosé sangría
-Jaleo	Cocktails	Carajillo Old Fashioned	18	Sir Davis Rye; Torres 10; Licor 43; Mr. Black
-Jaleo	Cocktails	Cuba Libre	15	Bacardi 8; Mexican Coca-Cola; Angostura; lime
-Jaleo	Cocktails	Bee's Knees with Oloroso	16	Gin; lemon; honey; oloroso sherry
-Jaleo	Cocktails	Margarita Donostiarra	17	Arbol infused tequila; mezcal; bay leaf; lime; sherry salt
-Jaleo	Cocktails	El Compadre	17	Bourbon; Aperol; lemon
-Jaleo	Cocktails	Jarana	16	Amontillado; Yzaguirre Rojo Reserva; Lustau brandy; Campari
-Jaleo	Cocktails	Sweet Bay	17	Gin; Green Chartreuse; bay leaf; lime
-Jaleo	Cocktails	Media Combinación	14	Yzaguirre rojo vermouth; Cynar; Gin; Angostura Bitters
-Jaleo	Cocktails	Adonis	15	Oloroso; Yzaguirre Rojo Reserva; orange bitters
-Jaleo	Gin-Tonics	Ultimate	17	Hendrick's Gin; Fever-Tree Indian tonic; juniper; lemon; lime
-Jaleo	Gin-Tonics	Mediterranean	17	Gin Mare; Fever-Tree Mediterranean tonic; sweet vermouth; dry vermouth; lemon; lime; thyme
-Jaleo	Gin-Tonics	Triple Orange	17	Gin Mare; Fever-Tree tonic; marmalade; rosemary; orange bitters
-Jaleo	Gin-Tonics	Del Norte	17	Nordés Gin; Fever-Tree Mediterranean tonic; blood orange
-Jaleo	Zero-proof	Sangría 0.0	10	non-alcoholic sangría
-Jaleo	Zero-proof	La Seviyá	10	passion fruit; thyme
-Jaleo	Zero-proof	La Fresita	10	strawberry; lemon
-Jaleo	Zero-proof	Lemonade, Bay leaf soda	6	lemon; bay leaf; soda water
-Jaleo	Beer Cocktails	Clara (porrón)	23	lager; Kas Limón
-Zaytinya	Specialty Cocktails	Mediterranean Gin & Tonic	16	Stray Dog gin; sweet vermouth; dry vermouth; Mediterranean tonic; lemon; lime; thyme
-Zaytinya	Specialty Cocktails	Pomona	15	Ouzo; lemon; pomegranate; Moroccan mint
-Zaytinya	Specialty Cocktails	3 PM in Istanbul	16	Vodka; lemon lavender mint tisane; aperol; vanilla; lime; grapefruit
-Zaytinya	Specialty Cocktails	Pom Fili	14	Red wine; vodka; pomegranate; allspice dram
-Zaytinya	Specialty Cocktails	Za'atar Margarita	16	Milagro tequila; lime; Magdala orange liqueur; za'atar air
-Zaytinya	Specialty Cocktails	Minoan Sour	16	Tsipouro; lemon; egg white; olive oil
-Zaytinya	Specialty Cocktails	Sidecar to Tangier	16	Metaxa 5; rose petals; cardamom; cumin; honey; lemon
-Zaytinya	Specialty Cocktails	Dancing Tree Martini	16	Olive leaf gin; Otto's Athens vermouth; Scrappy's lavender bitters
-Zaytinya	Specialty Cocktails	Ankara Rye Club	16	Sazerac rye whisky; thyme; cumin; vermouth rouge
-Zaytinya	Specialty Cocktails	Continental Sour	18	Old Forester bourbon; Oloroso; citrus; red wine
-Zaytinya	Specialty Cocktails	Glykopikro	16	Olive leaf gin; greek vermouth; Campari; Salt
-Zaytinya	Specialty Cocktails	Melissa Old Fashioned	18	Elijah Craig bourbon; Mastiha; Honey; Angostura bitters
-Zaytinya	Specialty Cocktails	Midnight in Cyprus	17	Metaxa 5; Mavrodaphne of Patras; J Rieger caffe amaro; Ouzo; Espresso
-Zaytinya	Specialty Cocktails	Manna	15	Greek brandy; Benedictine; Mastiha; labneh honey
-Zaytinya	Specialty Cocktails	Magic Carpet	16	Fords gin; apricot liqueur; elderflower; vanilla; Greek yogurt
-Zaytinya	Zero-proof	Aegean Sunset	8	cardamom; lime; peach; cherry
-Zaytinya	Zero-proof	Cucumber-Mint Cooler	8	cucumber; mint
-Zaytinya	Zero-proof	Lemonatha	7	lemon; water; orange blossom
-Zaytinya	Zero-proof	Ayran	6	yogurt; water; salt; lime
-China Chilcano	Clásicos de Perú	Pisco Sour	16	Caravedo pisco; lime; egg white; Angostura bitters
-China Chilcano	Clásicos de Perú	Chilcano	15	Caravedo pisco; lime; Angostura bitters; ginger ale
-China Chilcano	Clásicos de Perú	Pisco Punch	15	Caravedo pisco; pineapple; lemon; orange bitters
-China Chilcano	Clásicos de Perú	Passiflora	16	Caravedo torontel pisco; Milagro tequila; orange liqueur; lime; passionfruit salt air
-China Chilcano	More Cocktails	Highball	13	Suntory Toki Whiskey; club soda; grapefruit peel
-China Chilcano	More Cocktails	Bullet Train to Tokyo	14	Yeti Sake; cucumber pisco; rocoto pisco; lime
-China Chilcano	More Cocktails	5-Spice Old Fashioned	16	J. Rieger whiskey; Chinese five spice; Angostura bitters
-China Chilcano	More Cocktails	Lychee Chuhai	16	Hamada Daiyame 25 shochu; elderflower liqueur; lychee; Toki bubbles
-China Chilcano	More Cocktails	Kyuri San	16	Cilantro rum; cucumber pisco; Green Chartreuse; lime
-China Chilcano	More Cocktails	Pisco y Coco	16	Caravedo torontel pisco; citrus; coconut; highball bubbles
-China Chilcano	Zero-proof	Refresco de Maracuyá	7	passion fruit; water
-China Chilcano	Zero-proof	Chicha Morada	7	purple corn; pineapple; spices
-Bazaar Meat	Cocktails	Ultimate G&T	18	hendrick's gin; fever tree indian tonic; citrus; juniper berry; lemon verbena
-Bazaar Meat	Cocktails	Continental Sour	18	sazerac rye; lemon; sugar; tempranillo red wine; oloroso sherry
-Bazaar Meat	Cocktails	Melon Cloud	24	maestro dobel diamante tequila; artonic melon aperitif; chai syrup; lemon
-Bazaar Meat	Cocktails	Watermelon Report	18	lemongrass infused tito's vodka; watermelon; mandarin orange; cilantro; lime
-Bazaar Meat	All-Time Classics	Nitro Caipirinha	16	avuá prata cachaça; lime; sugar; liquid nitrogen
-Bazaar Meat	All-Time Classics	Salt Air Margarita	18	olmeca altos blanco tequila; orange liqueur; lime; salt air
-Bazaar Meat	Aperitifs & Spirit-Forward	Foggy Hill	18	del maguey vida mezcal; yzaguirre 1884 gran reserva vermouth; cynar; aperol; orange-thyme aromatic cloud
-Bazaar Meat	Aperitifs & Spirit-Forward	Ben Franklin's Milk Punch	20	torres 20 spanish brandy; lemon; nutmeg; dairy
-Bazaar Meat	Aperitifs & Spirit-Forward	Black Friar	20	sazerac rye; vida mezcal; amaro; yellow chartreuse; aperol; PX
-Bazaar Meat	Aperitifs & Spirit-Forward	Freezer Martini	22	olive oil fat washed gin (or vodka); blanc vermouth; dry vermouth
-Bazaar Meat	Aperitifs & Spirit-Forward	Stamp Collector Sazerac	45	whistlepig 15 year rye whiskey; pierre ferrand cognac; sugar; peychaud's bitters; absinthe
-Bazaar Meat	Zero-proof	Emerald Coin	18	seedlip grove; honeydew; lemongrass; lime; celery
-Bazaar Meat	Zero-proof	Squaring the Circle	16	kentucky 74; lyre's amaretti; maple; cumin tincture
-Bazaar Meat	Zero-proof	Aperitif in the Alps	18	Ghia non-alcoholic bitter aperitif; orange zest syrup
+group	restaurant	section	drink	price	ingredients
+José Andrés Group	Oyamel	Margaritas	Oyamel	16	Salt Air; Milagro Blanco; Magdala; lime
+José Andrés Group	Oyamel	Margaritas	Classic	15	Hornitos blanco; Magdala; lime
+José Andrés Group	Oyamel	Margaritas	Reposado Margarita	17	Hornitos Reposado; Magdala; lime
+José Andrés Group	Oyamel	Margaritas	Mezcal Margarita	17	Mezcal Amarás Verde; Magdala; lime
+José Andrés Group	Oyamel	Margaritas	Pepino Serrano Margarita	16	Espolón Blanco; Magdala; cucumber; lime; serrano chile
+José Andrés Group	Oyamel	Margaritas	Daisy de Grana	18	Milagro Blanco; Magdala; housemade grenadine; lime; Salt Air
+José Andrés Group	Oyamel	Margaritas	Estilo Ron Cooper	18	Olmeca Altos Blanco; Magdala; lime; Oaxacan sea salt; Del Maguey Vida Puebla Mezcal
+José Andrés Group	Oyamel	Cócteles de la Casa	Escribo	18	Bosscal Damiana; Green Chartreuse; hoja santa; lime; tomatillo
+José Andrés Group	Oyamel	Cócteles de la Casa	Negroni Bourdain	18	Montelobos Espadín; Aperol; Cynar; Dolin Sweet Vermouth
+José Andrés Group	Oyamel	Cócteles de la Casa	Chixculub Punch	17	Uruapan Charanda; banana leaf; Luxardo Sangue Morlacco Cherry; Velvet Falernum; brûléed lime
+José Andrés Group	Oyamel	Cócteles de la Casa	El Mago	16	El Mago Sotol; Aperol; Uruapan Charanda; tamarind-pineapple shrub; lime
+José Andrés Group	Oyamel	Cócteles de la Casa	Baja Gin & Tonic	17	Las Californias Nativo; Chinola Passionfruit; Dolin Blanc; thyme; Mexican oregano; Fever-tree tonic
+José Andrés Group	Oyamel	Cócteles de la Casa	Molito Old Fashioned	23	Bahnez Espadin-Barril; molito; Aztec chocolate bitters; apple and whiskey oak aromatic cloud
+José Andrés Group	Oyamel	Cócteles de la Casa	Mojito Dorado	16	Don Q; lime; mint; lime air
+José Andrés Group	Oyamel	Cócteles de la Casa	Amor Cafeinado	18	Quiereme Mucho Espadín; Cynar; allspice; Oaxacan Chocolate; espresso
+José Andrés Group	Oyamel	Beer Cocktails	Michelada Original	13	Tecate; sangrita de tomate; lime
+José Andrés Group	Oyamel	Beer Cocktails	Michelada Cubano	14	Tecate; sangrita de tomate; habañero; lime
+José Andrés Group	Oyamel	Beer Cocktails	Michelada El Bajío	14	Tecate; Mexican maggi; worcestershire; picante; lime; sal de gusano
+José Andrés Group	Oyamel	Zero-proof	Limonada	6	sparkling water; lime
+José Andrés Group	Jaleo	Sangría	Sangría Roja La Sueca	12	red wine sangría
+José Andrés Group	Jaleo	Sangría	Sangría de Cava	14	cava sangría
+José Andrés Group	Jaleo	Sangría	Sangría Rosada	14	rosé sangría
+José Andrés Group	Jaleo	Cocktails	Carajillo Old Fashioned	18	Sir Davis Rye; Torres 10; Licor 43; Mr. Black
+José Andrés Group	Jaleo	Cocktails	Cuba Libre	15	Bacardi 8; Mexican Coca-Cola; Angostura; lime
+José Andrés Group	Jaleo	Cocktails	Bee's Knees with Oloroso	16	Gin; lemon; honey; oloroso sherry
+José Andrés Group	Jaleo	Cocktails	Margarita Donostiarra	17	Arbol infused tequila; mezcal; bay leaf; lime; sherry salt
+José Andrés Group	Jaleo	Cocktails	El Compadre	17	Bourbon; Aperol; lemon
+José Andrés Group	Jaleo	Cocktails	Jarana	16	Amontillado; Yzaguirre Rojo Reserva; Lustau brandy; Campari
+José Andrés Group	Jaleo	Cocktails	Sweet Bay	17	Gin; Green Chartreuse; bay leaf; lime
+José Andrés Group	Jaleo	Cocktails	Media Combinación	14	Yzaguirre rojo vermouth; Cynar; Gin; Angostura Bitters
+José Andrés Group	Jaleo	Cocktails	Adonis	15	Oloroso; Yzaguirre Rojo Reserva; orange bitters
+José Andrés Group	Jaleo	Gin-Tonics	Ultimate	17	Hendrick's Gin; Fever-Tree Indian tonic; juniper; lemon; lime
+José Andrés Group	Jaleo	Gin-Tonics	Mediterranean	17	Gin Mare; Fever-Tree Mediterranean tonic; sweet vermouth; dry vermouth; lemon; lime; thyme
+José Andrés Group	Jaleo	Gin-Tonics	Triple Orange	17	Gin Mare; Fever-Tree tonic; marmalade; rosemary; orange bitters
+José Andrés Group	Jaleo	Gin-Tonics	Del Norte	17	Nordés Gin; Fever-Tree Mediterranean tonic; blood orange
+José Andrés Group	Jaleo	Zero-proof	Sangría 0.0	10	non-alcoholic sangría
+José Andrés Group	Jaleo	Zero-proof	La Seviyá	10	passion fruit; thyme
+José Andrés Group	Jaleo	Zero-proof	La Fresita	10	strawberry; lemon
+José Andrés Group	Jaleo	Zero-proof	Lemonade, Bay leaf soda	6	lemon; bay leaf; soda water
+José Andrés Group	Jaleo	Beer Cocktails	Clara (porrón)	23	lager; Kas Limón
+José Andrés Group	Zaytinya	Specialty Cocktails	Mediterranean Gin & Tonic	16	Stray Dog gin; sweet vermouth; dry vermouth; Mediterranean tonic; lemon; lime; thyme
+José Andrés Group	Zaytinya	Specialty Cocktails	Pomona	15	Ouzo; lemon; pomegranate; Moroccan mint
+José Andrés Group	Zaytinya	Specialty Cocktails	3 PM in Istanbul	16	Vodka; lemon lavender mint tisane; aperol; vanilla; lime; grapefruit
+José Andrés Group	Zaytinya	Specialty Cocktails	Pom Fili	14	Red wine; vodka; pomegranate; allspice dram
+José Andrés Group	Zaytinya	Specialty Cocktails	Za'atar Margarita	16	Milagro tequila; lime; Magdala orange liqueur; za'atar air
+José Andrés Group	Zaytinya	Specialty Cocktails	Minoan Sour	16	Tsipouro; lemon; egg white; olive oil
+José Andrés Group	Zaytinya	Specialty Cocktails	Sidecar to Tangier	16	Metaxa 5; rose petals; cardamom; cumin; honey; lemon
+José Andrés Group	Zaytinya	Specialty Cocktails	Dancing Tree Martini	16	Olive leaf gin; Otto's Athens vermouth; Scrappy's lavender bitters
+José Andrés Group	Zaytinya	Specialty Cocktails	Ankara Rye Club	16	Sazerac rye whisky; thyme; cumin; vermouth rouge
+José Andrés Group	Zaytinya	Specialty Cocktails	Continental Sour	18	Old Forester bourbon; Oloroso; citrus; red wine
+José Andrés Group	Zaytinya	Specialty Cocktails	Glykopikro	16	Olive leaf gin; greek vermouth; Campari; Salt
+José Andrés Group	Zaytinya	Specialty Cocktails	Melissa Old Fashioned	18	Elijah Craig bourbon; Mastiha; Honey; Angostura bitters
+José Andrés Group	Zaytinya	Specialty Cocktails	Midnight in Cyprus	17	Metaxa 5; Mavrodaphne of Patras; J Rieger caffe amaro; Ouzo; Espresso
+José Andrés Group	Zaytinya	Specialty Cocktails	Manna	15	Greek brandy; Benedictine; Mastiha; labneh honey
+José Andrés Group	Zaytinya	Specialty Cocktails	Magic Carpet	16	Fords gin; apricot liqueur; elderflower; vanilla; Greek yogurt
+José Andrés Group	Zaytinya	Zero-proof	Aegean Sunset	8	cardamom; lime; peach; cherry
+José Andrés Group	Zaytinya	Zero-proof	Cucumber-Mint Cooler	8	cucumber; mint
+José Andrés Group	Zaytinya	Zero-proof	Lemonatha	7	lemon; water; orange blossom
+José Andrés Group	Zaytinya	Zero-proof	Ayran	6	yogurt; water; salt; lime
+José Andrés Group	China Chilcano	Clásicos de Perú	Pisco Sour	16	Caravedo pisco; lime; egg white; Angostura bitters
+José Andrés Group	China Chilcano	Clásicos de Perú	Chilcano	15	Caravedo pisco; lime; Angostura bitters; ginger ale
+José Andrés Group	China Chilcano	Clásicos de Perú	Pisco Punch	15	Caravedo pisco; pineapple; lemon; orange bitters
+José Andrés Group	China Chilcano	Clásicos de Perú	Passiflora	16	Caravedo torontel pisco; Milagro tequila; orange liqueur; lime; passionfruit salt air
+José Andrés Group	China Chilcano	More Cocktails	Highball	13	Suntory Toki Whiskey; club soda; grapefruit peel
+José Andrés Group	China Chilcano	More Cocktails	Bullet Train to Tokyo	14	Yeti Sake; cucumber pisco; rocoto pisco; lime
+José Andrés Group	China Chilcano	More Cocktails	5-Spice Old Fashioned	16	J. Rieger whiskey; Chinese five spice; Angostura bitters
+José Andrés Group	China Chilcano	More Cocktails	Lychee Chuhai	16	Hamada Daiyame 25 shochu; elderflower liqueur; lychee; Toki bubbles
+José Andrés Group	China Chilcano	More Cocktails	Kyuri San	16	Cilantro rum; cucumber pisco; Green Chartreuse; lime
+José Andrés Group	China Chilcano	More Cocktails	Pisco y Coco	16	Caravedo torontel pisco; citrus; coconut; highball bubbles
+José Andrés Group	China Chilcano	Zero-proof	Refresco de Maracuyá	7	passion fruit; water
+José Andrés Group	China Chilcano	Zero-proof	Chicha Morada	7	purple corn; pineapple; spices
+José Andrés Group	Bazaar Meat	Cocktails	Ultimate G&T	18	hendrick's gin; fever tree indian tonic; citrus; juniper berry; lemon verbena
+José Andrés Group	Bazaar Meat	Cocktails	Continental Sour	18	sazerac rye; lemon; sugar; tempranillo red wine; oloroso sherry
+José Andrés Group	Bazaar Meat	Cocktails	Melon Cloud	24	maestro dobel diamante tequila; artonic melon aperitif; chai syrup; lemon
+José Andrés Group	Bazaar Meat	Cocktails	Watermelon Report	18	lemongrass infused tito's vodka; watermelon; mandarin orange; cilantro; lime
+José Andrés Group	Bazaar Meat	All-Time Classics	Nitro Caipirinha	16	avuá prata cachaça; lime; sugar; liquid nitrogen
+José Andrés Group	Bazaar Meat	All-Time Classics	Salt Air Margarita	18	olmeca altos blanco tequila; orange liqueur; lime; salt air
+José Andrés Group	Bazaar Meat	Aperitifs & Spirit-Forward	Foggy Hill	18	del maguey vida mezcal; yzaguirre 1884 gran reserva vermouth; cynar; aperol; orange-thyme aromatic cloud
+José Andrés Group	Bazaar Meat	Aperitifs & Spirit-Forward	Ben Franklin's Milk Punch	20	torres 20 spanish brandy; lemon; nutmeg; dairy
+José Andrés Group	Bazaar Meat	Aperitifs & Spirit-Forward	Black Friar	20	sazerac rye; vida mezcal; amaro; yellow chartreuse; aperol; PX
+José Andrés Group	Bazaar Meat	Aperitifs & Spirit-Forward	Freezer Martini	22	olive oil fat washed gin (or vodka); blanc vermouth; dry vermouth
+José Andrés Group	Bazaar Meat	Aperitifs & Spirit-Forward	Stamp Collector Sazerac	45	whistlepig 15 year rye whiskey; pierre ferrand cognac; sugar; peychaud's bitters; absinthe
+José Andrés Group	Bazaar Meat	Zero-proof	Emerald Coin	18	seedlip grove; honeydew; lemongrass; lime; celery
+José Andrés Group	Bazaar Meat	Zero-proof	Squaring the Circle	16	kentucky 74; lyre's amaretti; maple; cumin tincture
+José Andrés Group	Bazaar Meat	Zero-proof	Aperitif in the Alps	18	Ghia non-alcoholic bitter aperitif; orange zest syrup
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Calabria	24	Facundo Neo Rum; Italicus; Cucumber; Basil
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Emilia Romagna	24	Ilegal Mezcal; Apricot Liquor; Montenegro; Citrus
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Piemonte	24	Amaro dell'Erborista; Rubino Vermouth; Pomegranate; Red Fruit Liqueur; Citrus
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Bassano	24	Grey Goose Vodka; Orange Cordial; Amaro Nardini; Honey; Citrus
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Lombardia	24	Elijah Craig Bourbon; Pear & Mint Cordial; Ambrato Vermouth
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Sicilia	24	Bombay Blood Orange Infused Gin; Green Tea; Prickly Pear
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Veneto	24	Don Fulano Blanco Tequila; Cynar; Ancho Reyes Classico; Celery; Strawberry; Lemongrass
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Vignola	24	Yuzu Gin; Sakura; Rose Liqueur; Raspberry; Lime
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Venezia	24	Fiola Barrel Aged Negroni
+Fabio Trabocchi Restaurants	Fiola	Cocktails	Fabio's Famous Manhattan	26	Fiola Barrel Aged Manhattan
+Fabio Trabocchi Restaurants	Fiola	Aperitivo Cocktails	Americano	20	Campari; Cocchi Vermouth di Torino; Soda Water
+Fabio Trabocchi Restaurants	Fiola	Aperitivo Cocktails	Sbagliato	20	Campari; Cocchi Vermouth di Torino; Prosecco
+Fabio Trabocchi Restaurants	Fiola	Aperitivo Cocktails	Venezia Spritz	20	Aperitivo Select; Prosecco; Soda Water
+Fabio Trabocchi Restaurants	Fiola	Zero Proof Cocktails	Zero Proof Sbagliato	16	Lyre's Italian Orange; Dry London Spirit; Non-Alcoholic Prosecco
+Fabio Trabocchi Restaurants	Fiola	Zero Proof Cocktails	Zero Proof Spritz	16	Lyre's Italian Orange; Non-Alcoholic Prosecco; Cherry Blossom
+Fabio Trabocchi Restaurants	Fiola	Zero Proof Cocktails	Rosemarino	16	Seedlip Garden 108; Rosemary; Ginger; Citrus
+Fabio Trabocchi Restaurants	Fiola	Zero Proof Cocktails	Palermo	16	CUT Above NA Whisky; Raspberry; Agave; Citrus
+Fabio Trabocchi Restaurants	Fiola	Mocktails	Amalfi Coast	16	Citrus; Ginger
+Fabio Trabocchi Restaurants	Fiola	Mocktails	Camomilla	16	Chamomile; Lemon; Apple; Mint
+Fabio Trabocchi Restaurants	Fiola	Mocktails	Profumo di Lavanda	16	Cranberry; Orange; Lavender
+Fabio Trabocchi Restaurants	Fiola Mare	Signatures	Casino Royale	34	Belvedere Vodka; Gin Mare; Lillet; Expressed Citrus Oil; Roll of the Dice
+Fabio Trabocchi Restaurants	Fiola Mare	Signatures	Dirty Bliss	34	Extra Vigin Olive Oil Washed Elyx Vodka; House Brine Blend; Pickled Medley Garnish
+Fabio Trabocchi Restaurants	Fiola Mare	Signatures	Fiola Mare "Infinity Barrel" Manhattan	34	Barrel Aged Solera of Rare Whiskeys; Vermouth; Bitters
+Fabio Trabocchi Restaurants	Fiola Mare	Low ABV / Spritz	Amalfi Spritz	20	Italicus Bergamot Aperitivo; Don Ciccio Limoncello; Prosecco
+Fabio Trabocchi Restaurants	Fiola Mare	Low ABV / Spritz	Spritz Venezia	22	Aperol; Peach & Tomato Tincture; Giffard Creme de Peche; Private Label Prosecco
+Fabio Trabocchi Restaurants	Fiola Mare	Cocktail D'Autore	Frose' All Day	23	Provence Rose Wine; Watermelon Puree; Lillet Rose; Cocchi Rosa; Lime
+Fabio Trabocchi Restaurants	Fiola Mare	Cocktail D'Autore	Espresso Negroni	22	Classic, Infused with a Kick
+Fabio Trabocchi Restaurants	Fiola Mare	Cocktail D'Autore	Sicilian Dream	24	Tanqueray Gin; Chinola Passionfruit Liqueur; Strega; Lemon; Coconut Orgeat
+Fabio Trabocchi Restaurants	Fiola Mare	Cocktail D'Autore	Sexy Fish	28	Codigo 1530 Blanco; Cappelletti; Cherry Herring Liqueur; Pineapple; Blood Orange
+Fabio Trabocchi Restaurants	Fiola Mare	Cocktail D'Autore	Fabio's Gin & Tonic	26	Blend of Fabio's Favorite Gins; Rosemary & Grapefruit Tonic
+Fabio Trabocchi Restaurants	Fiola Mare	Cocktail D'Autore	Nice 'N' Easy	24	Jefferson's Small Batch Bourbon; Lime; Luxardo Maraschino; Spicy-nise Syrup
+Fabio Trabocchi Restaurants	Fiola Mare	Classic Martinis	Ice Cold Classic Martini	22	50:50 Style - Gin; Vermouth; Orange Bitters
+Fabio Trabocchi Restaurants	Fiola Mare	Classic Martinis	Breakfast Martini	22	Vodka or Gin; Cointreau; Strawberry Marmalade; Citrus
+Fabio Trabocchi Restaurants	Fiola Mare	Classic Martinis	Mezcal Martinez	22	Mezcal; Vermouth; Luxardo Maraschino; Bitters
+Fabio Trabocchi Restaurants	Fiola Mare	Classic Martinis	Nitro Espresso Martini	22	Vodka; Espresso; Kahlua; Braulio Amaro
+Fabio Trabocchi Restaurants	Fiola Mare	Zero-Proof Cocktails	Cabana Kid	19	Seedlip 'Garden 102' N/A Spirit; Pomegranate; White Peach & Jasmine Tea; Lime
+Fabio Trabocchi Restaurants	Fiola Mare	Zero-Proof Cocktails	St Agrestis Phony Negroni	19	30+ Organic Botanicals; Tuscan Juniper; Italian Citrus; Exotic Floral Notes
+Fabio Trabocchi Restaurants	Fiola Mare	Zero-Proof Cocktails	Fragola Fizz	19	Freeze Dried Strawberry Elixir; Citrus; Elderflower Bubbles
+Fabio Trabocchi Restaurants	Del Mar	Gin & Tonics	Encantado	24	Monkey 47 Gin; Hibiscus; Mint; Passionfruit Tonic
+Fabio Trabocchi Restaurants	Del Mar	Gin & Tonics	Priorat G&T	21	Gin Mare Mediterranean Gin; Priorat Natur Vermouth; Olive & Piparra Brine; Q Mixers Tonic Water
+Fabio Trabocchi Restaurants	Del Mar	Signature Cocktails	Sin Miedo	21	Buffalo Trace; Laphroaig Quarter Cask; Shochu; Spanish Dark Cacao; Bitters
+Fabio Trabocchi Restaurants	Del Mar	Signature Cocktails	Habla de Ti	18	Absolut Vodka; Manzanilla Sherry; Pineapple Amaro; Green Apple; Green Chartreuse; Lime Juice
+Fabio Trabocchi Restaurants	Del Mar	Signature Cocktails	Te Quiero	21	Del Maguey Chichicapa Mezcal; Primitivo Quiles Vermouth; Homemade Spice Foam
+Fabio Trabocchi Restaurants	Del Mar	Signature Cocktails	Si Tu No Estas	20	Bombay Sapphire Gin; Caraway-Infused Cap Corse Quinquina; Jefferson's Straight Rye; Heirloom Pineapple Amaro
+Fabio Trabocchi Restaurants	Del Mar	Del Mar Classics	The Spanish	17	Lustau Los Arcos Amontillado Sherry; Primitivo Quiles Vermouth; Red Bitter Blend
+Fabio Trabocchi Restaurants	Del Mar	Del Mar Classics	Del Mar Sangria Roja	25	Tempranillo Red Wine; Grand Marinier; P.Quiles Vermouth; Beefeater London Dry Gin; Cava; Fresh Fruit
+Fabio Trabocchi Restaurants	Del Mar	Del Mar Classics	Carajillo	19	Absolut Vodka; Licor 43; Owen's Espresso; Kahlua Coffe Liqueur
+Fabio Trabocchi Restaurants	Del Mar	Del Mar Classics	Del Mar Rose Sangria	25	Provence Rose Wine; Codigo 1530 Blanco Tequila; Pear Brandy; Cinnamon; Grapefruit; Cava
+Fabio Trabocchi Restaurants	Del Mar	Non-Alcoholic	Sol Amarillo	15	Martini & Rossi N/A Aperitivo; Pineapple Gomme; Lapsang Tea; Verjus Blanc; Lime Juice
+Fabio Trabocchi Restaurants	Del Mar	Non-Alcoholic	Sangria Iced Tea	15	White Peach & Turmeric Tea; Superfruit Infusion; Ginger; Apple Cider; Hibiscus
+Fabio Trabocchi Restaurants	Sfoglina	Spritz	The Classic Venetian	17	1920 Select Aperitivo; Soda; Prosecco
+Fabio Trabocchi Restaurants	Sfoglina	Spritz	Lychee Little Pearl	17	Malfy Gin; Elderflower; Lychee; Boba; Lemon; Prosecco
+Fabio Trabocchi Restaurants	Sfoglina	Spritz	Ciao, Cello!	20	Rosemary-Infused Don Ciccio Limoncello; Reposado; Passion Fruit; Lemon; Prosecco
+Fabio Trabocchi Restaurants	Sfoglina	Negroni	Caffè Dolce	20	Coffee-Infused Cognac; Mascarpone-Washed Campari; Carpano Antica Vermouth; Chocolate Bitters
+Fabio Trabocchi Restaurants	Sfoglina	Negroni	Sway In the Sun	17	Planteray Pineapple; Bacardi Coconut; Cinque Amaro; Blanc Vermouth; Lime Bitters
+Fabio Trabocchi Restaurants	Sfoglina	Negroni	Moonlight & Mezcal	17	Ilegal Mezcal; Strawberry Cappelletti; Suze; Dry Vermouth
+Fabio Trabocchi Restaurants	Sfoglina	Classic	Melon Drift	16	Tequila Blanco; Finocchietto; Watermelon; Lime; Agave
+Fabio Trabocchi Restaurants	Sfoglina	Classic	Garibaldi	15	Campari; Peach; Orange Juice
+Fabio Trabocchi Restaurants	Sfoglina	Classic	Cool as a…	17	Ketel One Cucumber & Mint; Italicus; Basil; Lime
+Fabio Trabocchi Restaurants	Sfoglina	Zero Proof	Spritz Zero	14	Lyre's Italian Spritz; Grapefruit; Soda
+Fabio Trabocchi Restaurants	Sfoglina	Zero Proof	Watermelon Sparkling Lemonade	12	House Made Lemonade; Watermelon Juice; San Pellegrino Limonata
+Fabio Trabocchi Restaurants	Sfoglina	Zero Proof	Cucumber Basil Smash	15	Aplòs Arise; Basil; Lime; Ginger Ale
+STARR Restaurants	Le Diplomate	Cocktails	Frosé	15	rosé wine; st. germain; lillet rose; ginger; lime juice
+STARR Restaurants	Le Diplomate	Cocktails	Kir 75	16	sparkling wine; bombay dry gin; combier créme de cassis; lemon; lavender
+STARR Restaurants	Le Diplomate	Cocktails	Romarin	15	vodka; st. germain; grapefruit; rosemary
+STARR Restaurants	Le Diplomate	Cocktails	Le Jardin	15	bombay dry gin; lillet blanc; herbs de provence; lime; sparkling water
+STARR Restaurants	Le Diplomate	Cocktails	Le Dirty	15	wheatley vodka; olive brine; olives
+STARR Restaurants	Le Diplomate	Cocktails	Clouseau	16	fig infused jim beam bourbon; lime; plum bitters
+STARR Restaurants	Le Diplomate	Cocktails	Marguerite Des Champs	16	sauza blanco tequila; aperol; crème de framboise; ginger; lemon
+STARR Restaurants	Le Diplomate	Cocktails	L'Ombre Royale	19	courvoisier vs cognac; dolin dry; allspice dram; crème de cacao
+STARR Restaurants	Le Diplomate	Cocktails	L'Espresso	16	vodka; borghetti coffee liqueur; cynar; frangelico; espresso
+STARR Restaurants	St. Anselm	Cocktails	Vodka & Bubbles	18	wheatley vodka; passionfruit liqueur; vanilla; lime; sparkling
+STARR Restaurants	St. Anselm	Cocktails	Espresso Cocktail	17	vodka; coffee liqueur; la colombe cold brew; demarara
+STARR Restaurants	St. Anselm	Cocktails	Tequila Cocktail	16	cazadores blanco; red bitters; grapefruit; lime; smoked salt
+STARR Restaurants	St. Anselm	Cocktails	Rum Cocktail	17	dark rum; banhez mezcal; amaro; pineapple syrup; lime
+STARR Restaurants	St. Anselm	Cocktails	Gold Rush	16	buffalo trace bourbon; honey; lemon
+STARR Restaurants	St. Anselm	Cocktails	Dirty Cocktail	17	ketel one; olive brine; manzanilla olives
+STARR Restaurants	St. Anselm	Cocktails	Cosmo	15	wheatley vodka citrus mash; orange liqueur; lime; cranberry
+STARR Restaurants	St. Anselm	Cocktails	Hemingway Daiquiri	16	cotton & reed white rum; lime; grapefruit; maraschino; simple
+STARR Restaurants	St. Anselm	Cocktails	Martinez	18	barr hill reserve tom cat gin; dry vermouth; maraschino
+STARR Restaurants	St. Anselm	Cocktails	Mint Julep	18	wild turkey bourbon; mini underberg; simple; mint
+STARR Restaurants	St. Anselm	Cocktails	Boulevardier	17	bowman brothers st. anselm barrel select; red bitters; sweet vermouth
+STARR Restaurants	St. Anselm	Cocktails	Old Fashioned	19	old grand-dad bourbon; cotton & reed st. anselm spiced rum
+STARR Restaurants	St. Anselm	Cocktails	Sunset Park	16	sazerac 'st.anselm select' rye; cinzano extra dry vermouth; apricot liqueur; bitters
+STARR Restaurants	St. Anselm	Cocktails	Manhattan	17	rittenhouse rye; sibona amaro; cocchi vermouth di torino; angostura
+STARR Restaurants	St. Anselm	Cocktails & Martinis (Cocktail Hour)	Gin Martini	9	bombay gin; dolin dry vermouth; lemon twist or olive
+STARR Restaurants	St. Anselm	Lunch Cocktails	Sherry Cobbler	14	amontillado sherry; pomegranate and cranberry; orange
+STARR Restaurants	St. Anselm	Lunch Cocktails	Americano	18	bonal; muz vermouth
+STARR Restaurants	St. Anselm	Lunch Cocktails	Iced Irish Coffee	17	tullamore dew; la colombe 'louisiane'; whipped cream
+STARR Restaurants	St. Anselm	Brunch Cocktails	Spaghett	13	miller high life; aperol; lemon
+STARR Restaurants	St. Anselm	Brunch Cocktails	Bloody Mary	15	wheatley vodka; st. anselm bloody mary mix
+STARR Restaurants	St. Anselm	Brunch Cocktails	Aviation Cocktail	12	bombay gin; luxardo maraschino; creme de violette; lemon
+STARR Restaurants	St. Anselm	Non-Alcoholic Mocktails	Lavender Lemonade	10	citrus; lavender syrup; honey
+STARR Restaurants	St. Anselm	Non-Alcoholic Mocktails	Tropical Spice	10	pineapple; lime; fever-tree ginger beer
+STARR Restaurants	The Occidental	Cocktails	The Occidental Manhattan	19	maker's mark 46 bourbon; sazerac rye; claque-pepin calvados; cocchi storico vermouth di torino; sfumato rabarbaro
+STARR Restaurants	The Occidental	Cocktails	Foster's Negroni	23	barcardi ocho rum; st. george bruto americano; cocchi storico vermouth di torino; tempus fugit crème de banane
+STARR Restaurants	The Occidental	Cocktails	The A-Train	18	wheatley vodka; lo-fi vermouth; crème de noyaux; lemon; sage & blackberry
+STARR Restaurants	The Occidental	Cocktails	Pimm's Cup	20	pimm's №1; zubrowka bison grass vodka; barrow's intense ginger; celery bitters; ginger beer; cucumber
+STARR Restaurants	The Occidental	Cocktails	Gin Rickey	17	sipsmith gin; lime half; fever-tree club soda
+STARR Restaurants	The Occidental	Cocktails	San Luis Swizzle	19	ilegal joven mezcal; faccia brutto centerbe; serrano; pineapple; peychaud bitters
+STARR Restaurants	The Occidental	Cocktails	The Edmont	21	sazerac rye whiskey; blanc vermouth; lavender honey; vegan 'egg white'; islay scotch mist
+STARR Restaurants	The Occidental	Cocktails	Cabildera	24	patron blanco, patron reposado, & patron añejo tequilas; velvet falernum; cardamom bitters; kumquat
+STARR Restaurants	The Occidental	Martinis	The Occidental Martini	21	belvedere vodka; cocchi torino extra dry vermouth; manzanilla brine; maldon sea salt
+STARR Restaurants	The Occidental	Martinis	50/Fifty	20	sweet gwendoline french gin; lo-fi dry vermouth; lemon-stuffed olive
+STARR Restaurants	The Occidental	Martinis	Green Alaska	20	tinkerman's gin recipe #7.4; green chartreuse; dolin blanc vermouth; lemon bitters
+STARR Restaurants	The Occidental	Martinis	Polynesian	19	bimini coconut gin; lo-fi sweet vermouth; cardamom bitters
+STARR Restaurants	The Occidental	Martinis	Ms. Fitzgerald	19	pisco el gobernador; luxardo bitter bianco; combier pamplemousse rosé; spearmint oil
+STARR Restaurants	The Occidental	Martinis	Cosmopolitan	20	st. george citrus vodka; grand marnier; cranberry; lime
+STARR Restaurants	The Occidental	Non-Alcoholic Cocktails	Sauxbeur Sour	15	m&r floreal na aperitivo; cranberry; lime
+STARR Restaurants	The Occidental	Non-Alcoholic Cocktails	Saint Agrestis Phony Negroni	14	
+STARR Restaurants	The Occidental	Non-Alcoholic Cocktails	Lyre's Amalfi Spritz	14	
+STARR Restaurants	Pastis	Cocktails	Franc	15	frozen bombay sapphire; st germain; white wine; lemon
+STARR Restaurants	Pastis	Cocktails	Je M'Appelle Hugo	17	bombay sapphire; st germain; lemon; sparkling wine
+STARR Restaurants	Pastis	Cocktails	Spritz Royale	16	aperol; grapefruit cordial; lemon; sparkling water
+STARR Restaurants	Pastis	Cocktails	Mangue À Trois	18	wheatley vodka; chinola passionfruit; giffard vanille; mango; sparkling wine
+STARR Restaurants	Pastis	Cocktails	Faux Pas	16	banhez mezcal; cap corse blanc; luxardo maraschino; bigallet china-china
+STARR Restaurants	Pastis	Cocktails	The Eiffel Sour	18	green chartreuse; alpine herbal liqueur; pineapple; lime; nutmeg
+STARR Restaurants	Pastis	Cocktails	Le Banane	16	bacardi silver; tempus fugit crème de banane; lime
+STARR Restaurants	Pastis	Cocktails	Manhattan À Minuit	18	knob creek rye; maker's mark bourbon; vermouth rouge; bonal
+STARR Restaurants	Pastis	Cocktails	Calvados Sidecar	18	calvados; hennessy vs; grand marnier; lemon
+STARR Restaurants	Pastis	Cocktails	Café Pastis	17	vodka; borghetti coffee liqueur; averna; hazelnut; espresso
+STARR Restaurants	Pastis	Cocktails	Le Dirty Martini	17	grey goose vodka; brine; olives
+STARR Restaurants	Pastis	Cocktails	Le Petit Pickle	10	grey goose vodka; house pickle brine; pickled things
+STARR Restaurants	Pastis	Non-Alcoholic	Lavender Lemonade	8	
+STARR Restaurants	Pastis	Non-Alcoholic	St. Agrestis Phony Negroni	14	
+STARR Restaurants	Pastis	Non-Alcoholic	Bonjour Hugo	14	giffard elderflower; lemon; n/a sparkling; fever tree elderflower
+STARR Restaurants	Pastis	Non-Alcoholic	Tonique Sale	14	seedlip grove 42; olive juice; lemon juice; fever tree tonic
+STARR Restaurants	El Presidente	Specialty Cocktails	Roja Sangria	16	red wine; fruit juice; cordial
+STARR Restaurants	El Presidente	Specialty Cocktails	Picante Mami	14	st. george chili vodka; lo-fi gentian aperitif; orange cordial; lemon; charred shishito
+STARR Restaurants	El Presidente	Specialty Cocktails	Carajillo	15	licor 43; copa de oro coffee liqueur; espresso
+STARR Restaurants	El Presidente	Specialty Cocktails	Como La Flor	15	old overholt rye; pajarote jengibre; st. elizabeth allspice dram; hibiscus; lime
+STARR Restaurants	El Presidente	Specialty Cocktails	Piña Piña	15	lots of rums; coconut; pineapple; lime
+STARR Restaurants	El Presidente	Specialty Cocktails	Mezcal Negroni	16	banhez mezcal; campari; sweet vermouth
+STARR Restaurants	El Presidente	Specialty Cocktails	Wolf Spritzer	15	aperol; montelobos mezcal; lemon; cava
+STARR Restaurants	El Presidente	Specialty Cocktails	Oaxacan Old Fashioned	17	cazadores reposado; bahnez joven mezcal; agave; bitters
+STARR Restaurants	El Presidente	Specialty Cocktails	Ms. She-La-La	12	michelada service 12oz. corona familiar; savory-spicy mix; salt; lime
+STARR Restaurants	El Presidente	Specialty Cocktails	My-My Chamoy-Moy	12	atlas blood orange gose; tart-plum chamoy; lime salt
+STARR Restaurants	El Presidente	Featured Cocktails	Cantarito	14	gran centenario reposado; fresh citrus juices; jarritos grapefruit soda
+STARR Restaurants	El Presidente	Featured Cocktails	Frozen Watermelon Margarita	18	cazadores; watermelon; lemon
+STARR Restaurants	El Presidente	Featured Cocktails	Patron Mangonada	17	chamoy; lime; tajin
+STARR Restaurants	El Presidente	Featured Cocktails	Pueblo Tiki Tiki	16	cazadores reposado; ilegal mezcal; passionfruit; agave; ancho reyes
+STARR Restaurants	El Presidente	Featured Cocktails	Blue Lagoon Jelly Shot	7	cazadores blanco; blue raspberry; lime; gummy
+STARR Restaurants	El Presidente	Margaritas	The Margarita	14	tequila blanco; orange cordial; fresh lime
+STARR Restaurants	El Presidente	Margaritas	Frozen Pineapple Margarita	15	tequila reposado; ancho reyes; chipotle; caramelized pineapple; lime
+STARR Restaurants	El Presidente	Margaritas	Big Ass Margarita	28	the margarita, but big AF
+STARR Restaurants	El Presidente	Margaritas	Spiced Strawberry	16	tequila blanco; orange cordial; spices
+STARR Restaurants	El Presidente	Margaritas	Put Me In, Coach	14	tequila blanco; herbal liqueur; luxardo maraschino; blue glacier gatorade
+STARR Restaurants	El Presidente	Margaritas	The Elephant In The Room	15	tequila blanco; las californias native gin; campari; bitter guava; grapefruit
+STARR Restaurants	El Presidente	Margaritas	Sgt. Pepper	16	banhez mezcal; ancho reyes; red bell pepper juice; chili salt
+STARR Restaurants	El Presidente	Zero Proof Mocktail	Cucumber Mint Cooler	8	cucumber; mint; lemon; sparkling water
+STARR Restaurants	El Presidente	Zero Proof Mocktail	Red Bell Pepper Lemonade	8	red bell pepper; lemon; agave
+STARR Restaurants	El Presidente	Zero Proof Mocktail	Mangonada	10	chamoy; mango; lime; tajin
+STARR Restaurants	El Presidente	Cocktails (Brunch)	Bloody Mary	16	vodka; spicy tomato; celery
+STARR Restaurants	El Presidente	Cocktails (Brunch)	Bloody Maria	16	blanco tequila; spicy tomato; celery
+STARR Restaurants	El Presidente	Cocktails (Brunch)	Carmelized Pineapple Mimosa	15	cava; caramelized pineapple; lime
+STARR Restaurants	El Presidente	Cocktails (Dessert)	Tigre Sucia	15	horchata; 1921 tequila crema or bumbu rum crème
+STARR Restaurants	El Presidente	Drinks (Happy Hour)	Sparkling Margarita	11	the margarita shaken & topped with cava
+STARR Restaurants	El Presidente	Drinks (Happy Hour)	Pregame Shooter	11	tequila; blue gatorade; lime

@@ -8,7 +8,8 @@ Needs Google Chrome and an internet connection (fonts and D3 load from CDNs).
 """
 import json, pathlib, statistics, subprocess, tempfile, os
 
-MENU_DATE = "Oct 13, 2026"
+MENU_DATE = "Oct 13–14, 2026"
+SHORT = {"José Andrés Group": "José Andrés", "Fabio Trabocchi Restaurants": "Fabio Trabocchi", "STARR Restaurants": "STARR", "Neighborhood Restaurant Group": "Neighborhood Restaurant Group"}
 CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 root = pathlib.Path(__file__).resolve().parent.parent
 drinks = json.loads((root / "data" / "drinks.json").read_text())
@@ -38,10 +39,12 @@ with tempfile.TemporaryDirectory() as tmp:
     snap = tmp / "snap.html"
     snap.write_text(page_src.replace("</body>", hook + "</body>"))
     shoot(snap.as_uri() + "#overview", shot, 1200, 800, 1)  # og-card.html's crop assumes this size
-    prices = [d["price"] for d in drinks if not d["zero"]]
+    prices = [d["price"] for d in drinks if not d["zero"] and d["price"] is not None]
     med = statistics.median(prices)
     fill = {
-        "__RESTS__": ["zero", "one", "two", "three", "four", "five", "six", "seven"][len({d["restaurant"] for d in drinks})],
+        "__RESTS__": str(len({d["restaurant"] for d in drinks})),
+        "__N_GROUPS__": str(len({d["group"] for d in drinks})),
+        "__GROUPS__": ", ".join(SHORT.get(g, g) for g in dict.fromkeys(d["group"] for d in drinks)),
         "__DRINKS__": str(len(drinks)),
         "__INGS__": str(len({i["name"] for d in drinks for i in d["ings"]})),
         "__MEDIAN__": f"${med:g}",

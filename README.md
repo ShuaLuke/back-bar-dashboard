@@ -2,14 +2,15 @@
 
 > Unofficial fan project. Not affiliated with, endorsed by or connected to José Andrés, José Andrés Group or any of the restaurants. Menus and prices change.
 
-An interactive dashboard of the cocktail and zero-proof menus at five José Andrés restaurants in Washington, DC (Oyamel, Jaleo, Zaytinya, China Chilcano, Bazaar Meat), read from each restaurant's website on Oct 13, 2026.
+An interactive dashboard of the cocktail and zero-proof menus at Washington, DC restaurants, read from each restaurant's own website on Oct 13–14, 2026. It started with five José Andrés Group restaurants (Oyamel, Jaleo, Zaytinya, China Chilcano, Bazaar Meat) and now also covers STARR Restaurants and Fabio Trabocchi Restaurants, so the groups can be compared.
 
 ## Views
 - **Overview**: KPIs, top pairings, by-restaurant price spread, most-used ingredients, category mix, signals
 - **Ingredient lookup**: search an ingredient, see ranked partners and the drinks
 - **Pairing matrix**: co-occurrence heatmap of the top 16/24/32 ingredients
 - **Pairing map**: interactive chord diagram (categories ⇄ ingredients, drill-down, filters)
-- **Prep & inventory / Pricing / Menu gaps**: operations views built from the menus alone
+- **Prep & inventory / Pricing / Menu gaps**: operations views built from the menus alone, for whichever restaurants are selected
+- **Compare groups**: group-vs-group view: price, zero-proof share, what drinks are built from, signature ingredients, common ground, same-style pricing, and pairings other groups use that one doesn't
 - **Cost & sales (what if)**: a preview of margin and sales analysis. Costs are adjustable *assumptions* per ingredient type. Sales are a seeded *random simulated* sample (menu-engineering matrix, top sellers, drink + food pairing, check lift). Lists what real recipe, invoice and POS data would unlock
 - **Pairing map sub-maps**: click a category arc or ribbon to see the ingredients behind it as a two-column link diagram (or a small chord for pairs within one category). In the Ingredients view, an ingredient shows its partners grouped by category, and a pair shows what else goes into its drinks. The pairing matrix detail panel uses the same diagrams: a cell shows what else goes in, a diagonal cell shows partners
 
@@ -29,7 +30,7 @@ python3 scripts/make_og.py                                          # optional: 
 ```
 
 ## Files
-- `data/drinks_raw.tsv`: one row per drink: restaurant, section, drink, price (by the glass), ingredients as written on the menu (`;`-separated)
+- `data/drinks_raw.tsv`: one row per drink: group, restaurant, section, drink, price (by the glass; blank if the menu lists none), ingredients as written on the menu (`;`-separated). Rows are grouped by restaurant group; `data/sources.md` lists the menu URLs and read dates
 - `scripts/normalize.py`: regex rules mapping menu wording to a canonical ingredient and category (first match wins). It exits with an error listing anything unmapped.
 - `data/drinks.json`: normalized output the page reads
 - `src/template.html`: the whole app (CSS + HTML + JS, D3 v7). Everything above the `<!--BODY-->` marker goes in `<head>`. `__DATA__` is replaced at build time.

@@ -1,5 +1,6 @@
 [
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Oyamel",
@@ -47,6 +48,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Classic",
@@ -85,6 +87,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Reposado Margarita",
@@ -123,6 +126,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Mezcal Margarita",
@@ -161,6 +165,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Pepino Serrano Margarita",
@@ -217,6 +222,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Daisy de Grana",
@@ -273,6 +279,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Margaritas",
 "drink": "Estilo Ron Cooper",
@@ -329,6 +336,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Escribo",
@@ -385,6 +393,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Negroni Bourdain",
@@ -432,6 +441,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Chixculub Punch",
@@ -488,6 +498,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "El Mago",
@@ -544,6 +555,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Baja Gin & Tonic",
@@ -609,6 +621,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Molito Old Fashioned",
@@ -651,6 +664,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Mojito Dorado",
@@ -693,6 +707,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Cócteles de la Casa",
 "drink": "Amor Cafeinado",
@@ -749,6 +764,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Beer Cocktails",
 "drink": "Michelada Original",
@@ -787,6 +803,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Beer Cocktails",
 "drink": "Michelada Cubano",
@@ -834,6 +851,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Beer Cocktails",
 "drink": "Michelada El Bajío",
@@ -894,6 +912,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Oyamel",
 "section": "Zero-proof",
 "drink": "Limonada",
@@ -923,6 +942,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Sangría",
 "drink": "Sangría Roja La Sueca",
@@ -943,6 +963,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Sangría",
 "drink": "Sangría de Cava",
@@ -950,7 +971,7 @@
 "zero": false,
 "ings": [
 {
-"name": "Cava",
+"name": "Sparkling wine",
 "cat": "Wine & beer",
 "raw": "cava sangría"
 }
@@ -958,11 +979,12 @@
 "parts": [
 [
 "cava sangría",
-"Cava"
+"Sparkling wine"
 ]
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Sangría",
 "drink": "Sangría Rosada",
@@ -983,6 +1005,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Carajillo Old Fashioned",
@@ -1030,6 +1053,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Cuba Libre",
@@ -1077,6 +1101,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Bee's Knees with Oloroso",
@@ -1124,6 +1149,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Margarita Donostiarra",
@@ -1180,6 +1206,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "El Compadre",
@@ -1218,6 +1245,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Jarana",
@@ -1265,6 +1293,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Sweet Bay",
@@ -1312,6 +1341,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Media Combinación",
@@ -1359,6 +1389,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Cocktails",
 "drink": "Adonis",
@@ -1397,6 +1428,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Gin-Tonics",
 "drink": "Ultimate",
@@ -1453,6 +1485,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Gin-Tonics",
 "drink": "Mediterranean",
@@ -1522,6 +1555,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Gin-Tonics",
 "drink": "Triple Orange",
@@ -1578,6 +1612,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Gin-Tonics",
 "drink": "Del Norte",
@@ -1616,6 +1651,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Zero-proof",
 "drink": "Sangría 0.0",
@@ -1636,6 +1672,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Zero-proof",
 "drink": "La Seviyá",
@@ -1665,6 +1702,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Zero-proof",
 "drink": "La Fresita",
@@ -1694,6 +1732,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Zero-proof",
 "drink": "Lemonade, Bay leaf soda",
@@ -1732,6 +1771,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Jaleo",
 "section": "Beer Cocktails",
 "drink": "Clara (porrón)",
@@ -1761,6 +1801,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Mediterranean Gin & Tonic",
@@ -1830,6 +1871,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Pomona",
@@ -1877,6 +1919,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "3 PM in Istanbul",
@@ -1942,6 +1985,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Pom Fili",
@@ -1989,6 +2033,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Za'atar Margarita",
@@ -2036,6 +2081,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Minoan Sour",
@@ -2083,6 +2129,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Sidecar to Tangier",
@@ -2148,6 +2195,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Dancing Tree Martini",
@@ -2186,6 +2234,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Ankara Rye Club",
@@ -2233,6 +2282,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Continental Sour",
@@ -2280,6 +2330,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Glykopikro",
@@ -2327,6 +2378,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Melissa Old Fashioned",
@@ -2374,6 +2426,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Midnight in Cyprus",
@@ -2430,6 +2483,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Manna",
@@ -2477,6 +2531,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Specialty Cocktails",
 "drink": "Magic Carpet",
@@ -2533,6 +2588,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Zero-proof",
 "drink": "Aegean Sunset",
@@ -2580,6 +2636,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Zero-proof",
 "drink": "Cucumber-Mint Cooler",
@@ -2609,6 +2666,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Zero-proof",
 "drink": "Lemonatha",
@@ -2642,6 +2700,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Zaytinya",
 "section": "Zero-proof",
 "drink": "Ayran",
@@ -2684,6 +2743,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "Clásicos de Perú",
 "drink": "Pisco Sour",
@@ -2731,6 +2791,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "Clásicos de Perú",
 "drink": "Chilcano",
@@ -2778,6 +2839,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "Clásicos de Perú",
 "drink": "Pisco Punch",
@@ -2825,6 +2887,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "Clásicos de Perú",
 "drink": "Passiflora",
@@ -2881,6 +2944,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "More Cocktails",
 "drink": "Highball",
@@ -2919,6 +2983,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "More Cocktails",
 "drink": "Bullet Train to Tokyo",
@@ -2961,6 +3026,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "More Cocktails",
 "drink": "5-Spice Old Fashioned",
@@ -2999,6 +3065,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "More Cocktails",
 "drink": "Lychee Chuhai",
@@ -3041,6 +3108,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "More Cocktails",
 "drink": "Kyuri San",
@@ -3088,6 +3156,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "More Cocktails",
 "drink": "Pisco y Coco",
@@ -3130,6 +3199,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "Zero-proof",
 "drink": "Refresco de Maracuyá",
@@ -3154,6 +3224,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "China Chilcano",
 "section": "Zero-proof",
 "drink": "Chicha Morada",
@@ -3192,6 +3263,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Cocktails",
 "drink": "Ultimate G&T",
@@ -3248,6 +3320,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Cocktails",
 "drink": "Continental Sour",
@@ -3304,6 +3377,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Cocktails",
 "drink": "Melon Cloud",
@@ -3351,6 +3425,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Cocktails",
 "drink": "Watermelon Report",
@@ -3407,6 +3482,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "All-Time Classics",
 "drink": "Nitro Caipirinha",
@@ -3449,6 +3525,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "All-Time Classics",
 "drink": "Salt Air Margarita",
@@ -3496,6 +3573,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Aperitifs & Spirit-Forward",
 "drink": "Foggy Hill",
@@ -3547,6 +3625,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Aperitifs & Spirit-Forward",
 "drink": "Ben Franklin's Milk Punch",
@@ -3594,6 +3673,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Aperitifs & Spirit-Forward",
 "drink": "Black Friar",
@@ -3659,6 +3739,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Aperitifs & Spirit-Forward",
 "drink": "Freezer Martini",
@@ -3692,6 +3773,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Aperitifs & Spirit-Forward",
 "drink": "Stamp Collector Sazerac",
@@ -3748,6 +3830,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Zero-proof",
 "drink": "Emerald Coin",
@@ -3804,6 +3887,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Zero-proof",
 "drink": "Squaring the Circle",
@@ -3846,6 +3930,7 @@
 ]
 },
 {
+"group": "José Andrés Group",
 "restaurant": "Bazaar Meat",
 "section": "Zero-proof",
 "drink": "Aperitif in the Alps",
@@ -3871,6 +3956,7032 @@
 [
 "orange zest syrup",
 "Orange"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Calabria",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "Facundo Neo Rum"
+},
+{
+"name": "Italicus (bergamot)",
+"cat": "Liqueurs & amari",
+"raw": "Italicus"
+},
+{
+"name": "Cucumber",
+"cat": "Fruit",
+"raw": "Cucumber"
+},
+{
+"name": "Basil",
+"cat": "Herbs & spices",
+"raw": "Basil"
+}
+],
+"parts": [
+[
+"Facundo Neo Rum",
+"Rum"
+],
+[
+"Italicus",
+"Italicus (bergamot)"
+],
+[
+"Cucumber",
+"Cucumber"
+],
+[
+"Basil",
+"Basil"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Emilia Romagna",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "Ilegal Mezcal"
+},
+{
+"name": "Apricot liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Apricot Liquor"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Montenegro"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"Ilegal Mezcal",
+"Mezcal"
+],
+[
+"Apricot Liquor",
+"Apricot liqueur"
+],
+[
+"Montenegro",
+"Amaro"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Piemonte",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Amaro dell'Erborista"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Rubino Vermouth"
+},
+{
+"name": "Pomegranate",
+"cat": "Fruit",
+"raw": "Pomegranate"
+},
+{
+"name": "Berry liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Red Fruit Liqueur"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"Amaro dell'Erborista",
+"Amaro"
+],
+[
+"Rubino Vermouth",
+"Vermouth"
+],
+[
+"Pomegranate",
+"Pomegranate"
+],
+[
+"Red Fruit Liqueur",
+"Berry liqueur"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Bassano",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "Grey Goose Vodka"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Orange Cordial"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Amaro Nardini"
+},
+{
+"name": "Honey",
+"cat": "Sweeteners",
+"raw": "Honey"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"Grey Goose Vodka",
+"Vodka"
+],
+[
+"Orange Cordial",
+"Orange liqueur"
+],
+[
+"Amaro Nardini",
+"Amaro"
+],
+[
+"Honey",
+"Honey"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Lombardia",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "Elijah Craig Bourbon"
+},
+{
+"name": "Pear",
+"cat": "Fruit",
+"raw": "Pear & Mint Cordial"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Ambrato Vermouth"
+}
+],
+"parts": [
+[
+"Elijah Craig Bourbon",
+"Bourbon"
+],
+[
+"Pear & Mint Cordial",
+"Pear"
+],
+[
+"Ambrato Vermouth",
+"Vermouth"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Sicilia",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Bombay Blood Orange Infused Gin"
+},
+{
+"name": "Tea",
+"cat": "Herbs & spices",
+"raw": "Green Tea"
+},
+{
+"name": "Prickly pear",
+"cat": "Fruit",
+"raw": "Prickly Pear"
+}
+],
+"parts": [
+[
+"Bombay Blood Orange Infused Gin",
+"Gin"
+],
+[
+"Green Tea",
+"Tea"
+],
+[
+"Prickly Pear",
+"Prickly pear"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Veneto",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "Don Fulano Blanco Tequila"
+},
+{
+"name": "Cynar",
+"cat": "Liqueurs & amari",
+"raw": "Cynar"
+},
+{
+"name": "Chile liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Ancho Reyes Classico"
+},
+{
+"name": "Celery",
+"cat": "Herbs & spices",
+"raw": "Celery"
+},
+{
+"name": "Strawberry",
+"cat": "Fruit",
+"raw": "Strawberry"
+},
+{
+"name": "Lemongrass",
+"cat": "Herbs & spices",
+"raw": "Lemongrass"
+}
+],
+"parts": [
+[
+"Don Fulano Blanco Tequila",
+"Blanco tequila"
+],
+[
+"Cynar",
+"Cynar"
+],
+[
+"Ancho Reyes Classico",
+"Chile liqueur"
+],
+[
+"Celery",
+"Celery"
+],
+[
+"Strawberry",
+"Strawberry"
+],
+[
+"Lemongrass",
+"Lemongrass"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Vignola",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Yuzu Gin"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "Sakura"
+},
+{
+"name": "Floral liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Rose Liqueur"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "Raspberry"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+}
+],
+"parts": [
+[
+"Yuzu Gin",
+"Gin"
+],
+[
+"Sakura",
+"Floral (rose, lavender)"
+],
+[
+"Rose Liqueur",
+"Floral liqueur"
+],
+[
+"Raspberry",
+"Berry"
+],
+[
+"Lime",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Venezia",
+"price": 24.0,
+"zero": false,
+"ings": [],
+"parts": [
+[
+"Fiola Barrel Aged Negroni",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Cocktails",
+"drink": "Fabio's Famous Manhattan",
+"price": 26.0,
+"zero": false,
+"ings": [],
+"parts": [
+[
+"Fiola Barrel Aged Manhattan",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Aperitivo Cocktails",
+"drink": "Americano",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "Campari"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Cocchi Vermouth di Torino"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "Soda Water"
+}
+],
+"parts": [
+[
+"Campari",
+"Campari"
+],
+[
+"Cocchi Vermouth di Torino",
+"Vermouth"
+],
+[
+"Soda Water",
+"Soda water"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Aperitivo Cocktails",
+"drink": "Sbagliato",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "Campari"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Cocchi Vermouth di Torino"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Prosecco"
+}
+],
+"parts": [
+[
+"Campari",
+"Campari"
+],
+[
+"Cocchi Vermouth di Torino",
+"Vermouth"
+],
+[
+"Prosecco",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Aperitivo Cocktails",
+"drink": "Venezia Spritz",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Select / Cappelletti",
+"cat": "Liqueurs & amari",
+"raw": "Aperitivo Select"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Prosecco"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "Soda Water"
+}
+],
+"parts": [
+[
+"Aperitivo Select",
+"Select / Cappelletti"
+],
+[
+"Prosecco",
+"Sparkling wine"
+],
+[
+"Soda Water",
+"Soda water"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Zero Proof Cocktails",
+"drink": "Zero Proof Sbagliato",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Lyre's Italian Orange"
+},
+{
+"name": "NA sparkling",
+"cat": "Zero-proof spirits",
+"raw": "Non-Alcoholic Prosecco"
+}
+],
+"parts": [
+[
+"Lyre's Italian Orange",
+"NA spirit"
+],
+[
+"Dry London Spirit",
+"NA spirit"
+],
+[
+"Non-Alcoholic Prosecco",
+"NA sparkling"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Zero Proof Cocktails",
+"drink": "Zero Proof Spritz",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Lyre's Italian Orange"
+},
+{
+"name": "NA sparkling",
+"cat": "Zero-proof spirits",
+"raw": "Non-Alcoholic Prosecco"
+},
+{
+"name": "Cherry",
+"cat": "Fruit",
+"raw": "Cherry Blossom"
+}
+],
+"parts": [
+[
+"Lyre's Italian Orange",
+"NA spirit"
+],
+[
+"Non-Alcoholic Prosecco",
+"NA sparkling"
+],
+[
+"Cherry Blossom",
+"Cherry"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Zero Proof Cocktails",
+"drink": "Rosemarino",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Seedlip Garden 108"
+},
+{
+"name": "Rosemary",
+"cat": "Herbs & spices",
+"raw": "Rosemary"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "Ginger"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"Seedlip Garden 108",
+"NA spirit"
+],
+[
+"Rosemary",
+"Rosemary"
+],
+[
+"Ginger",
+"Ginger"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Zero Proof Cocktails",
+"drink": "Palermo",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "Whiskey",
+"cat": "Whiskey",
+"raw": "CUT Above NA Whisky"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "Raspberry"
+},
+{
+"name": "Agave nectar",
+"cat": "Sweeteners",
+"raw": "Agave"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"CUT Above NA Whisky",
+"Whiskey"
+],
+[
+"Raspberry",
+"Berry"
+],
+[
+"Agave",
+"Agave nectar"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Mocktails",
+"drink": "Amalfi Coast",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "Ginger"
+}
+],
+"parts": [
+[
+"Citrus",
+"Citrus (mixed)"
+],
+[
+"Ginger",
+"Ginger"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Mocktails",
+"drink": "Camomilla",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "Chamomile"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "Lemon"
+},
+{
+"name": "Apple",
+"cat": "Fruit",
+"raw": "Apple"
+},
+{
+"name": "Mint",
+"cat": "Herbs & spices",
+"raw": "Mint"
+}
+],
+"parts": [
+[
+"Chamomile",
+"Floral (rose, lavender)"
+],
+[
+"Lemon",
+"Lemon"
+],
+[
+"Apple",
+"Apple"
+],
+[
+"Mint",
+"Mint"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola",
+"section": "Mocktails",
+"drink": "Profumo di Lavanda",
+"price": 16.0,
+"zero": true,
+"ings": [
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "Cranberry"
+},
+{
+"name": "Orange",
+"cat": "Citrus",
+"raw": "Orange"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "Lavender"
+}
+],
+"parts": [
+[
+"Cranberry",
+"Berry"
+],
+[
+"Orange",
+"Orange"
+],
+[
+"Lavender",
+"Floral (rose, lavender)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Signatures",
+"drink": "Casino Royale",
+"price": 34.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "Belvedere Vodka"
+},
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Gin Mare"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "Lillet"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Expressed Citrus Oil"
+}
+],
+"parts": [
+[
+"Belvedere Vodka",
+"Vodka"
+],
+[
+"Gin Mare",
+"Gin"
+],
+[
+"Lillet",
+"Aperitif wine"
+],
+[
+"Expressed Citrus Oil",
+"Citrus (mixed)"
+],
+[
+"Roll of the Dice",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Signatures",
+"drink": "Dirty Bliss",
+"price": 34.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Extra Vigin Olive Oil Washed Elyx Vodka"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "House Brine Blend"
+}
+],
+"parts": [
+[
+"Extra Vigin Olive Oil Washed Elyx Vodka",
+"Gin"
+],
+[
+"House Brine Blend",
+"Brine / pickles"
+],
+[
+"Pickled Medley Garnish",
+"Brine / pickles"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Signatures",
+"drink": "Fiola Mare \"Infinity Barrel\" Manhattan",
+"price": 34.0,
+"zero": false,
+"ings": [
+{
+"name": "Whiskey",
+"cat": "Whiskey",
+"raw": "Barrel Aged Solera of Rare Whiskeys"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Vermouth"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "Bitters"
+}
+],
+"parts": [
+[
+"Barrel Aged Solera of Rare Whiskeys",
+"Whiskey"
+],
+[
+"Vermouth",
+"Vermouth"
+],
+[
+"Bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Low ABV / Spritz",
+"drink": "Amalfi Spritz",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Italicus (bergamot)",
+"cat": "Liqueurs & amari",
+"raw": "Italicus Bergamot Aperitivo"
+},
+{
+"name": "Limoncello",
+"cat": "Liqueurs & amari",
+"raw": "Don Ciccio Limoncello"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Prosecco"
+}
+],
+"parts": [
+[
+"Italicus Bergamot Aperitivo",
+"Italicus (bergamot)"
+],
+[
+"Don Ciccio Limoncello",
+"Limoncello"
+],
+[
+"Prosecco",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Low ABV / Spritz",
+"drink": "Spritz Venezia",
+"price": 22.0,
+"zero": false,
+"ings": [
+{
+"name": "Aperol",
+"cat": "Liqueurs & amari",
+"raw": "Aperol"
+},
+{
+"name": "Peach",
+"cat": "Fruit",
+"raw": "Peach & Tomato Tincture"
+},
+{
+"name": "Peach liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Giffard Creme de Peche"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Private Label Prosecco"
+}
+],
+"parts": [
+[
+"Aperol",
+"Aperol"
+],
+[
+"Peach & Tomato Tincture",
+"Peach"
+],
+[
+"Giffard Creme de Peche",
+"Peach liqueur"
+],
+[
+"Private Label Prosecco",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Cocktail D'Autore",
+"drink": "Frose' All Day",
+"price": 23.0,
+"zero": false,
+"ings": [
+{
+"name": "Rosé",
+"cat": "Wine & beer",
+"raw": "Provence Rose Wine"
+},
+{
+"name": "Watermelon",
+"cat": "Fruit",
+"raw": "Watermelon Puree"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "Lillet Rose"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+}
+],
+"parts": [
+[
+"Provence Rose Wine",
+"Rosé"
+],
+[
+"Watermelon Puree",
+"Watermelon"
+],
+[
+"Lillet Rose",
+"Aperitif wine"
+],
+[
+"Cocchi Rosa",
+"Aperitif wine"
+],
+[
+"Lime",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Cocktail D'Autore",
+"drink": "Espresso Negroni",
+"price": 22.0,
+"zero": false,
+"ings": [],
+"parts": [
+[
+"Classic, Infused with a Kick",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Cocktail D'Autore",
+"drink": "Sicilian Dream",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Tanqueray Gin"
+},
+{
+"name": "Passion fruit",
+"cat": "Fruit",
+"raw": "Chinola Passionfruit Liqueur"
+},
+{
+"name": "Strega / Galliano",
+"cat": "Liqueurs & amari",
+"raw": "Strega"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "Lemon"
+},
+{
+"name": "Coconut",
+"cat": "Fruit",
+"raw": "Coconut Orgeat"
+}
+],
+"parts": [
+[
+"Tanqueray Gin",
+"Gin"
+],
+[
+"Chinola Passionfruit Liqueur",
+"Passion fruit"
+],
+[
+"Strega",
+"Strega / Galliano"
+],
+[
+"Lemon",
+"Lemon"
+],
+[
+"Coconut Orgeat",
+"Coconut"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Cocktail D'Autore",
+"drink": "Sexy Fish",
+"price": 28.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "Codigo 1530 Blanco"
+},
+{
+"name": "Select / Cappelletti",
+"cat": "Liqueurs & amari",
+"raw": "Cappelletti"
+},
+{
+"name": "Cherry",
+"cat": "Fruit",
+"raw": "Cherry Herring Liqueur"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "Pineapple"
+},
+{
+"name": "Blood orange",
+"cat": "Citrus",
+"raw": "Blood Orange"
+}
+],
+"parts": [
+[
+"Codigo 1530 Blanco",
+"Blanco tequila"
+],
+[
+"Cappelletti",
+"Select / Cappelletti"
+],
+[
+"Cherry Herring Liqueur",
+"Cherry"
+],
+[
+"Pineapple",
+"Pineapple"
+],
+[
+"Blood Orange",
+"Blood orange"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Cocktail D'Autore",
+"drink": "Fabio's Gin & Tonic",
+"price": 26.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Blend of Fabio's Favorite Gins"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "Rosemary & Grapefruit Tonic"
+}
+],
+"parts": [
+[
+"Blend of Fabio's Favorite Gins",
+"Gin"
+],
+[
+"Rosemary & Grapefruit Tonic",
+"Grapefruit"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Cocktail D'Autore",
+"drink": "Nice 'N' Easy",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "Jefferson's Small Batch Bourbon"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Luxardo Maraschino"
+},
+{
+"name": "Chile",
+"cat": "Herbs & spices",
+"raw": "Spicy-nise Syrup"
+}
+],
+"parts": [
+[
+"Jefferson's Small Batch Bourbon",
+"Bourbon"
+],
+[
+"Lime",
+"Lime"
+],
+[
+"Luxardo Maraschino",
+"Maraschino liqueur"
+],
+[
+"Spicy-nise Syrup",
+"Chile"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Classic Martinis",
+"drink": "Ice Cold Classic Martini",
+"price": 22.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "50:50 Style - Gin"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Vermouth"
+},
+{
+"name": "Orange bitters",
+"cat": "Bitters",
+"raw": "Orange Bitters"
+}
+],
+"parts": [
+[
+"50:50 Style - Gin",
+"Gin"
+],
+[
+"Vermouth",
+"Vermouth"
+],
+[
+"Orange Bitters",
+"Orange bitters"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Classic Martinis",
+"drink": "Breakfast Martini",
+"price": 22.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Vodka or Gin"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Cointreau"
+},
+{
+"name": "Orange",
+"cat": "Citrus",
+"raw": "Strawberry Marmalade"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"Vodka or Gin",
+"Gin"
+],
+[
+"Cointreau",
+"Orange liqueur"
+],
+[
+"Strawberry Marmalade",
+"Orange"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Classic Martinis",
+"drink": "Mezcal Martinez",
+"price": 22.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "Mezcal"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Vermouth"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Luxardo Maraschino"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "Bitters"
+}
+],
+"parts": [
+[
+"Mezcal",
+"Mezcal"
+],
+[
+"Vermouth",
+"Vermouth"
+],
+[
+"Luxardo Maraschino",
+"Maraschino liqueur"
+],
+[
+"Bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Classic Martinis",
+"drink": "Nitro Espresso Martini",
+"price": 22.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "Vodka"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "Espresso"
+},
+{
+"name": "Coffee liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Kahlua"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Braulio Amaro"
+}
+],
+"parts": [
+[
+"Vodka",
+"Vodka"
+],
+[
+"Espresso",
+"Coffee"
+],
+[
+"Kahlua",
+"Coffee liqueur"
+],
+[
+"Braulio Amaro",
+"Amaro"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Zero-Proof Cocktails",
+"drink": "Cabana Kid",
+"price": 19.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Seedlip 'Garden 102' N/A Spirit"
+},
+{
+"name": "Pomegranate",
+"cat": "Fruit",
+"raw": "Pomegranate"
+},
+{
+"name": "Peach",
+"cat": "Fruit",
+"raw": "White Peach & Jasmine Tea"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+}
+],
+"parts": [
+[
+"Seedlip 'Garden 102' N/A Spirit",
+"NA spirit"
+],
+[
+"Pomegranate",
+"Pomegranate"
+],
+[
+"White Peach & Jasmine Tea",
+"Peach"
+],
+[
+"Lime",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Zero-Proof Cocktails",
+"drink": "St Agrestis Phony Negroni",
+"price": 19.0,
+"zero": true,
+"ings": [
+{
+"name": "Juniper",
+"cat": "Herbs & spices",
+"raw": "Tuscan Juniper"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Italian Citrus"
+}
+],
+"parts": [
+[
+"30+ Organic Botanicals",
+""
+],
+[
+"Tuscan Juniper",
+"Juniper"
+],
+[
+"Italian Citrus",
+"Citrus (mixed)"
+],
+[
+"Exotic Floral Notes",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Fiola Mare",
+"section": "Zero-Proof Cocktails",
+"drink": "Fragola Fizz",
+"price": 19.0,
+"zero": true,
+"ings": [
+{
+"name": "Strawberry",
+"cat": "Fruit",
+"raw": "Freeze Dried Strawberry Elixir"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "Citrus"
+}
+],
+"parts": [
+[
+"Freeze Dried Strawberry Elixir",
+"Strawberry"
+],
+[
+"Citrus",
+"Citrus (mixed)"
+],
+[
+"Elderflower Bubbles",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Gin & Tonics",
+"drink": "Encantado",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Monkey 47 Gin"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "Hibiscus"
+},
+{
+"name": "Mint",
+"cat": "Herbs & spices",
+"raw": "Mint"
+},
+{
+"name": "Passion fruit",
+"cat": "Fruit",
+"raw": "Passionfruit Tonic"
+}
+],
+"parts": [
+[
+"Monkey 47 Gin",
+"Gin"
+],
+[
+"Hibiscus",
+"Floral (rose, lavender)"
+],
+[
+"Mint",
+"Mint"
+],
+[
+"Passionfruit Tonic",
+"Passion fruit"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Gin & Tonics",
+"drink": "Priorat G&T",
+"price": 21.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Gin Mare Mediterranean Gin"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Priorat Natur Vermouth"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "Olive & Piparra Brine"
+},
+{
+"name": "Tonic",
+"cat": "Mixers",
+"raw": "Q Mixers Tonic Water"
+}
+],
+"parts": [
+[
+"Gin Mare Mediterranean Gin",
+"Gin"
+],
+[
+"Priorat Natur Vermouth",
+"Vermouth"
+],
+[
+"Olive & Piparra Brine",
+"Brine / pickles"
+],
+[
+"Q Mixers Tonic Water",
+"Tonic"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Signature Cocktails",
+"drink": "Sin Miedo",
+"price": 21.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "Buffalo Trace"
+},
+{
+"name": "Scotch",
+"cat": "Whiskey",
+"raw": "Laphroaig Quarter Cask"
+},
+{
+"name": "Shochu",
+"cat": "Other spirits",
+"raw": "Shochu"
+},
+{
+"name": "Chocolate",
+"cat": "Herbs & spices",
+"raw": "Spanish Dark Cacao"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "Bitters"
+}
+],
+"parts": [
+[
+"Buffalo Trace",
+"Bourbon"
+],
+[
+"Laphroaig Quarter Cask",
+"Scotch"
+],
+[
+"Shochu",
+"Shochu"
+],
+[
+"Spanish Dark Cacao",
+"Chocolate"
+],
+[
+"Bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Signature Cocktails",
+"drink": "Habla de Ti",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "Absolut Vodka"
+},
+{
+"name": "Sherry",
+"cat": "Vermouth & fortified",
+"raw": "Manzanilla Sherry"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Pineapple Amaro"
+},
+{
+"name": "Apple",
+"cat": "Fruit",
+"raw": "Green Apple"
+},
+{
+"name": "Green Chartreuse",
+"cat": "Liqueurs & amari",
+"raw": "Green Chartreuse"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime Juice"
+}
+],
+"parts": [
+[
+"Absolut Vodka",
+"Vodka"
+],
+[
+"Manzanilla Sherry",
+"Sherry"
+],
+[
+"Pineapple Amaro",
+"Amaro"
+],
+[
+"Green Apple",
+"Apple"
+],
+[
+"Green Chartreuse",
+"Green Chartreuse"
+],
+[
+"Lime Juice",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Signature Cocktails",
+"drink": "Te Quiero",
+"price": 21.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "Del Maguey Chichicapa Mezcal"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Primitivo Quiles Vermouth"
+},
+{
+"name": "Baking spice",
+"cat": "Herbs & spices",
+"raw": "Homemade Spice Foam"
+}
+],
+"parts": [
+[
+"Del Maguey Chichicapa Mezcal",
+"Mezcal"
+],
+[
+"Primitivo Quiles Vermouth",
+"Vermouth"
+],
+[
+"Homemade Spice Foam",
+"Baking spice"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Signature Cocktails",
+"drink": "Si Tu No Estas",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Bombay Sapphire Gin"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "Caraway-Infused Cap Corse Quinquina"
+},
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "Jefferson's Straight Rye"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Heirloom Pineapple Amaro"
+}
+],
+"parts": [
+[
+"Bombay Sapphire Gin",
+"Gin"
+],
+[
+"Caraway-Infused Cap Corse Quinquina",
+"Aperitif wine"
+],
+[
+"Jefferson's Straight Rye",
+"Rye whiskey"
+],
+[
+"Heirloom Pineapple Amaro",
+"Amaro"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Del Mar Classics",
+"drink": "The Spanish",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Sherry",
+"cat": "Vermouth & fortified",
+"raw": "Lustau Los Arcos Amontillado Sherry"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Primitivo Quiles Vermouth"
+},
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "Red Bitter Blend"
+}
+],
+"parts": [
+[
+"Lustau Los Arcos Amontillado Sherry",
+"Sherry"
+],
+[
+"Primitivo Quiles Vermouth",
+"Vermouth"
+],
+[
+"Red Bitter Blend",
+"Campari"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Del Mar Classics",
+"drink": "Del Mar Sangria Roja",
+"price": 25.0,
+"zero": false,
+"ings": [
+{
+"name": "Red wine",
+"cat": "Wine & beer",
+"raw": "Tempranillo Red Wine"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Grand Marinier"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "P.Quiles Vermouth"
+},
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Beefeater London Dry Gin"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Cava"
+}
+],
+"parts": [
+[
+"Tempranillo Red Wine",
+"Red wine"
+],
+[
+"Grand Marinier",
+"Orange liqueur"
+],
+[
+"P.Quiles Vermouth",
+"Vermouth"
+],
+[
+"Beefeater London Dry Gin",
+"Gin"
+],
+[
+"Cava",
+"Sparkling wine"
+],
+[
+"Fresh Fruit",
+""
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Del Mar Classics",
+"drink": "Carajillo",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "Absolut Vodka"
+},
+{
+"name": "Licor 43",
+"cat": "Liqueurs & amari",
+"raw": "Licor 43"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "Owen's Espresso"
+},
+{
+"name": "Coffee liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Kahlua Coffe Liqueur"
+}
+],
+"parts": [
+[
+"Absolut Vodka",
+"Vodka"
+],
+[
+"Licor 43",
+"Licor 43"
+],
+[
+"Owen's Espresso",
+"Coffee"
+],
+[
+"Kahlua Coffe Liqueur",
+"Coffee liqueur"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Del Mar Classics",
+"drink": "Del Mar Rose Sangria",
+"price": 25.0,
+"zero": false,
+"ings": [
+{
+"name": "Rosé",
+"cat": "Wine & beer",
+"raw": "Provence Rose Wine"
+},
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "Codigo 1530 Blanco Tequila"
+},
+{
+"name": "Brandy",
+"cat": "Brandy & pisco",
+"raw": "Pear Brandy"
+},
+{
+"name": "Baking spice",
+"cat": "Herbs & spices",
+"raw": "Cinnamon"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "Grapefruit"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Cava"
+}
+],
+"parts": [
+[
+"Provence Rose Wine",
+"Rosé"
+],
+[
+"Codigo 1530 Blanco Tequila",
+"Blanco tequila"
+],
+[
+"Pear Brandy",
+"Brandy"
+],
+[
+"Cinnamon",
+"Baking spice"
+],
+[
+"Grapefruit",
+"Grapefruit"
+],
+[
+"Cava",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Non-Alcoholic",
+"drink": "Sol Amarillo",
+"price": 15.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Martini & Rossi N/A Aperitivo"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "Pineapple Gomme"
+},
+{
+"name": "Tea",
+"cat": "Herbs & spices",
+"raw": "Lapsang Tea"
+},
+{
+"name": "Verjus",
+"cat": "Citrus",
+"raw": "Verjus Blanc"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime Juice"
+}
+],
+"parts": [
+[
+"Martini & Rossi N/A Aperitivo",
+"NA spirit"
+],
+[
+"Pineapple Gomme",
+"Pineapple"
+],
+[
+"Lapsang Tea",
+"Tea"
+],
+[
+"Verjus Blanc",
+"Verjus"
+],
+[
+"Lime Juice",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Del Mar",
+"section": "Non-Alcoholic",
+"drink": "Sangria Iced Tea",
+"price": 15.0,
+"zero": true,
+"ings": [
+{
+"name": "Peach",
+"cat": "Fruit",
+"raw": "White Peach & Turmeric Tea"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "Ginger"
+},
+{
+"name": "Cider",
+"cat": "Wine & beer",
+"raw": "Apple Cider"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "Hibiscus"
+}
+],
+"parts": [
+[
+"White Peach & Turmeric Tea",
+"Peach"
+],
+[
+"Superfruit Infusion",
+""
+],
+[
+"Ginger",
+"Ginger"
+],
+[
+"Apple Cider",
+"Cider"
+],
+[
+"Hibiscus",
+"Floral (rose, lavender)"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Spritz",
+"drink": "The Classic Venetian",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Select / Cappelletti",
+"cat": "Liqueurs & amari",
+"raw": "1920 Select Aperitivo"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "Soda"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Prosecco"
+}
+],
+"parts": [
+[
+"1920 Select Aperitivo",
+"Select / Cappelletti"
+],
+[
+"Soda",
+"Soda water"
+],
+[
+"Prosecco",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Spritz",
+"drink": "Lychee Little Pearl",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "Malfy Gin"
+},
+{
+"name": "Elderflower liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Elderflower"
+},
+{
+"name": "Lychee",
+"cat": "Fruit",
+"raw": "Lychee"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "Lemon"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Prosecco"
+}
+],
+"parts": [
+[
+"Malfy Gin",
+"Gin"
+],
+[
+"Elderflower",
+"Elderflower liqueur"
+],
+[
+"Lychee",
+"Lychee"
+],
+[
+"Boba",
+""
+],
+[
+"Lemon",
+"Lemon"
+],
+[
+"Prosecco",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Spritz",
+"drink": "Ciao, Cello!",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Limoncello",
+"cat": "Liqueurs & amari",
+"raw": "Rosemary-Infused Don Ciccio Limoncello"
+},
+{
+"name": "Reposado tequila",
+"cat": "Agave",
+"raw": "Reposado"
+},
+{
+"name": "Passion fruit",
+"cat": "Fruit",
+"raw": "Passion Fruit"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "Lemon"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "Prosecco"
+}
+],
+"parts": [
+[
+"Rosemary-Infused Don Ciccio Limoncello",
+"Limoncello"
+],
+[
+"Reposado",
+"Reposado tequila"
+],
+[
+"Passion Fruit",
+"Passion fruit"
+],
+[
+"Lemon",
+"Lemon"
+],
+[
+"Prosecco",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Negroni",
+"drink": "Caffè Dolce",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Brandy",
+"cat": "Brandy & pisco",
+"raw": "Coffee-Infused Cognac"
+},
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "Mascarpone-Washed Campari"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Carpano Antica Vermouth"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "Chocolate Bitters"
+}
+],
+"parts": [
+[
+"Coffee-Infused Cognac",
+"Brandy"
+],
+[
+"Mascarpone-Washed Campari",
+"Campari"
+],
+[
+"Carpano Antica Vermouth",
+"Vermouth"
+],
+[
+"Chocolate Bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Negroni",
+"drink": "Sway In the Sun",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "Planteray Pineapple"
+},
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "Bacardi Coconut"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "Cinque Amaro"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Blanc Vermouth"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime Bitters"
+}
+],
+"parts": [
+[
+"Planteray Pineapple",
+"Pineapple"
+],
+[
+"Bacardi Coconut",
+"Rum"
+],
+[
+"Cinque Amaro",
+"Amaro"
+],
+[
+"Blanc Vermouth",
+"Vermouth"
+],
+[
+"Lime Bitters",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Negroni",
+"drink": "Moonlight & Mezcal",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "Ilegal Mezcal"
+},
+{
+"name": "Select / Cappelletti",
+"cat": "Liqueurs & amari",
+"raw": "Strawberry Cappelletti"
+},
+{
+"name": "Gentian (Suze)",
+"cat": "Liqueurs & amari",
+"raw": "Suze"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "Dry Vermouth"
+}
+],
+"parts": [
+[
+"Ilegal Mezcal",
+"Mezcal"
+],
+[
+"Strawberry Cappelletti",
+"Select / Cappelletti"
+],
+[
+"Suze",
+"Gentian (Suze)"
+],
+[
+"Dry Vermouth",
+"Vermouth"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Classic",
+"drink": "Melon Drift",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "Tequila Blanco"
+},
+{
+"name": "Anise liqueur",
+"cat": "Liqueurs & amari",
+"raw": "Finocchietto"
+},
+{
+"name": "Watermelon",
+"cat": "Fruit",
+"raw": "Watermelon"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+},
+{
+"name": "Agave nectar",
+"cat": "Sweeteners",
+"raw": "Agave"
+}
+],
+"parts": [
+[
+"Tequila Blanco",
+"Blanco tequila"
+],
+[
+"Finocchietto",
+"Anise liqueur"
+],
+[
+"Watermelon",
+"Watermelon"
+],
+[
+"Lime",
+"Lime"
+],
+[
+"Agave",
+"Agave nectar"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Classic",
+"drink": "Garibaldi",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "Campari"
+},
+{
+"name": "Peach",
+"cat": "Fruit",
+"raw": "Peach"
+},
+{
+"name": "Orange",
+"cat": "Citrus",
+"raw": "Orange Juice"
+}
+],
+"parts": [
+[
+"Campari",
+"Campari"
+],
+[
+"Peach",
+"Peach"
+],
+[
+"Orange Juice",
+"Orange"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Classic",
+"drink": "Cool as a…",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "Ketel One Cucumber & Mint"
+},
+{
+"name": "Italicus (bergamot)",
+"cat": "Liqueurs & amari",
+"raw": "Italicus"
+},
+{
+"name": "Basil",
+"cat": "Herbs & spices",
+"raw": "Basil"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+}
+],
+"parts": [
+[
+"Ketel One Cucumber & Mint",
+"Vodka"
+],
+[
+"Italicus",
+"Italicus (bergamot)"
+],
+[
+"Basil",
+"Basil"
+],
+[
+"Lime",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Zero Proof",
+"drink": "Spritz Zero",
+"price": 14.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Lyre's Italian Spritz"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "Grapefruit"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "Soda"
+}
+],
+"parts": [
+[
+"Lyre's Italian Spritz",
+"NA spirit"
+],
+[
+"Grapefruit",
+"Grapefruit"
+],
+[
+"Soda",
+"Soda water"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Zero Proof",
+"drink": "Watermelon Sparkling Lemonade",
+"price": 12.0,
+"zero": true,
+"ings": [
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "House Made Lemonade"
+},
+{
+"name": "Watermelon",
+"cat": "Fruit",
+"raw": "Watermelon Juice"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "San Pellegrino Limonata"
+}
+],
+"parts": [
+[
+"House Made Lemonade",
+"Lemon"
+],
+[
+"Watermelon Juice",
+"Watermelon"
+],
+[
+"San Pellegrino Limonata",
+"Lime"
+]
+]
+},
+{
+"group": "Fabio Trabocchi Restaurants",
+"restaurant": "Sfoglina",
+"section": "Zero Proof",
+"drink": "Cucumber Basil Smash",
+"price": 15.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "Aplòs Arise"
+},
+{
+"name": "Basil",
+"cat": "Herbs & spices",
+"raw": "Basil"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "Lime"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "Ginger Ale"
+}
+],
+"parts": [
+[
+"Aplòs Arise",
+"NA spirit"
+],
+[
+"Basil",
+"Basil"
+],
+[
+"Lime",
+"Lime"
+],
+[
+"Ginger Ale",
+"Ginger"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Frosé",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Rosé",
+"cat": "Wine & beer",
+"raw": "rosé wine"
+},
+{
+"name": "Elderflower liqueur",
+"cat": "Liqueurs & amari",
+"raw": "st. germain"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "lillet rose"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "ginger"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime juice"
+}
+],
+"parts": [
+[
+"rosé wine",
+"Rosé"
+],
+[
+"st. germain",
+"Elderflower liqueur"
+],
+[
+"lillet rose",
+"Aperitif wine"
+],
+[
+"ginger",
+"Ginger"
+],
+[
+"lime juice",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Kir 75",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "sparkling wine"
+},
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "bombay dry gin"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "combier créme de cassis"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "lavender"
+}
+],
+"parts": [
+[
+"sparkling wine",
+"Sparkling wine"
+],
+[
+"bombay dry gin",
+"Gin"
+],
+[
+"combier créme de cassis",
+"Orange liqueur"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"lavender",
+"Floral (rose, lavender)"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Romarin",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "vodka"
+},
+{
+"name": "Elderflower liqueur",
+"cat": "Liqueurs & amari",
+"raw": "st. germain"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "grapefruit"
+},
+{
+"name": "Rosemary",
+"cat": "Herbs & spices",
+"raw": "rosemary"
+}
+],
+"parts": [
+[
+"vodka",
+"Vodka"
+],
+[
+"st. germain",
+"Elderflower liqueur"
+],
+[
+"grapefruit",
+"Grapefruit"
+],
+[
+"rosemary",
+"Rosemary"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Le Jardin",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "bombay dry gin"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "lillet blanc"
+},
+{
+"name": "Herb / spice (other)",
+"cat": "Herbs & spices",
+"raw": "herbs de provence"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "sparkling water"
+}
+],
+"parts": [
+[
+"bombay dry gin",
+"Gin"
+],
+[
+"lillet blanc",
+"Aperitif wine"
+],
+[
+"herbs de provence",
+"Herb / spice (other)"
+],
+[
+"lime",
+"Lime"
+],
+[
+"sparkling water",
+"Soda water"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Le Dirty",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "wheatley vodka"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "olive brine"
+},
+{
+"name": "Olive",
+"cat": "Savory",
+"raw": "olives"
+}
+],
+"parts": [
+[
+"wheatley vodka",
+"Vodka"
+],
+[
+"olive brine",
+"Brine / pickles"
+],
+[
+"olives",
+"Olive"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Clouseau",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "fig infused jim beam bourbon"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Plum",
+"cat": "Fruit",
+"raw": "plum bitters"
+}
+],
+"parts": [
+[
+"fig infused jim beam bourbon",
+"Bourbon"
+],
+[
+"lime",
+"Lime"
+],
+[
+"plum bitters",
+"Plum"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "Marguerite Des Champs",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "sauza blanco tequila"
+},
+{
+"name": "Aperol",
+"cat": "Liqueurs & amari",
+"raw": "aperol"
+},
+{
+"name": "Berry liqueur",
+"cat": "Liqueurs & amari",
+"raw": "crème de framboise"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "ginger"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"sauza blanco tequila",
+"Blanco tequila"
+],
+[
+"aperol",
+"Aperol"
+],
+[
+"crème de framboise",
+"Berry liqueur"
+],
+[
+"ginger",
+"Ginger"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "L'Ombre Royale",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Brandy",
+"cat": "Brandy & pisco",
+"raw": "courvoisier vs cognac"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "dolin dry"
+},
+{
+"name": "Allspice dram",
+"cat": "Liqueurs & amari",
+"raw": "allspice dram"
+},
+{
+"name": "Chocolate",
+"cat": "Herbs & spices",
+"raw": "crème de cacao"
+}
+],
+"parts": [
+[
+"courvoisier vs cognac",
+"Brandy"
+],
+[
+"dolin dry",
+"Vermouth"
+],
+[
+"allspice dram",
+"Allspice dram"
+],
+[
+"crème de cacao",
+"Chocolate"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Le Diplomate",
+"section": "Cocktails",
+"drink": "L'Espresso",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "vodka"
+},
+{
+"name": "Coffee liqueur",
+"cat": "Liqueurs & amari",
+"raw": "borghetti coffee liqueur"
+},
+{
+"name": "Cynar",
+"cat": "Liqueurs & amari",
+"raw": "cynar"
+},
+{
+"name": "Nut liqueur",
+"cat": "Liqueurs & amari",
+"raw": "frangelico"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "espresso"
+}
+],
+"parts": [
+[
+"vodka",
+"Vodka"
+],
+[
+"borghetti coffee liqueur",
+"Coffee liqueur"
+],
+[
+"cynar",
+"Cynar"
+],
+[
+"frangelico",
+"Nut liqueur"
+],
+[
+"espresso",
+"Coffee"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Vodka & Bubbles",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "wheatley vodka"
+},
+{
+"name": "Passion fruit",
+"cat": "Fruit",
+"raw": "passionfruit liqueur"
+},
+{
+"name": "Vanilla",
+"cat": "Sweeteners",
+"raw": "vanilla"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "sparkling"
+}
+],
+"parts": [
+[
+"wheatley vodka",
+"Vodka"
+],
+[
+"passionfruit liqueur",
+"Passion fruit"
+],
+[
+"vanilla",
+"Vanilla"
+],
+[
+"lime",
+"Lime"
+],
+[
+"sparkling",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Espresso Cocktail",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "vodka"
+},
+{
+"name": "Coffee liqueur",
+"cat": "Liqueurs & amari",
+"raw": "coffee liqueur"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "la colombe cold brew"
+},
+{
+"name": "Sugar",
+"cat": "Sweeteners",
+"raw": "demarara"
+}
+],
+"parts": [
+[
+"vodka",
+"Vodka"
+],
+[
+"coffee liqueur",
+"Coffee liqueur"
+],
+[
+"la colombe cold brew",
+"Coffee"
+],
+[
+"demarara",
+"Sugar"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Tequila Cocktail",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "cazadores blanco"
+},
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "red bitters"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "grapefruit"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Salt / salt air",
+"cat": "Savory",
+"raw": "smoked salt"
+}
+],
+"parts": [
+[
+"cazadores blanco",
+"Blanco tequila"
+],
+[
+"red bitters",
+"Campari"
+],
+[
+"grapefruit",
+"Grapefruit"
+],
+[
+"lime",
+"Lime"
+],
+[
+"smoked salt",
+"Salt / salt air"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Rum Cocktail",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "dark rum"
+},
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "banhez mezcal"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "amaro"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "pineapple syrup"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"dark rum",
+"Rum"
+],
+[
+"banhez mezcal",
+"Mezcal"
+],
+[
+"amaro",
+"Amaro"
+],
+[
+"pineapple syrup",
+"Pineapple"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Gold Rush",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "buffalo trace bourbon"
+},
+{
+"name": "Honey",
+"cat": "Sweeteners",
+"raw": "honey"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"buffalo trace bourbon",
+"Bourbon"
+],
+[
+"honey",
+"Honey"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Dirty Cocktail",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "ketel one"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "olive brine"
+},
+{
+"name": "Olive",
+"cat": "Savory",
+"raw": "manzanilla olives"
+}
+],
+"parts": [
+[
+"ketel one",
+"Vodka"
+],
+[
+"olive brine",
+"Brine / pickles"
+],
+[
+"manzanilla olives",
+"Olive"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Cosmo",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "wheatley vodka citrus mash"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "orange liqueur"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "cranberry"
+}
+],
+"parts": [
+[
+"wheatley vodka citrus mash",
+"Vodka"
+],
+[
+"orange liqueur",
+"Orange liqueur"
+],
+[
+"lime",
+"Lime"
+],
+[
+"cranberry",
+"Berry"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Hemingway Daiquiri",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "cotton & reed white rum"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "grapefruit"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "maraschino"
+},
+{
+"name": "Sugar",
+"cat": "Sweeteners",
+"raw": "simple"
+}
+],
+"parts": [
+[
+"cotton & reed white rum",
+"Rum"
+],
+[
+"lime",
+"Lime"
+],
+[
+"grapefruit",
+"Grapefruit"
+],
+[
+"maraschino",
+"Maraschino liqueur"
+],
+[
+"simple",
+"Sugar"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Martinez",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "barr hill reserve tom cat gin"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "dry vermouth"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "maraschino"
+}
+],
+"parts": [
+[
+"barr hill reserve tom cat gin",
+"Gin"
+],
+[
+"dry vermouth",
+"Vermouth"
+],
+[
+"maraschino",
+"Maraschino liqueur"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Mint Julep",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "wild turkey bourbon"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "mini underberg"
+},
+{
+"name": "Sugar",
+"cat": "Sweeteners",
+"raw": "simple"
+},
+{
+"name": "Mint",
+"cat": "Herbs & spices",
+"raw": "mint"
+}
+],
+"parts": [
+[
+"wild turkey bourbon",
+"Bourbon"
+],
+[
+"mini underberg",
+"Amaro"
+],
+[
+"simple",
+"Sugar"
+],
+[
+"mint",
+"Mint"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Boulevardier",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "bowman brothers st. anselm barrel select"
+},
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "red bitters"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "sweet vermouth"
+}
+],
+"parts": [
+[
+"bowman brothers st. anselm barrel select",
+"Bourbon"
+],
+[
+"red bitters",
+"Campari"
+],
+[
+"sweet vermouth",
+"Vermouth"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Old Fashioned",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "old grand-dad bourbon"
+},
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "cotton & reed st. anselm spiced rum"
+}
+],
+"parts": [
+[
+"old grand-dad bourbon",
+"Bourbon"
+],
+[
+"cotton & reed st. anselm spiced rum",
+"Rum"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Sunset Park",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "sazerac 'st.anselm select' rye"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "cinzano extra dry vermouth"
+},
+{
+"name": "Apricot liqueur",
+"cat": "Liqueurs & amari",
+"raw": "apricot liqueur"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "bitters"
+}
+],
+"parts": [
+[
+"sazerac 'st.anselm select' rye",
+"Rye whiskey"
+],
+[
+"cinzano extra dry vermouth",
+"Vermouth"
+],
+[
+"apricot liqueur",
+"Apricot liqueur"
+],
+[
+"bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails",
+"drink": "Manhattan",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "rittenhouse rye"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "sibona amaro"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "cocchi vermouth di torino"
+},
+{
+"name": "Angostura bitters",
+"cat": "Bitters",
+"raw": "angostura"
+}
+],
+"parts": [
+[
+"rittenhouse rye",
+"Rye whiskey"
+],
+[
+"sibona amaro",
+"Amaro"
+],
+[
+"cocchi vermouth di torino",
+"Vermouth"
+],
+[
+"angostura",
+"Angostura bitters"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Cocktails & Martinis (Cocktail Hour)",
+"drink": "Gin Martini",
+"price": 9.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "bombay gin"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "dolin dry vermouth"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon twist or olive"
+}
+],
+"parts": [
+[
+"bombay gin",
+"Gin"
+],
+[
+"dolin dry vermouth",
+"Vermouth"
+],
+[
+"lemon twist or olive",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Lunch Cocktails",
+"drink": "Sherry Cobbler",
+"price": 14.0,
+"zero": false,
+"ings": [
+{
+"name": "Sherry",
+"cat": "Vermouth & fortified",
+"raw": "amontillado sherry"
+},
+{
+"name": "Pomegranate",
+"cat": "Fruit",
+"raw": "pomegranate and cranberry"
+},
+{
+"name": "Orange",
+"cat": "Citrus",
+"raw": "orange"
+}
+],
+"parts": [
+[
+"amontillado sherry",
+"Sherry"
+],
+[
+"pomegranate and cranberry",
+"Pomegranate"
+],
+[
+"orange",
+"Orange"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Lunch Cocktails",
+"drink": "Americano",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "bonal"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "muz vermouth"
+}
+],
+"parts": [
+[
+"bonal",
+"Aperitif wine"
+],
+[
+"muz vermouth",
+"Vermouth"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Lunch Cocktails",
+"drink": "Iced Irish Coffee",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Irish whiskey",
+"cat": "Whiskey",
+"raw": "tullamore dew"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "la colombe 'louisiane'"
+},
+{
+"name": "Dairy",
+"cat": "Dairy & egg",
+"raw": "whipped cream"
+}
+],
+"parts": [
+[
+"tullamore dew",
+"Irish whiskey"
+],
+[
+"la colombe 'louisiane'",
+"Coffee"
+],
+[
+"whipped cream",
+"Dairy"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Brunch Cocktails",
+"drink": "Spaghett",
+"price": 13.0,
+"zero": false,
+"ings": [
+{
+"name": "Beer",
+"cat": "Wine & beer",
+"raw": "miller high life"
+},
+{
+"name": "Aperol",
+"cat": "Liqueurs & amari",
+"raw": "aperol"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"miller high life",
+"Beer"
+],
+[
+"aperol",
+"Aperol"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Brunch Cocktails",
+"drink": "Bloody Mary",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "wheatley vodka"
+},
+{
+"name": "Tomato / tomatillo",
+"cat": "Fruit",
+"raw": "st. anselm bloody mary mix"
+}
+],
+"parts": [
+[
+"wheatley vodka",
+"Vodka"
+],
+[
+"st. anselm bloody mary mix",
+"Tomato / tomatillo"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Brunch Cocktails",
+"drink": "Aviation Cocktail",
+"price": 12.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "bombay gin"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "luxardo maraschino"
+},
+{
+"name": "Floral liqueur",
+"cat": "Liqueurs & amari",
+"raw": "creme de violette"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"bombay gin",
+"Gin"
+],
+[
+"luxardo maraschino",
+"Maraschino liqueur"
+],
+[
+"creme de violette",
+"Floral liqueur"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Non-Alcoholic Mocktails",
+"drink": "Lavender Lemonade",
+"price": 10.0,
+"zero": true,
+"ings": [
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "citrus"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "lavender syrup"
+},
+{
+"name": "Honey",
+"cat": "Sweeteners",
+"raw": "honey"
+}
+],
+"parts": [
+[
+"citrus",
+"Citrus (mixed)"
+],
+[
+"lavender syrup",
+"Floral (rose, lavender)"
+],
+[
+"honey",
+"Honey"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "St. Anselm",
+"section": "Non-Alcoholic Mocktails",
+"drink": "Tropical Spice",
+"price": 10.0,
+"zero": true,
+"ings": [
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "pineapple"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Beer",
+"cat": "Wine & beer",
+"raw": "fever-tree ginger beer"
+}
+],
+"parts": [
+[
+"pineapple",
+"Pineapple"
+],
+[
+"lime",
+"Lime"
+],
+[
+"fever-tree ginger beer",
+"Beer"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "The Occidental Manhattan",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "maker's mark 46 bourbon"
+},
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "sazerac rye"
+},
+{
+"name": "Brandy",
+"cat": "Brandy & pisco",
+"raw": "claque-pepin calvados"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "cocchi storico vermouth di torino"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "sfumato rabarbaro"
+}
+],
+"parts": [
+[
+"maker's mark 46 bourbon",
+"Bourbon"
+],
+[
+"sazerac rye",
+"Rye whiskey"
+],
+[
+"claque-pepin calvados",
+"Brandy"
+],
+[
+"cocchi storico vermouth di torino",
+"Vermouth"
+],
+[
+"sfumato rabarbaro",
+"Amaro"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "Foster's Negroni",
+"price": 23.0,
+"zero": false,
+"ings": [
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "barcardi ocho rum"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "st. george bruto americano"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "cocchi storico vermouth di torino"
+},
+{
+"name": "Banana liqueur",
+"cat": "Liqueurs & amari",
+"raw": "tempus fugit crème de banane"
+}
+],
+"parts": [
+[
+"barcardi ocho rum",
+"Rum"
+],
+[
+"st. george bruto americano",
+"Aperitif wine"
+],
+[
+"cocchi storico vermouth di torino",
+"Vermouth"
+],
+[
+"tempus fugit crème de banane",
+"Banana liqueur"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "The A-Train",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "wheatley vodka"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "lo-fi vermouth"
+},
+{
+"name": "Nut liqueur",
+"cat": "Liqueurs & amari",
+"raw": "crème de noyaux"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "sage & blackberry"
+}
+],
+"parts": [
+[
+"wheatley vodka",
+"Vodka"
+],
+[
+"lo-fi vermouth",
+"Vermouth"
+],
+[
+"crème de noyaux",
+"Nut liqueur"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"sage & blackberry",
+"Berry"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "Pimm's Cup",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Pimm's",
+"cat": "Liqueurs & amari",
+"raw": "pimm's №1"
+},
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "zubrowka bison grass vodka"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "barrow's intense ginger"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "celery bitters"
+},
+{
+"name": "Beer",
+"cat": "Wine & beer",
+"raw": "ginger beer"
+},
+{
+"name": "Cucumber",
+"cat": "Fruit",
+"raw": "cucumber"
+}
+],
+"parts": [
+[
+"pimm's №1",
+"Pimm's"
+],
+[
+"zubrowka bison grass vodka",
+"Vodka"
+],
+[
+"barrow's intense ginger",
+"Ginger"
+],
+[
+"celery bitters",
+"Other bitters"
+],
+[
+"ginger beer",
+"Beer"
+],
+[
+"cucumber",
+"Cucumber"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "Gin Rickey",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "sipsmith gin"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime half"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "fever-tree club soda"
+}
+],
+"parts": [
+[
+"sipsmith gin",
+"Gin"
+],
+[
+"lime half",
+"Lime"
+],
+[
+"fever-tree club soda",
+"Soda water"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "San Luis Swizzle",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "ilegal joven mezcal"
+},
+{
+"name": "Herbal liqueur",
+"cat": "Liqueurs & amari",
+"raw": "faccia brutto centerbe"
+},
+{
+"name": "Chile",
+"cat": "Herbs & spices",
+"raw": "serrano"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "pineapple"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "peychaud bitters"
+}
+],
+"parts": [
+[
+"ilegal joven mezcal",
+"Mezcal"
+],
+[
+"faccia brutto centerbe",
+"Herbal liqueur"
+],
+[
+"serrano",
+"Chile"
+],
+[
+"pineapple",
+"Pineapple"
+],
+[
+"peychaud bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "The Edmont",
+"price": 21.0,
+"zero": false,
+"ings": [
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "sazerac rye whiskey"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "blanc vermouth"
+},
+{
+"name": "Honey",
+"cat": "Sweeteners",
+"raw": "lavender honey"
+},
+{
+"name": "Egg white",
+"cat": "Dairy & egg",
+"raw": "vegan 'egg white'"
+},
+{
+"name": "Scotch",
+"cat": "Whiskey",
+"raw": "islay scotch mist"
+}
+],
+"parts": [
+[
+"sazerac rye whiskey",
+"Rye whiskey"
+],
+[
+"blanc vermouth",
+"Vermouth"
+],
+[
+"lavender honey",
+"Honey"
+],
+[
+"vegan 'egg white'",
+"Egg white"
+],
+[
+"islay scotch mist",
+"Scotch"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Cocktails",
+"drink": "Cabildera",
+"price": 24.0,
+"zero": false,
+"ings": [
+{
+"name": "Reposado tequila",
+"cat": "Agave",
+"raw": "patron blanco, patron reposado, & patron añejo tequilas"
+},
+{
+"name": "Velvet Falernum",
+"cat": "Liqueurs & amari",
+"raw": "velvet falernum"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "cardamom bitters"
+},
+{
+"name": "Kumquat",
+"cat": "Citrus",
+"raw": "kumquat"
+}
+],
+"parts": [
+[
+"patron blanco, patron reposado, & patron añejo tequilas",
+"Reposado tequila"
+],
+[
+"velvet falernum",
+"Velvet Falernum"
+],
+[
+"cardamom bitters",
+"Other bitters"
+],
+[
+"kumquat",
+"Kumquat"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Martinis",
+"drink": "The Occidental Martini",
+"price": 21.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "belvedere vodka"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "cocchi torino extra dry vermouth"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "manzanilla brine"
+},
+{
+"name": "Salt / salt air",
+"cat": "Savory",
+"raw": "maldon sea salt"
+}
+],
+"parts": [
+[
+"belvedere vodka",
+"Vodka"
+],
+[
+"cocchi torino extra dry vermouth",
+"Vermouth"
+],
+[
+"manzanilla brine",
+"Brine / pickles"
+],
+[
+"maldon sea salt",
+"Salt / salt air"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Martinis",
+"drink": "50/Fifty",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "sweet gwendoline french gin"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "lo-fi dry vermouth"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon-stuffed olive"
+}
+],
+"parts": [
+[
+"sweet gwendoline french gin",
+"Gin"
+],
+[
+"lo-fi dry vermouth",
+"Vermouth"
+],
+[
+"lemon-stuffed olive",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Martinis",
+"drink": "Green Alaska",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "tinkerman's gin recipe #7.4"
+},
+{
+"name": "Green Chartreuse",
+"cat": "Liqueurs & amari",
+"raw": "green chartreuse"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "dolin blanc vermouth"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon bitters"
+}
+],
+"parts": [
+[
+"tinkerman's gin recipe #7.4",
+"Gin"
+],
+[
+"green chartreuse",
+"Green Chartreuse"
+],
+[
+"dolin blanc vermouth",
+"Vermouth"
+],
+[
+"lemon bitters",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Martinis",
+"drink": "Polynesian",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "bimini coconut gin"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "lo-fi sweet vermouth"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "cardamom bitters"
+}
+],
+"parts": [
+[
+"bimini coconut gin",
+"Gin"
+],
+[
+"lo-fi sweet vermouth",
+"Vermouth"
+],
+[
+"cardamom bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Martinis",
+"drink": "Ms. Fitzgerald",
+"price": 19.0,
+"zero": false,
+"ings": [
+{
+"name": "Pisco",
+"cat": "Brandy & pisco",
+"raw": "pisco el gobernador"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "luxardo bitter bianco"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "combier pamplemousse rosé"
+},
+{
+"name": "Mint",
+"cat": "Herbs & spices",
+"raw": "spearmint oil"
+}
+],
+"parts": [
+[
+"pisco el gobernador",
+"Pisco"
+],
+[
+"luxardo bitter bianco",
+"Maraschino liqueur"
+],
+[
+"combier pamplemousse rosé",
+"Orange liqueur"
+],
+[
+"spearmint oil",
+"Mint"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Martinis",
+"drink": "Cosmopolitan",
+"price": 20.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "st. george citrus vodka"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "grand marnier"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "cranberry"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"st. george citrus vodka",
+"Vodka"
+],
+[
+"grand marnier",
+"Orange liqueur"
+],
+[
+"cranberry",
+"Berry"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Non-Alcoholic Cocktails",
+"drink": "Sauxbeur Sour",
+"price": 15.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "m&r floreal na aperitivo"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "cranberry"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"m&r floreal na aperitivo",
+"NA spirit"
+],
+[
+"cranberry",
+"Berry"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Non-Alcoholic Cocktails",
+"drink": "Saint Agrestis Phony Negroni",
+"price": 14.0,
+"zero": true,
+"ings": [],
+"parts": []
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "The Occidental",
+"section": "Non-Alcoholic Cocktails",
+"drink": "Lyre's Amalfi Spritz",
+"price": 14.0,
+"zero": true,
+"ings": [],
+"parts": []
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Franc",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "frozen bombay sapphire"
+},
+{
+"name": "Elderflower liqueur",
+"cat": "Liqueurs & amari",
+"raw": "st germain"
+},
+{
+"name": "White wine",
+"cat": "Wine & beer",
+"raw": "white wine"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"frozen bombay sapphire",
+"Gin"
+],
+[
+"st germain",
+"Elderflower liqueur"
+],
+[
+"white wine",
+"White wine"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Je M'Appelle Hugo",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "bombay sapphire"
+},
+{
+"name": "Elderflower liqueur",
+"cat": "Liqueurs & amari",
+"raw": "st germain"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "sparkling wine"
+}
+],
+"parts": [
+[
+"bombay sapphire",
+"Gin"
+],
+[
+"st germain",
+"Elderflower liqueur"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"sparkling wine",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Spritz Royale",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Aperol",
+"cat": "Liqueurs & amari",
+"raw": "aperol"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "grapefruit cordial"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "sparkling water"
+}
+],
+"parts": [
+[
+"aperol",
+"Aperol"
+],
+[
+"grapefruit cordial",
+"Grapefruit"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"sparkling water",
+"Soda water"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Mangue À Trois",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "wheatley vodka"
+},
+{
+"name": "Passion fruit",
+"cat": "Fruit",
+"raw": "chinola passionfruit"
+},
+{
+"name": "Vanilla",
+"cat": "Sweeteners",
+"raw": "giffard vanille"
+},
+{
+"name": "Mango",
+"cat": "Fruit",
+"raw": "mango"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "sparkling wine"
+}
+],
+"parts": [
+[
+"wheatley vodka",
+"Vodka"
+],
+[
+"chinola passionfruit",
+"Passion fruit"
+],
+[
+"giffard vanille",
+"Vanilla"
+],
+[
+"mango",
+"Mango"
+],
+[
+"sparkling wine",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Faux Pas",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "banhez mezcal"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "cap corse blanc"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "luxardo maraschino"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "bigallet china-china"
+}
+],
+"parts": [
+[
+"banhez mezcal",
+"Mezcal"
+],
+[
+"cap corse blanc",
+"Aperitif wine"
+],
+[
+"luxardo maraschino",
+"Maraschino liqueur"
+],
+[
+"bigallet china-china",
+"Amaro"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "The Eiffel Sour",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Green Chartreuse",
+"cat": "Liqueurs & amari",
+"raw": "green chartreuse"
+},
+{
+"name": "Herbal liqueur",
+"cat": "Liqueurs & amari",
+"raw": "alpine herbal liqueur"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "pineapple"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+},
+{
+"name": "Baking spice",
+"cat": "Herbs & spices",
+"raw": "nutmeg"
+}
+],
+"parts": [
+[
+"green chartreuse",
+"Green Chartreuse"
+],
+[
+"alpine herbal liqueur",
+"Herbal liqueur"
+],
+[
+"pineapple",
+"Pineapple"
+],
+[
+"lime",
+"Lime"
+],
+[
+"nutmeg",
+"Baking spice"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Le Banane",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "bacardi silver"
+},
+{
+"name": "Banana liqueur",
+"cat": "Liqueurs & amari",
+"raw": "tempus fugit crème de banane"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"bacardi silver",
+"Rum"
+],
+[
+"tempus fugit crème de banane",
+"Banana liqueur"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Manhattan À Minuit",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "knob creek rye"
+},
+{
+"name": "Bourbon",
+"cat": "Whiskey",
+"raw": "maker's mark bourbon"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "vermouth rouge"
+},
+{
+"name": "Aperitif wine",
+"cat": "Vermouth & fortified",
+"raw": "bonal"
+}
+],
+"parts": [
+[
+"knob creek rye",
+"Rye whiskey"
+],
+[
+"maker's mark bourbon",
+"Bourbon"
+],
+[
+"vermouth rouge",
+"Vermouth"
+],
+[
+"bonal",
+"Aperitif wine"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Calvados Sidecar",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Brandy",
+"cat": "Brandy & pisco",
+"raw": "calvados"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "grand marnier"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"calvados",
+"Brandy"
+],
+[
+"hennessy vs",
+"Brandy"
+],
+[
+"grand marnier",
+"Orange liqueur"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Café Pastis",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "vodka"
+},
+{
+"name": "Coffee liqueur",
+"cat": "Liqueurs & amari",
+"raw": "borghetti coffee liqueur"
+},
+{
+"name": "Amaro",
+"cat": "Liqueurs & amari",
+"raw": "averna"
+},
+{
+"name": "Nut (orgeat, hazelnut)",
+"cat": "Sweeteners",
+"raw": "hazelnut"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "espresso"
+}
+],
+"parts": [
+[
+"vodka",
+"Vodka"
+],
+[
+"borghetti coffee liqueur",
+"Coffee liqueur"
+],
+[
+"averna",
+"Amaro"
+],
+[
+"hazelnut",
+"Nut (orgeat, hazelnut)"
+],
+[
+"espresso",
+"Coffee"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Le Dirty Martini",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "grey goose vodka"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "brine"
+},
+{
+"name": "Olive",
+"cat": "Savory",
+"raw": "olives"
+}
+],
+"parts": [
+[
+"grey goose vodka",
+"Vodka"
+],
+[
+"brine",
+"Brine / pickles"
+],
+[
+"olives",
+"Olive"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Cocktails",
+"drink": "Le Petit Pickle",
+"price": 10.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "grey goose vodka"
+},
+{
+"name": "Brine / pickles",
+"cat": "Savory",
+"raw": "house pickle brine"
+}
+],
+"parts": [
+[
+"grey goose vodka",
+"Vodka"
+],
+[
+"house pickle brine",
+"Brine / pickles"
+],
+[
+"pickled things",
+"Brine / pickles"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Non-Alcoholic",
+"drink": "Lavender Lemonade",
+"price": 8.0,
+"zero": true,
+"ings": [],
+"parts": []
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Non-Alcoholic",
+"drink": "St. Agrestis Phony Negroni",
+"price": 14.0,
+"zero": true,
+"ings": [],
+"parts": []
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Non-Alcoholic",
+"drink": "Bonjour Hugo",
+"price": 14.0,
+"zero": true,
+"ings": [
+{
+"name": "Elderflower liqueur",
+"cat": "Liqueurs & amari",
+"raw": "giffard elderflower"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "NA sparkling",
+"cat": "Zero-proof spirits",
+"raw": "n/a sparkling"
+}
+],
+"parts": [
+[
+"giffard elderflower",
+"Elderflower liqueur"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"n/a sparkling",
+"NA sparkling"
+],
+[
+"fever tree elderflower",
+"Elderflower liqueur"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "Pastis",
+"section": "Non-Alcoholic",
+"drink": "Tonique Sale",
+"price": 14.0,
+"zero": true,
+"ings": [
+{
+"name": "NA spirit",
+"cat": "Zero-proof spirits",
+"raw": "seedlip grove 42"
+},
+{
+"name": "Olive",
+"cat": "Savory",
+"raw": "olive juice"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon juice"
+},
+{
+"name": "Tonic",
+"cat": "Mixers",
+"raw": "fever tree tonic"
+}
+],
+"parts": [
+[
+"seedlip grove 42",
+"NA spirit"
+],
+[
+"olive juice",
+"Olive"
+],
+[
+"lemon juice",
+"Lemon"
+],
+[
+"fever tree tonic",
+"Tonic"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Roja Sangria",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Red wine",
+"cat": "Wine & beer",
+"raw": "red wine"
+},
+{
+"name": "Sugar",
+"cat": "Sweeteners",
+"raw": "cordial"
+}
+],
+"parts": [
+[
+"red wine",
+"Red wine"
+],
+[
+"fruit juice",
+""
+],
+[
+"cordial",
+"Sugar"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Picante Mami",
+"price": 14.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "st. george chili vodka"
+},
+{
+"name": "Gentian (Suze)",
+"cat": "Liqueurs & amari",
+"raw": "lo-fi gentian aperitif"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "orange cordial"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Chile",
+"cat": "Herbs & spices",
+"raw": "charred shishito"
+}
+],
+"parts": [
+[
+"st. george chili vodka",
+"Vodka"
+],
+[
+"lo-fi gentian aperitif",
+"Gentian (Suze)"
+],
+[
+"orange cordial",
+"Orange liqueur"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"charred shishito",
+"Chile"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Carajillo",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Licor 43",
+"cat": "Liqueurs & amari",
+"raw": "licor 43"
+},
+{
+"name": "Coffee liqueur",
+"cat": "Liqueurs & amari",
+"raw": "copa de oro coffee liqueur"
+},
+{
+"name": "Coffee",
+"cat": "Herbs & spices",
+"raw": "espresso"
+}
+],
+"parts": [
+[
+"licor 43",
+"Licor 43"
+],
+[
+"copa de oro coffee liqueur",
+"Coffee liqueur"
+],
+[
+"espresso",
+"Coffee"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Como La Flor",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Rye whiskey",
+"cat": "Whiskey",
+"raw": "old overholt rye"
+},
+{
+"name": "Ginger",
+"cat": "Mixers",
+"raw": "pajarote jengibre"
+},
+{
+"name": "Allspice dram",
+"cat": "Liqueurs & amari",
+"raw": "st. elizabeth allspice dram"
+},
+{
+"name": "Floral (rose, lavender)",
+"cat": "Herbs & spices",
+"raw": "hibiscus"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"old overholt rye",
+"Rye whiskey"
+],
+[
+"pajarote jengibre",
+"Ginger"
+],
+[
+"st. elizabeth allspice dram",
+"Allspice dram"
+],
+[
+"hibiscus",
+"Floral (rose, lavender)"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Piña Piña",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Rum",
+"cat": "Rum & cane",
+"raw": "lots of rums"
+},
+{
+"name": "Coconut",
+"cat": "Fruit",
+"raw": "coconut"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "pineapple"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"lots of rums",
+"Rum"
+],
+[
+"coconut",
+"Coconut"
+],
+[
+"pineapple",
+"Pineapple"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Mezcal Negroni",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "banhez mezcal"
+},
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "campari"
+},
+{
+"name": "Vermouth",
+"cat": "Vermouth & fortified",
+"raw": "sweet vermouth"
+}
+],
+"parts": [
+[
+"banhez mezcal",
+"Mezcal"
+],
+[
+"campari",
+"Campari"
+],
+[
+"sweet vermouth",
+"Vermouth"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Wolf Spritzer",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Aperol",
+"cat": "Liqueurs & amari",
+"raw": "aperol"
+},
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "montelobos mezcal"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "cava"
+}
+],
+"parts": [
+[
+"aperol",
+"Aperol"
+],
+[
+"montelobos mezcal",
+"Mezcal"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"cava",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Oaxacan Old Fashioned",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Reposado tequila",
+"cat": "Agave",
+"raw": "cazadores reposado"
+},
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "bahnez joven mezcal"
+},
+{
+"name": "Agave nectar",
+"cat": "Sweeteners",
+"raw": "agave"
+},
+{
+"name": "Other bitters",
+"cat": "Bitters",
+"raw": "bitters"
+}
+],
+"parts": [
+[
+"cazadores reposado",
+"Reposado tequila"
+],
+[
+"bahnez joven mezcal",
+"Mezcal"
+],
+[
+"agave",
+"Agave nectar"
+],
+[
+"bitters",
+"Other bitters"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "Ms. She-La-La",
+"price": 12.0,
+"zero": false,
+"ings": [
+{
+"name": "Beer",
+"cat": "Wine & beer",
+"raw": "michelada service 12oz. corona familiar"
+},
+{
+"name": "Chile",
+"cat": "Herbs & spices",
+"raw": "savory-spicy mix"
+},
+{
+"name": "Salt / salt air",
+"cat": "Savory",
+"raw": "salt"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"michelada service 12oz. corona familiar",
+"Beer"
+],
+[
+"savory-spicy mix",
+"Chile"
+],
+[
+"salt",
+"Salt / salt air"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Specialty Cocktails",
+"drink": "My-My Chamoy-Moy",
+"price": 12.0,
+"zero": false,
+"ings": [
+{
+"name": "Blood orange",
+"cat": "Citrus",
+"raw": "atlas blood orange gose"
+},
+{
+"name": "Plum",
+"cat": "Fruit",
+"raw": "tart-plum chamoy"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime salt"
+}
+],
+"parts": [
+[
+"atlas blood orange gose",
+"Blood orange"
+],
+[
+"tart-plum chamoy",
+"Plum"
+],
+[
+"lime salt",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Featured Cocktails",
+"drink": "Cantarito",
+"price": 14.0,
+"zero": false,
+"ings": [
+{
+"name": "Reposado tequila",
+"cat": "Agave",
+"raw": "gran centenario reposado"
+},
+{
+"name": "Citrus (mixed)",
+"cat": "Citrus",
+"raw": "fresh citrus juices"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "jarritos grapefruit soda"
+}
+],
+"parts": [
+[
+"gran centenario reposado",
+"Reposado tequila"
+],
+[
+"fresh citrus juices",
+"Citrus (mixed)"
+],
+[
+"jarritos grapefruit soda",
+"Grapefruit"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Featured Cocktails",
+"drink": "Frozen Watermelon Margarita",
+"price": 18.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "cazadores"
+},
+{
+"name": "Watermelon",
+"cat": "Fruit",
+"raw": "watermelon"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+}
+],
+"parts": [
+[
+"cazadores",
+"Blanco tequila"
+],
+[
+"watermelon",
+"Watermelon"
+],
+[
+"lemon",
+"Lemon"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Featured Cocktails",
+"drink": "Patron Mangonada",
+"price": 17.0,
+"zero": false,
+"ings": [
+{
+"name": "Chamoy / Tajín",
+"cat": "Savory",
+"raw": "chamoy"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"chamoy",
+"Chamoy / Tajín"
+],
+[
+"lime",
+"Lime"
+],
+[
+"tajin",
+"Chamoy / Tajín"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Featured Cocktails",
+"drink": "Pueblo Tiki Tiki",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Reposado tequila",
+"cat": "Agave",
+"raw": "cazadores reposado"
+},
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "ilegal mezcal"
+},
+{
+"name": "Passion fruit",
+"cat": "Fruit",
+"raw": "passionfruit"
+},
+{
+"name": "Agave nectar",
+"cat": "Sweeteners",
+"raw": "agave"
+},
+{
+"name": "Chile liqueur",
+"cat": "Liqueurs & amari",
+"raw": "ancho reyes"
+}
+],
+"parts": [
+[
+"cazadores reposado",
+"Reposado tequila"
+],
+[
+"ilegal mezcal",
+"Mezcal"
+],
+[
+"passionfruit",
+"Passion fruit"
+],
+[
+"agave",
+"Agave nectar"
+],
+[
+"ancho reyes",
+"Chile liqueur"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Featured Cocktails",
+"drink": "Blue Lagoon Jelly Shot",
+"price": 7.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "cazadores blanco"
+},
+{
+"name": "Berry",
+"cat": "Fruit",
+"raw": "blue raspberry"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"cazadores blanco",
+"Blanco tequila"
+],
+[
+"blue raspberry",
+"Berry"
+],
+[
+"lime",
+"Lime"
+],
+[
+"gummy",
+""
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "The Margarita",
+"price": 14.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "tequila blanco"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "orange cordial"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "fresh lime"
+}
+],
+"parts": [
+[
+"tequila blanco",
+"Blanco tequila"
+],
+[
+"orange cordial",
+"Orange liqueur"
+],
+[
+"fresh lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "Frozen Pineapple Margarita",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Reposado tequila",
+"cat": "Agave",
+"raw": "tequila reposado"
+},
+{
+"name": "Chile liqueur",
+"cat": "Liqueurs & amari",
+"raw": "ancho reyes"
+},
+{
+"name": "Chile",
+"cat": "Herbs & spices",
+"raw": "chipotle"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "caramelized pineapple"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"tequila reposado",
+"Reposado tequila"
+],
+[
+"ancho reyes",
+"Chile liqueur"
+],
+[
+"chipotle",
+"Chile"
+],
+[
+"caramelized pineapple",
+"Pineapple"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "Big Ass Margarita",
+"price": 28.0,
+"zero": false,
+"ings": [],
+"parts": [
+[
+"the margarita, but big AF",
+""
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "Spiced Strawberry",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "tequila blanco"
+},
+{
+"name": "Orange liqueur",
+"cat": "Liqueurs & amari",
+"raw": "orange cordial"
+},
+{
+"name": "Baking spice",
+"cat": "Herbs & spices",
+"raw": "spices"
+}
+],
+"parts": [
+[
+"tequila blanco",
+"Blanco tequila"
+],
+[
+"orange cordial",
+"Orange liqueur"
+],
+[
+"spices",
+"Baking spice"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "Put Me In, Coach",
+"price": 14.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "tequila blanco"
+},
+{
+"name": "Herbal liqueur",
+"cat": "Liqueurs & amari",
+"raw": "herbal liqueur"
+},
+{
+"name": "Maraschino liqueur",
+"cat": "Liqueurs & amari",
+"raw": "luxardo maraschino"
+},
+{
+"name": "Sports drink",
+"cat": "Mixers",
+"raw": "blue glacier gatorade"
+}
+],
+"parts": [
+[
+"tequila blanco",
+"Blanco tequila"
+],
+[
+"herbal liqueur",
+"Herbal liqueur"
+],
+[
+"luxardo maraschino",
+"Maraschino liqueur"
+],
+[
+"blue glacier gatorade",
+"Sports drink"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "The Elephant In The Room",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "tequila blanco"
+},
+{
+"name": "Gin",
+"cat": "Gin",
+"raw": "las californias native gin"
+},
+{
+"name": "Campari",
+"cat": "Liqueurs & amari",
+"raw": "campari"
+},
+{
+"name": "Guava",
+"cat": "Fruit",
+"raw": "bitter guava"
+},
+{
+"name": "Grapefruit",
+"cat": "Citrus",
+"raw": "grapefruit"
+}
+],
+"parts": [
+[
+"tequila blanco",
+"Blanco tequila"
+],
+[
+"las californias native gin",
+"Gin"
+],
+[
+"campari",
+"Campari"
+],
+[
+"bitter guava",
+"Guava"
+],
+[
+"grapefruit",
+"Grapefruit"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Margaritas",
+"drink": "Sgt. Pepper",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Mezcal",
+"cat": "Agave",
+"raw": "banhez mezcal"
+},
+{
+"name": "Chile liqueur",
+"cat": "Liqueurs & amari",
+"raw": "ancho reyes"
+},
+{
+"name": "Bell pepper",
+"cat": "Fruit",
+"raw": "red bell pepper juice"
+},
+{
+"name": "Chile",
+"cat": "Herbs & spices",
+"raw": "chili salt"
+}
+],
+"parts": [
+[
+"banhez mezcal",
+"Mezcal"
+],
+[
+"ancho reyes",
+"Chile liqueur"
+],
+[
+"red bell pepper juice",
+"Bell pepper"
+],
+[
+"chili salt",
+"Chile"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Zero Proof Mocktail",
+"drink": "Cucumber Mint Cooler",
+"price": 8.0,
+"zero": true,
+"ings": [
+{
+"name": "Cucumber",
+"cat": "Fruit",
+"raw": "cucumber"
+},
+{
+"name": "Mint",
+"cat": "Herbs & spices",
+"raw": "mint"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Soda water",
+"cat": "Mixers",
+"raw": "sparkling water"
+}
+],
+"parts": [
+[
+"cucumber",
+"Cucumber"
+],
+[
+"mint",
+"Mint"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"sparkling water",
+"Soda water"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Zero Proof Mocktail",
+"drink": "Red Bell Pepper Lemonade",
+"price": 8.0,
+"zero": true,
+"ings": [
+{
+"name": "Bell pepper",
+"cat": "Fruit",
+"raw": "red bell pepper"
+},
+{
+"name": "Lemon",
+"cat": "Citrus",
+"raw": "lemon"
+},
+{
+"name": "Agave nectar",
+"cat": "Sweeteners",
+"raw": "agave"
+}
+],
+"parts": [
+[
+"red bell pepper",
+"Bell pepper"
+],
+[
+"lemon",
+"Lemon"
+],
+[
+"agave",
+"Agave nectar"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Zero Proof Mocktail",
+"drink": "Mangonada",
+"price": 10.0,
+"zero": true,
+"ings": [
+{
+"name": "Chamoy / Tajín",
+"cat": "Savory",
+"raw": "chamoy"
+},
+{
+"name": "Mango",
+"cat": "Fruit",
+"raw": "mango"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"chamoy",
+"Chamoy / Tajín"
+],
+[
+"mango",
+"Mango"
+],
+[
+"lime",
+"Lime"
+],
+[
+"tajin",
+"Chamoy / Tajín"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Cocktails (Brunch)",
+"drink": "Bloody Mary",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Vodka",
+"cat": "Vodka",
+"raw": "vodka"
+},
+{
+"name": "Tomato / tomatillo",
+"cat": "Fruit",
+"raw": "spicy tomato"
+},
+{
+"name": "Celery",
+"cat": "Herbs & spices",
+"raw": "celery"
+}
+],
+"parts": [
+[
+"vodka",
+"Vodka"
+],
+[
+"spicy tomato",
+"Tomato / tomatillo"
+],
+[
+"celery",
+"Celery"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Cocktails (Brunch)",
+"drink": "Bloody Maria",
+"price": 16.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "blanco tequila"
+},
+{
+"name": "Tomato / tomatillo",
+"cat": "Fruit",
+"raw": "spicy tomato"
+},
+{
+"name": "Celery",
+"cat": "Herbs & spices",
+"raw": "celery"
+}
+],
+"parts": [
+[
+"blanco tequila",
+"Blanco tequila"
+],
+[
+"spicy tomato",
+"Tomato / tomatillo"
+],
+[
+"celery",
+"Celery"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Cocktails (Brunch)",
+"drink": "Carmelized Pineapple Mimosa",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "cava"
+},
+{
+"name": "Pineapple",
+"cat": "Fruit",
+"raw": "caramelized pineapple"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"cava",
+"Sparkling wine"
+],
+[
+"caramelized pineapple",
+"Pineapple"
+],
+[
+"lime",
+"Lime"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Cocktails (Dessert)",
+"drink": "Tigre Sucia",
+"price": 15.0,
+"zero": false,
+"ings": [
+{
+"name": "Dairy",
+"cat": "Dairy & egg",
+"raw": "horchata"
+},
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "1921 tequila crema or bumbu rum crème"
+}
+],
+"parts": [
+[
+"horchata",
+"Dairy"
+],
+[
+"1921 tequila crema or bumbu rum crème",
+"Blanco tequila"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Drinks (Happy Hour)",
+"drink": "Sparkling Margarita",
+"price": 11.0,
+"zero": false,
+"ings": [
+{
+"name": "Sparkling wine",
+"cat": "Wine & beer",
+"raw": "the margarita shaken & topped with cava"
+}
+],
+"parts": [
+[
+"the margarita shaken & topped with cava",
+"Sparkling wine"
+]
+]
+},
+{
+"group": "STARR Restaurants",
+"restaurant": "El Presidente",
+"section": "Drinks (Happy Hour)",
+"drink": "Pregame Shooter",
+"price": 11.0,
+"zero": false,
+"ings": [
+{
+"name": "Blanco tequila",
+"cat": "Agave",
+"raw": "tequila"
+},
+{
+"name": "Sports drink",
+"cat": "Mixers",
+"raw": "blue gatorade"
+},
+{
+"name": "Lime",
+"cat": "Citrus",
+"raw": "lime"
+}
+],
+"parts": [
+[
+"tequila",
+"Blanco tequila"
+],
+[
+"blue gatorade",
+"Sports drink"
+],
+[
+"lime",
+"Lime"
 ]
 ]
 }

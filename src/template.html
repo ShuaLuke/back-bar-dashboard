@@ -1,13 +1,13 @@
 <title>Well &amp; Call · DC Cocktail Menus</title>
-<meta name="description" content="An unofficial, interactive look at 85 cocktails and zero-proof drinks on five José Andrés restaurant menus in Washington, DC: ingredients, pairings, prices and prep.">
+<meta name="description" content="An unofficial, interactive look at __N_DRINKS__ cocktails and zero-proof drinks across __N_GROUPS__ Washington, DC restaurant groups: ingredients, pairings, prices, prep and how the groups compare.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Well &amp; Call · DC Cocktail Menus">
-<meta property="og:description" content="Interactive dashboard of 85 drinks across five José Andrés restaurants in DC: what pairs with what, prices, prep load and menu gaps.">
+<meta property="og:description" content="Interactive dashboard of __N_DRINKS__ drinks across __N_RESTS__ DC restaurants in __N_GROUPS__ groups: what pairs with what, prices, prep load, menu gaps and group-vs-group comparison.">
 <meta property="og:url" content="https://shualuke.github.io/back-bar-dashboard/">
 <meta property="og:image" content="https://shualuke.github.io/back-bar-dashboard/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Well &amp; Call dashboard: 85 drinks, 98 ingredients, $16 median cocktail across five José Andrés restaurants in DC">
+<meta property="og:image:alt" content="Well &amp; Call dashboard: __N_DRINKS__ drinks across __N_RESTS__ Washington, DC restaurants, with a detail drawer open on the top pairing">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f0592a">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff8a4c'/%3E%3Cstop offset='.55' stop-color='%23f0592a'/%3E%3Cstop offset='1' stop-color='%23e2436e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cg fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 8h18c0 5-4 8.4-9 8.4S7 13 7 8z'/%3E%3Cpath d='M16 16.4V24'/%3E%3Cpath d='M11 25h10'/%3E%3C/g%3E%3C/svg%3E">
@@ -418,6 +418,26 @@ svg .tip-on { outline: none; stroke: var(--ink); stroke-width: 1.5; }
 .cbar i { display: block; height: 100%; }
 .pc-hi { color: var(--warn); font-weight: 600; }
 
+/* compare groups */
+:root { --g0: #f0592a; --g1: #0f9f95; --g2: #6c63d9; --g3: #e7a812; }
+.side #rest-controls .chip.grp { color: var(--ink); font-weight: 600; margin-top: 6px; }
+.side #rest-controls .chip.grp[aria-pressed="mixed"]::before { background: var(--accent-soft); border-color: var(--accent); box-shadow: inset 0 0 0 3px var(--surface); }
+.side #rest-controls .chip.sub { padding-left: 24px; }
+.gtiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.gtile { background: var(--raise); border-radius: 14px; padding: 12px 14px; display: grid; gap: 8px; border-top: 3px solid var(--gc); cursor: help; }
+.gname { font-weight: 600; font-size: 13.5px; display: flex; align-items: center; gap: 7px; }
+.gstats { display: grid; gap: 3px; font-size: 12px; color: var(--muted); }
+.gstats b { color: var(--ink); font-size: 15px; margin-right: 6px; font-variant-numeric: tabular-nums; }
+.gmix { display: grid; gap: 8px; }
+.gmix-row { display: grid; grid-template-columns: minmax(120px, 180px) minmax(0, 1fr); gap: 10px; align-items: center; font-size: 12.5px; }
+.gmix-name { display: flex; align-items: center; gap: 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gcols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.gcol { display: grid; gap: 4px; align-content: start; }
+.gcol .bar { grid-template-columns: minmax(0, 1.3fr) minmax(40px, 1fr) auto; }
+.gcol .val { white-space: nowrap; }
+.gtable th .dot { margin-right: 4px; vertical-align: 1px; }
+.gtable td.n { font-size: 12.5px; }
+.view[data-view="groups"] { gap: 20px; }
 /* drawer */
 .drawer-scrim { position: fixed; inset: 0; z-index: 20; background: rgba(20, 22, 31, 0.28); opacity: 0; transition: opacity .2s; }
 .drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 21; width: min(520px, 100vw); background: var(--surface); box-shadow: -20px 0 50px -20px rgba(20, 22, 31, 0.35);
@@ -482,6 +502,7 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
       <button data-view="prep"><svg viewBox="0 0 16 16"><path d="M2.5 5 8 2l5.5 3v6L8 14l-5.5-3z"/><path d="M2.5 5 8 8l5.5-3M8 8v6"/></svg>Prep &amp; inventory</button>
       <button data-view="price"><svg viewBox="0 0 16 16"><path d="M8.6 2H14v5.4L7.4 14 2 8.6z"/><circle cx="11" cy="5" r="1"/></svg>Pricing</button>
       <button data-view="gaps"><svg viewBox="0 0 16 16"><path d="M8 2v3M8 11v3M2 8h3M11 8h3M3.8 3.8l2 2M10.2 10.2l2 2M12.2 3.8l-2 2M5.8 10.2l-2 2"/></svg>Menu gaps</button>
+      <button data-view="groups"><svg viewBox="0 0 16 16"><rect x="2" y="3" width="4" height="10" rx="1"/><rect x="10" y="3" width="4" height="10" rx="1"/><path d="M6 8h4"/></svg>Compare groups</button>
       <div class="nav-group">What if</div>
       <button data-view="costs"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M10 5.8c-.4-.6-1.1-.9-2-.9-1.1 0-2 .6-2 1.5 0 2 4 1.1 4 3.2 0 .9-.9 1.5-2 1.5-.9 0-1.7-.4-2.1-1M8 3.6v1.3M8 11.1v1.3"/></svg>Cost &amp; sales</button>
     </nav>
@@ -491,7 +512,7 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
     </details>
     <div class="side-foot">
       <button class="nav-link" data-view="about">About the data</button>
-      <span>Menus read Oct 13, 2026</span>
+      <span>Menus read Oct 13–14, 2026</span>
       <p class="disclaim">Unofficial fan project. Not affiliated with José Andrés Group or its restaurants. Menus and prices change; check with each restaurant.</p>
     </div>
   </aside>
@@ -558,6 +579,10 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
       <div id="ops-gaps" role="tabpanel" aria-labelledby="tab-gaps" hidden></div>
     </section>
 
+    <section class="view panel" data-view="groups" aria-label="Compare restaurant groups" hidden>
+      <div id="groups-out"></div>
+    </section>
+
     <section class="view panel" data-view="costs" aria-label="Cost and sales what-if" hidden>
       <div id="cost-out"></div>
     </section>
@@ -567,11 +592,12 @@ table.heat td { text-align: center; font-family: var(--mono); font-size: 11.5px;
         <li><b>Unofficial.</b> This is an independent fan project. It isn't affiliated with, endorsed by or connected to José Andrés, José Andrés Group or any of the restaurants. Restaurant names belong to their owners.</li>
         <li>Menus and prices change often. Treat everything here as a snapshot and check with the restaurant before you go.</li>
         <li>The “Cost &amp; sales” tab uses made-up, adjustable cost assumptions and a random simulated sales sample to show what real cost and POS data would make possible. None of those numbers are the restaurants' real costs, sales or margins.</li>
-        <li>Source: each restaurant's own online beverage menu, read on Oct 13, 2026: Oyamel, Jaleo, Zaytinya, China Chilcano and Bazaar Meat (listed on The Bazaar's DC page).</li>
-        <li>Prices are by the glass. Pitchers, flights, straight pours, wine and beer are left out.</li>
-        <li>barmini isn't included because its cocktail menu isn't published online.</li>
-        <li>Brands are grouped into plain ingredients, so Hornitos and Milagro both count as blanco tequila. “Salt air” counts as salt. Garnish techniques (liquid nitrogen, aromatic clouds, carbonation) aren't counted. The Freezer Martini is counted as gin, though it's offered with vodka too.</li>
-        <li>Operations views use the menus only. Sales and cost data aren't included.</li>
+        <li>Source: each restaurant's own online beverage menu, read on Oct 13–14, 2026. No menu aggregators. The groups and restaurants covered:
+          <ul id="about-sources" style="margin-top:6px"></ul></li>
+        <li>Prices are by the glass. Pitchers, flights, straight pours, bottle service, wine and beer by the glass are left out. Sangrías and beer cocktails are kept. A few drinks list no price online; they're shown with “—” and left out of price math.</li>
+        <li>barmini (José Andrés) isn't included because its cocktail menu isn't published online. Groups are compared as their DC locations only.</li>
+        <li>Brands are grouped into plain ingredients, so Hornitos, Milagro and Cazadores all count as blanco tequila, and Cava and Prosecco both count as sparkling wine. “Salt air” counts as salt. Garnish techniques (liquid nitrogen, aromatic clouds, carbonation) and menu taglines aren't counted. Menu typos are kept as written in the drink lists.</li>
+        <li>Operations views use the menus only. Sales and cost data aren't included. Menu gaps and the “pairings other groups use” list compare against whatever restaurants are selected.</li>
         <li>A frequent pairing means the bars use it often. It doesn't rank how good a drink tastes.</li>
       </ul>
     </section>
@@ -599,10 +625,17 @@ const CAT2FAM = { "Agave":"spirit","Whiskey":"spirit","Gin":"spirit","Vodka":"sp
   "Sweeteners":"sweet","Bitters":"sweet","Mixers":"mixer","Dairy & egg":"other","Savory":"other" };
 const ING_FAM = {}, ING_CAT = {};
 DRINKS.forEach(d => d.ings.forEach(i => { ING_FAM[i.name] = CAT2FAM[i.cat]; ING_CAT[i.name] = i.cat; }));
-const RESTS = [...new Set(DRINKS.map(d => d.restaurant))];
+const GROUPS = [...new Set(DRINKS.map(d => d.group))];
+const REST_GROUP = Object.fromEntries(DRINKS.map(d => [d.restaurant, d.group]));
+const RESTS = GROUPS.flatMap(g => [...new Set(DRINKS.filter(d => d.group === g).map(d => d.restaurant))]);
+const GROUP_SHORT = { "José Andrés Group": "José Andrés", "Fabio Trabocchi Restaurants": "Trabocchi", "STARR Restaurants": "STARR", "Neighborhood Restaurant Group": "NRG" };
+const gShort = g => GROUP_SHORT[g] || g.split(" ")[0];
+const HOME = GROUPS[0]; // the group the dashboard was built around; menu gaps and signature-pairing views default to it
+const selRests = () => RESTS.filter(r => state.rests.has(r));
+const hasPrice = d => d.price != null;
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const famColor = f => css("--f-" + f);
-const money = v => "$" + (Number.isInteger(v) ? v : v.toFixed(2));
+const money = v => v == null || Number.isNaN(v) ? "—" : "$" + (Number.isInteger(v) ? v : v.toFixed(2));
 const m2 = v => "$" + (+v).toFixed(2);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 
@@ -687,12 +720,21 @@ const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
 function renderControls() {
   const box = document.getElementById("rest-controls");
   const all = DRINKS.filter(d => state.zero || !d.zero);
-  box.innerHTML = '<span class="label">Restaurants</span>' + RESTS.map(r =>
-    `<button class="chip" data-r="${esc(r)}" aria-pressed="${state.rests.has(r)}">${esc(r)} <small>${all.filter(d => d.restaurant === r).length}</small></button>`).join("") +
+  const gState = g => { const rs = RESTS.filter(r => REST_GROUP[r] === g), on = rs.filter(r => state.rests.has(r)).length; return on === 0 ? "false" : on === rs.length ? "true" : "mixed"; };
+  box.innerHTML = '<span class="label">Restaurant groups</span>' + GROUPS.map(g => `
+    <button class="chip grp" data-g="${esc(g)}" aria-pressed="${gState(g)}">${esc(g)} <small>${all.filter(d => d.group === g).length}</small></button>` +
+    RESTS.filter(r => REST_GROUP[r] === g).map(r =>
+    `<button class="chip sub" data-r="${esc(r)}" aria-pressed="${state.rests.has(r)}">${esc(r)} <small>${all.filter(d => d.restaurant === r).length}</small></button>`).join("")).join("") +
     `<span class="label">Drink types</span><button class="chip" id="zero-btn" aria-pressed="${state.zero}">Include zero-proof</button>`;
   box.querySelectorAll("[data-r]").forEach(b => b.onclick = () => {
     const r = b.dataset.r;
     if (state.rests.has(r) && state.rests.size > 1) state.rests.delete(r); else state.rests.add(r);
+    render();
+  });
+  box.querySelectorAll("[data-g]").forEach(b => b.onclick = () => {
+    const rs = RESTS.filter(r => REST_GROUP[r] === b.dataset.g), allOn = rs.every(r => state.rests.has(r));
+    if (allOn) { rs.forEach(r => state.rests.delete(r)); if (!state.rests.size) rs.forEach(r => state.rests.add(r)); }
+    else rs.forEach(r => state.rests.add(r));
     render();
   });
   document.getElementById("zero-btn").onclick = () => { state.zero = !state.zero; render(); };
@@ -712,12 +754,12 @@ function setMode(mode, sel, pins) {
 }
 
 function renderStrip(ds, S) {
-  const prices = ds.filter(d => !d.zero).map(d => d.price).sort((a, b) => a - b);
+  const prices = ds.filter(d => !d.zero && hasPrice(d)).map(d => d.price).sort((a, b) => a - b);
   const med = prices.length ? d3.median(prices) : 0;
   const top = [...S.pair].sort((a, b) => b[1] - a[1])[0];
   const q = p => prices.length ? money(d3.quantile(prices, p)) : "—";
   const priciest = ds.filter(d => !d.zero).sort((a, b) => b.price - a.price)[0];
-  const tDrinks = `<b>${ds.length} drinks</b>` + ttRows(RESTS.filter(r => state.rests.has(r)).map(r => {
+  const tDrinks = `<b>${ds.length} drinks</b>` + ttRows(selRests().map(r => {
     const x = ds.filter(d => d.restaurant === r), z = x.filter(d => d.zero).length;
     return [esc(r), `${x.length - z} + ${z} zero`];
   })) + `<div class="tt-hint">cocktails + zero-proof</div>`;
@@ -1234,7 +1276,7 @@ const ops = { tab: "prep", prepFilter: "perish1", sort: { key: "drinks", dir: -1
 try { const t = localStorage.getItem("ja-ops-tab"); if (["prep", "price", "gaps"].includes(t)) ops.tab = t; } catch (e) {}
 
 function opsBase() {
-  const ds = DRINKS;
+  const ds = DRINKS.filter(d => state.rests.has(d.restaurant));
   const info = new Map();
   ds.forEach(d => d.ings.forEach(i => {
     if (!info.has(i.name)) info.set(i.name, { name: i.name, cat: i.cat, drinks: [], rests: new Set() });
@@ -1278,7 +1320,7 @@ function renderPrep(B) {
   rows = rows.slice().sort((a, b) => { const x = val(a), y = val(b); return (typeof x === "string" ? x.localeCompare(y) : x - y) * dir || a.name.localeCompare(b.name); });
 
   // per restaurant load
-  const rests = RESTS.map(r => {
+  const rests = selRests().map(r => {
     const ds = B.ds.filter(d => d.restaurant === r);
     const c = new Map(); ds.forEach(d => d.ings.forEach(i => c.set(i.name, (c.get(i.name) || 0) + 1)));
     const one = [...c].filter(([n, v]) => v === 1).map(([n]) => n);
@@ -1290,7 +1332,7 @@ function renderPrep(B) {
   box.innerHTML = `
     <div class="ops-tiles">
       <div class="stat" tabindex="0" ${tipAttr(`<b>${all.length} ingredients by category</b>` + ttRows(FAMS.map(([f, l]) => [esc(l), all.filter(r => CAT2FAM[r.cat] === f).length]).filter(x => x[1])))}><b class="num">${all.length}</b><span>distinct ingredients across ${B.ds.length} drinks</span></div>
-      <div class="stat" tabindex="0" ${tipAttr(`<b>Single-use ingredients by restaurant</b>` + ttRows(RESTS.map(r => [esc(r), single.filter(x => x.drinks[0].restaurant === r).length])))}><b class="num">${single.length}</b><span>appear in only one drink (${Math.round(single.length / all.length * 100)}%)</span></div>
+      <div class="stat" tabindex="0" ${tipAttr(`<b>Single-use ingredients by restaurant</b>` + ttRows(selRests().map(r => [esc(r), single.filter(x => x.drinks[0].restaurant === r).length])))}><b class="num">${single.length}</b><span>appear in only one drink (${Math.round(single.length / all.length * 100)}%)</span></div>
       <div class="stat" tabindex="0" ${tipAttr(`<b>Fresh, single-use</b>` + ttList(perish1.map(r => `${esc(r.name)} <span class="tt-k">${esc(r.drinks[0].drink)}, ${esc(r.drinks[0].restaurant)}</span>`), 12))}><b class="num">${perish1.length}</b><span>of those are fresh produce, herbs or dairy</span></div>
       <div class="stat" tabindex="0" ${tipAttr(`<b>Shared by 3+ restaurants</b>` + ttList(shared.sort((a, b) => b.rests.size - a.rests.size || b.drinks.length - a.drinks.length).map(r => `${esc(r.name)} <span class="tt-k">${r.rests.size} rest. · ${r.drinks.length} drinks</span>`), 12))}><b class="num">${shared.length}</b><span>used by 3 or more restaurants</span></div>
     </div>
@@ -1337,7 +1379,7 @@ const STYLES = [
 const stackMax = ds => d3.max([...d3.group(ds, d => d.price).values()], l => l.length) || 1;
 function priceStrip(drinks, w, h, xs, r = 5.5) {
   // returns svg markup of dots on a price axis, stacked vertically when prices collide
-  const byP = d3.group(drinks, d => d.price);
+  const byP = d3.group(drinks.filter(hasPrice), d => d.price);
   const mid = h / 2;
   let marks = "";
   byP.forEach(list => list.forEach((d, i) => {
@@ -1355,7 +1397,7 @@ function renderPrice(B) {
   const ticks = [0, 10, 20, 30, 40];
   const axis = h => `<g>${ticks.map(t => `<line x1="${xs(t)}" x2="${xs(t)}" y1="0" y2="${h}" stroke="var(--line)" stroke-dasharray="${t ? "2 3" : ""}"></line><text x="${xs(t) + (t ? 0 : 2)}" y="${h + 13}" font-size="11" text-anchor="${t ? "middle" : "start"}" style="fill:var(--muted);font-family:var(--mono)">$${t}</text>`).join("")}</g>`;
 
-  const restRows = RESTS.map(r => {
+  const restRows = selRests().map(r => {
     const ds = B.ds.filter(d => d.restaurant === r), c = ds.filter(d => !d.zero), z = ds.filter(d => d.zero);
     return { r, ds, med: d3.median(c, d => d.price), zMed: z.length ? d3.median(z, d => d.price) : null, nz: z.length, h: Math.max(44, stackMax(ds) * step + 14) };
   });
@@ -1415,7 +1457,7 @@ function renderPrice(B) {
 /* ---------- menu gaps ---------- */
 function renderGaps(B) {
   const box = document.getElementById("ops-gaps");
-  if (!ops.rest) ops.rest = "Oyamel";
+  if (!ops.rest || !state.rests.has(ops.rest)) ops.rest = selRests()[0];
   const R = ops.rest;
   const mine = B.ds.filter(d => d.restaurant === R), others = B.ds.filter(d => d.restaurant !== R);
   const pairSet = ds => { const m = new Map(); ds.forEach(d => { const n = d.ings.map(i => i.name).sort();
@@ -1436,7 +1478,7 @@ function renderGaps(B) {
 
   box.innerHTML = `
     <div class="gap-pick"><span class="controls"><span class="label">Restaurant</span></span>
-      ${RESTS.map(r => `<button class="chip" data-gr="${esc(r)}" aria-pressed="${r === R}">${esc(r)}</button>`).join("")}</div>
+      ${selRests().map(r => `<button class="chip" data-gr="${esc(r)}" aria-pressed="${r === R}">${esc(r)}</button>`).join("")}</div>
     <div class="ops-two" style="margin-top:16px">
       <div style="min-width:0">
         <div class="sub" style="margin-top:0">Pairings the group relies on that ${esc(R)} doesn't use</div>
@@ -1461,7 +1503,7 @@ function renderGaps(B) {
         </div>
         <div class="callout">
           <b>Zero-proof: ${z.length} of ${mine.length} drinks (${Math.round(zShare * 100)}%)</b>
-          <span>The rest of the group averages ${Math.round(zoShare * 100)}%. ${z.length ? `${esc(R)} lists ${z.map(d => `${esc(d.drink)} at ${money(d.price)}`).join(", ")}.` : ""}</span>
+          <span>The other selected restaurants average ${Math.round(zoShare * 100)}%. ${z.length ? `${esc(R)} lists ${z.map(d => `${esc(d.drink)} at ${money(d.price)}`).join(", ")}.` : ""}</span>
         </div>
         <div class="callout">
           <b>Biggest relative gap: ${esc(bigGap.l)}</b>
@@ -1640,7 +1682,7 @@ function wireRange(id, set, fmt) {
 }
 function renderCostResults(ds) {
   const out = document.getElementById("cost-results");
-  const rows = ds.map(d => ({ d, ...estCost(d) }));
+  const rows = ds.filter(hasPrice).map(d => ({ d, ...estCost(d) }));
   const c = rows.filter(r => !r.d.zero), z = rows.filter(r => r.d.zero);
   const over = c.filter(r => r.pc > cost.target);
   const avgPc = rs => rs.length ? d3.mean(rs, r => r.pc) : null;
@@ -1724,15 +1766,126 @@ function renderCostResults(ds) {
   out.querySelectorAll("[data-sim-ld]").forEach(b => b.onclick = () => { sim.leader = b.dataset.simLd; renderCostResults(current()); });
 }
 
+
+/* ---------- compare groups ---------- */
+const grp = { focus: null, mix: "fam" };
+function renderGroups() {
+  const out = document.getElementById("groups-out");
+  const all = DRINKS.filter(d => state.zero || !d.zero);
+  if (GROUPS.length < 2) { out.innerHTML = '<p class="empty">Only one restaurant group is loaded. Add another group to data/drinks_raw.tsv to compare.</p>'; return; }
+  if (!grp.focus || !GROUPS.includes(grp.focus)) grp.focus = HOME;
+  const G = GROUPS.map((g, gi) => {
+    const ds = all.filter(d => d.group === g), c = ds.filter(d => !d.zero && hasPrice(d)), z = ds.filter(d => d.zero);
+    const rests = [...new Set(ds.map(d => d.restaurant))];
+    const cnt = new Map(); ds.forEach(d => d.ings.forEach(i => cnt.set(i.name, (cnt.get(i.name) || 0) + 1)));
+    return { g, gi, ds, c, z, rests, cnt, med: c.length ? d3.median(c, d => d.price) : null, lo: c.length ? d3.min(c, d => d.price) : null, hi: c.length ? d3.max(c, d => d.price) : null,
+      per: ds.length ? d3.mean(ds, d => d.ings.length) : 0, color: `var(--g${gi % 4})` };
+  });
+  const gColor = g => G.find(x => x.g === g).color;
+  const share = (ds, test) => ds.length ? ds.filter(test).length / ds.length : 0;
+
+  // tiles
+  const tiles = G.map(x => `<div class="gtile" style="--gc:${x.color}" tabindex="0" ${tipAttr(`<b>${esc(x.g)}</b>` + ttRows(x.rests.map(r => [esc(r), plural(x.ds.filter(d => d.restaurant === r).length, "drink")])))}>
+      <div class="gname"><i class="dot" style="background:${x.color}"></i>${esc(x.g)}</div>
+      <div class="gstats">
+        <span><b>${x.ds.length}</b>drinks · ${x.rests.length} ${x.rests.length === 1 ? "bar" : "bars"}</span>
+        <span><b>${money(x.med)}</b>median${x.lo != null ? ` · ${money(x.lo)}–${money(x.hi)}` : ""}</span>
+        <span><b>${pct(x.z.length, x.ds.length)}</b>zero-proof</span>
+        <span><b>${x.cnt.size}</b>ingredients · ${x.per.toFixed(1)} per drink</span>
+      </div></div>`).join("");
+
+  // mix stacks: category of ingredient uses, or base spirit of drinks
+  const famRows = G.map(x => { const m = new Map(); x.ds.forEach(d => d.ings.forEach(i => { const f = ING_FAM[i.name]; m.set(f, (m.get(f) || 0) + 1); }));
+    const tot = d3.sum([...m.values()]) || 1; return { x, segs: FAMS.map(([f, l]) => ({ k: f, l, v: (m.get(f) || 0) / tot, color: `var(--f-${f})` })).filter(s => s.v) }; });
+  const styleRows = G.map(x => { const m = new Map(); x.ds.forEach(d => { const st = styleOf(d); m.set(st, (m.get(st) || 0) + 1); });
+    return { x, segs: STYLES_SIM.map((st, i) => ({ k: st, l: st, v: (m.get(st) || 0) / (x.ds.length || 1), color: STYLE_COLOR[st] })).filter(s => s.v) }; });
+  const mixRows = grp.mix === "fam" ? famRows : styleRows;
+  const mixLegend = grp.mix === "fam" ? FAMS.map(([f, l]) => `<span><i class="dot" style="background:var(--f-${f})"></i>${l}</span>`).join("")
+    : STYLES_SIM.map(st => `<span><i class="dot" style="background:${STYLE_COLOR[st]}"></i>${st}</span>`).join("");
+  const mixHtml = mixRows.map(({ x, segs }) => `<div class="gmix-row"><span class="gmix-name"><i class="dot" style="background:${x.color}"></i>${esc(x.g)}</span>
+      <span class="mix-stack">${segs.map(sg => `<i style="width:${sg.v * 100}%;background:${sg.color}" ${tipAttr(`<b>${esc(sg.l)}</b><div class="tt-k">${esc(x.g)}</div>` + ttRows([[grp.mix === "fam" ? "Share of ingredient uses" : "Share of drinks", pct(sg.v, 1)]]))}></i>`).join("")}</span></div>`).join("");
+
+  // signature ingredients: used by this group in a much larger share of drinks than by the others
+  const sig = G.map(x => { const others = all.filter(d => d.group !== x.g);
+    const rows = [...x.cnt].map(([n, c]) => { const mine = c / x.ds.length, theirs = share(others, d => has(d, n)); return { n, c, mine, theirs, lift: (mine + 0.01) / (theirs + 0.01) }; })
+      .filter(r => r.c >= 2).sort((a, b) => b.lift - a.lift || b.c - a.c).slice(0, 6);
+    return { x, rows }; });
+  const sigHtml = sig.map(({ x, rows }) => `<div class="gcol"><div class="gname"><i class="dot" style="background:${x.color}"></i>${esc(x.g)}</div>
+      ${rows.map(r => `<div class="bar" data-ing="${esc(r.n)}" role="button" tabindex="0" ${tipAttr(`<b>${esc(r.n)}</b> <span class="tt-k">${esc(ING_CAT[r.n])}</span>` + ttRows([[esc(x.g), `${r.c} of ${x.ds.length} drinks (${pct(r.mine, 1)})`], ["Other groups", pct(r.theirs, 1)]]) + '<div class="tt-hint">Click for its pairing map</div>')}>
+        <span class="name">${esc(r.n)}</span><span class="track"><span class="fill" style="display:block;width:${Math.min(100, r.mine * 100 * 2.5)}%;background:var(--f-${ING_FAM[r.n]})"></span></span><span class="val">${pct(r.mine, 1)}${r.theirs ? ` vs ${pct(r.theirs, 1)}` : " · only here"}</span></div>`).join("") || '<p class="empty">Too few drinks.</p>'}</div>`).join("");
+
+  // common ground
+  const everywhere = [...new Set(all.flatMap(d => d.ings.map(i => i.name)))].filter(n => G.every(x => x.cnt.has(n)))
+    .map(n => [n, d3.sum(G, x => x.cnt.get(n))]).sort((a, b) => b[1] - a[1]);
+  const onlyOne = G.map(x => [...x.cnt.keys()].filter(n => G.every(y => y === x || !y.cnt.has(n))).length);
+
+  // price by style
+  const styleTable = STYLES.map(([name, how, test]) => ({ name, how, cells: G.map(x => { const ds = x.ds.filter(test).filter(hasPrice); return ds.length ? { n: ds.length, med: d3.median(ds, d => d.price), lo: d3.min(ds, d => d.price), hi: d3.max(ds, d => d.price) } : null; }) }))
+    .filter(r => r.cells.filter(Boolean).length >= 2);
+
+  // pairings other groups use that the focus group doesn't
+  const F = G.find(x => x.g === grp.focus), pairSet = ds => { const m = new Map(); ds.forEach(d => { const n = d.ings.map(i => i.name).sort();
+    for (let a = 0; a < n.length; a++) for (let b = a + 1; b < n.length; b++) { const k = n[a] + "|" + n[b]; if (!m.has(k)) m.set(k, []); m.get(k).push(d); } }); return m; };
+  const mp = pairSet(F.ds), op = pairSet(all.filter(d => d.group !== F.g));
+  const stock = new Set(F.ds.flatMap(d => d.ings.map(i => i.name)));
+  const opps = [...op].filter(([k]) => !mp.has(k)).map(([k, ds]) => { const [a, b] = k.split("|"); const gs = new Set(ds.map(d => d.group));
+    return { a, b, ds, gs, both: stock.has(a) && stock.has(b) }; }).filter(o => o.gs.size >= 2 || o.ds.length >= 3)
+    .sort((x, y) => y.gs.size - x.gs.size || y.ds.length - x.ds.length || (y.both - x.both)).slice(0, 10);
+
+  out.innerHTML = `
+    <div class="gtiles">${tiles}</div>
+    <div class="ops-two">
+      <div style="min-width:0">
+        <div class="view-tools"><div class="sub" style="margin:0">${grp.mix === "fam" ? "What drinks are built from · share of ingredient uses" : "Base spirit · share of drinks"}</div>
+          <div class="controls" id="gmix-mode">${[["fam", "Categories"], ["style", "Base spirit"]].map(([k, l]) => `<button class="chip" data-gm="${k}" aria-pressed="${grp.mix === k}">${l}</button>`).join("")}</div></div>
+        <div class="gmix">${mixHtml}</div>
+        <div class="legend" style="margin-top:8px">${mixLegend}</div>
+      </div>
+      <div style="min-width:0">
+        <div class="sub" style="margin-top:0">Common ground</div>
+        <div class="callout"><b>${everywhere.length} ingredients appear at every group</b><span>${everywhere.slice(0, 10).map(([n]) => esc(n)).join(", ")}${everywhere.length > 10 ? "…" : ""}</span></div>
+        <div class="bars" style="margin-top:10px">${G.map((x, i) => `<div class="bar" tabindex="0" ${tipAttr(`<b>Only at ${esc(x.g)}</b>` + ttList([...x.cnt.keys()].filter(n => G.every(y => y === x || !y.cnt.has(n))).sort((a, b) => x.cnt.get(b) - x.cnt.get(a)).map(n => `${esc(n)} <span class="tt-k">${x.cnt.get(n)}</span>`), 10))}>
+          <span class="name">Only at ${esc(gShort(x.g))}</span><span class="track"><span class="fill" style="display:block;width:${onlyOne[i] / (d3.max(onlyOne) || 1) * 100}%;background:${x.color}"></span></span><span class="val">${onlyOne[i]} ingr.</span></div>`).join("")}</div>
+        <p class="hint" style="margin-top:6px">Ingredients no other group lists. Hover for the list.</p>
+      </div>
+    </div>
+    <div>
+      <div class="sub" style="margin-top:0">Signature ingredients · share of the group's drinks vs. the other groups</div>
+      <div class="gcols">${sigHtml}</div>
+    </div>
+    <div class="ops-two">
+      <div style="min-width:0">
+        <div class="sub" style="margin-top:0">Same style, different group · median price (drinks)</div>
+        <div class="scroll"><table class="mini gtable"><thead><tr><th>Style</th>${G.map(x => `<th class="n"><i class="dot" style="background:${x.color}"></i>${esc(gShort(x.g))}</th>`).join("")}</tr></thead>
+          <tbody>${styleTable.map(r => `<tr><td><b style="font-weight:600">${esc(r.name)}</b><br><span class="hint">${esc(r.how)}</span></td>${r.cells.map(c => `<td class="n">${c ? `${money(c.med)} <span class="hint">(${c.n})</span>` : "—"}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+      </div>
+      <div style="min-width:0">
+        <div class="view-tools"><div class="sub" style="margin:0">Pairings other groups use that this one doesn't</div>
+          <div class="controls">${G.map(x => `<button class="chip" data-gf="${esc(x.g)}" aria-pressed="${x.g === F.g}">${esc(gShort(x.g))}</button>`).join("")}</div></div>
+        <div>${opps.length ? opps.map(o => `<div class="opp" data-pair="${esc(o.a)}|${esc(o.b)}" role="button" tabindex="0" ${tipAttr(`<b>${esc(o.a)} + ${esc(o.b)}</b>` + ttList(o.ds.map(ttDrink), 6) + '<div class="tt-hint">Click for what else goes in</div>')}>
+            <span class="on">${esc(o.a)} + ${esc(o.b)}</span>
+            <span>${o.both ? '<span class="flag ok">already stocked</span>' : '<span class="flag quiet">new item</span>'}</span>
+            <span class="om">${[...o.gs].map(g => esc(gShort(g))).join(", ")} · ${plural(o.ds.length, "drink")}</span></div>`).join("") : '<p class="empty">Nothing the others share that this group lacks.</p>'}</div>
+      </div>
+    </div>`;
+  const act = (el, fn) => { el.onclick = fn; el.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(); } }; };
+  out.querySelectorAll("[data-gm]").forEach(b => b.onclick = () => { grp.mix = b.dataset.gm; renderGroups(); });
+  out.querySelectorAll("[data-gf]").forEach(b => b.onclick = () => { grp.focus = b.dataset.gf; renderGroups(); });
+  out.querySelectorAll("[data-ing]").forEach(el => act(el, () => openDrawer({ type: "ing", a: el.dataset.ing })));
+  out.querySelectorAll("[data-pair]").forEach(el => act(el, () => { const [a, b] = el.dataset.pair.split("|"); openDrawer({ type: "pair", a, b }); }));
+}
+const STYLE_COLOR = { "Agave": "var(--f-spirit)", "Gin": "#3f9b56", "Whiskey": "#8a4b1f", "Rum & cane": "#e7a812", "Brandy & pisco": "#b06a2c", "Vodka & other": "#8b8a7e", "Wine & aperitivo": "#e0435e", "Zero-proof": "var(--teal)" };
+
 /* dashboard shell */
 const VIEWS = {
-  overview: { sec: "overview", title: "Overview", sub: "Cocktail and zero-proof menus at five José Andrés restaurants in Washington, DC." },
+  overview: { sec: "overview", title: "Overview", sub: "Cocktail and zero-proof menus across Washington, DC restaurant groups. Use the filters to pick groups or restaurants." },
   ingredients: { sec: "ingredients", title: "Ingredient lookup", sub: "Partners are ranked by the number of drinks that use both. Click one to filter the drink list." },
   matrix: { sec: "matrix", title: "Pairing matrix", sub: "The most-used ingredients, grouped by category. Each number is how many drinks use both. Click a cell to see what else goes in, or a diagonal cell for one ingredient's partners." },
   map: { sec: "map", title: "Pairing map", sub: "Ribbon width is the number of shared drinks. Click an arc or a ribbon for details, or a category to see the ingredients inside it." },
   prep: { sec: "ops", tab: "prep", title: "Prep & inventory", sub: "Which ingredients each bar has to stock and prep, and which ones only one drink uses. Based on menus only." },
   price: { sec: "ops", tab: "price", title: "Pricing", sub: "Every drink by restaurant, and the same style of drink compared across locations." },
-  gaps: { sec: "ops", tab: "gaps", title: "Menu gaps", sub: "Pairings the rest of the group uses that a restaurant doesn't, and how its menu mix compares." },
+  gaps: { sec: "ops", tab: "gaps", title: "Menu gaps", sub: "Pairings the other selected restaurants use that one doesn't, and how its menu mix compares." },
+  groups: { sec: "groups", title: "Compare groups", sub: "How the restaurant groups' bar programs differ: price, zero-proof, what they build drinks from, and what each one does that the others don't. Uses every group regardless of the filters." },
   costs: { sec: "costs", title: "Cost & sales (what if)", sub: "A preview of what real cost and sales data would unlock. Costs are adjustable assumptions and sales are a random simulated sample, not the restaurants' real numbers." },
   about: { sec: "about", title: "About the data", sub: "Where the numbers come from and how ingredients were grouped." }
 };
@@ -1753,10 +1906,17 @@ function setView(v, opts = {}) {
 document.querySelectorAll("[data-view]").forEach(b => { if (b.tagName === "BUTTON") b.addEventListener("click", () => setView(b.dataset.view)); });
 if (matchMedia("(max-width: 900px)").matches) document.getElementById("filters").removeAttribute("open");
 
+function scopeLabel() {
+  const n = state.rests.size;
+  if (n === RESTS.length) return GROUPS.length > 1 ? `All ${GROUPS.length} groups · ${n} restaurants` : `All ${n} restaurants`;
+  const fullGroups = GROUPS.filter(g => RESTS.filter(r => REST_GROUP[r] === g).every(r => state.rests.has(r)));
+  if (fullGroups.length && fullGroups.reduce((a, g) => a + RESTS.filter(r => REST_GROUP[r] === g).length, 0) === n) return fullGroups.map(gShort).join(" + ");
+  return n === 1 ? [...state.rests][0] : n + " restaurants";
+}
 function renderScope(ds) {
   const n = state.rests.size;
   document.querySelector("#scope-pill span").textContent =
-    `${n === RESTS.length ? "All 5 restaurants" : n === 1 ? [...state.rests][0] : n + " restaurants"} · ${ds.length} drinks${state.zero ? "" : " · no zero-proof"}`;
+    `${scopeLabel()} · ${ds.length} drinks${state.zero ? "" : " · no zero-proof"}`;
 }
 
 function renderOverview(ds, S) {
@@ -1781,9 +1941,9 @@ function renderOverview(ds, S) {
   // signals (whole group, unfiltered, so they stay stable)
   const B = opsBase(), all = [...B.info.values()];
   const fresh1 = all.filter(r => r.drinks.length === 1 && r.perish);
-  const zAll = DRINKS.filter(d => d.zero), cAll = DRINKS.filter(d => !d.zero);
+  const zAll = B.ds.filter(d => d.zero), cAll = B.ds.filter(d => !d.zero && hasPrice(d));
   const zLo = d3.min(zAll, d => d.price), zHi = d3.max(zAll, d => d.price);
-  const zCounts = RESTS.map(r => [r, DRINKS.filter(d => d.restaurant === r && d.zero).length]).sort((a, b) => a[1] - b[1]);
+  const zCounts = selRests().map(r => [r, B.ds.filter(d => d.restaurant === r && d.zero).length]).sort((a, b) => a[1] - b[1]);
   const shared = all.filter(r => r.rests.size >= 4).map(r => r.name);
 
   // tooltip content
@@ -1802,7 +1962,7 @@ function renderOverview(ds, S) {
     return `<b>${esc(m.l)}</b>` + ttRows([["Share of uses", pct(m.v, totalUse)], ["Ingredient uses", m.v], ["Distinct ingredients", inside.length], ["Drinks using it", `${nd} (${pct(nd, ds.length)})`]])
       + `<div class="tt-k" style="margin-top:4px">Most used</div>` + ttList(inside.slice(0, 4).map(([n, c]) => `${esc(n)} <span class="tt-k">${c}</span>`)) + '<div class="tt-hint">Click for what\'s inside</div>'; };
   const tFresh = `<b>${fresh1.length} fresh items in only one drink</b>` + ttList(fresh1.map(r => `${esc(r.name)} <span class="tt-k">${esc(r.drinks[0].drink)}, ${esc(r.drinks[0].restaurant)}</span>`), 10);
-  const tZp = `<b>Zero-proof prices by restaurant</b>` + ttRows(RESTS.map(r => { const z = zAll.filter(d => d.restaurant === r);
+  const tZp = `<b>Zero-proof prices by restaurant</b>` + ttRows(selRests().map(r => { const z = zAll.filter(d => d.restaurant === r);
     return [esc(r), z.length ? `${money(d3.min(z, d => d.price))}–${money(d3.max(z, d => d.price))}` : "none"]; }));
   const tZc = `<b>Zero-proof drinks per restaurant</b>` + ttRows(zCounts.slice().reverse().map(([r, n]) => [esc(r), n]));
   const tShared = `<b>${shared.length} ingredients at 4+ restaurants</b>` + ttList(shared.map(n => `${esc(n)} <span class="tt-k">${B.info.get(n).rests.size} rest. · ${B.info.get(n).drinks.length} drinks</span>`), 10);
@@ -1828,7 +1988,7 @@ function renderOverview(ds, S) {
             <line x1="4" x2="${W - 4}" y1="9" y2="9" stroke="var(--line)" stroke-width="2" stroke-linecap="round"></line>
             ${x.lo != null ? `<line x1="${xs(x.lo)}" x2="${xs(x.hi)}" y1="9" y2="9" stroke="var(--accent)" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"></line>` : ""}
             ${x.med != null ? `<line x1="${xs(x.med)}" x2="${xs(x.med)}" y1="2" y2="16" stroke="var(--ink)" stroke-width="1.5"></line>` : ""}
-            ${x.d.map(d => `<circle cx="${xs(d.price)}" cy="9" r="3.2" fill="${d.zero ? "var(--teal)" : "var(--accent)"}" stroke="var(--surface)" stroke-width="1" ${tipAttr(`<b>${esc(d.drink)}</b><br>${esc(d.restaurant)} · ${money(d.price)}${d.zero ? " · zero-proof" : ""}`)}></circle>`).join("")}
+            ${x.d.filter(hasPrice).map(d => `<circle cx="${xs(d.price)}" cy="9" r="3.2" fill="${d.zero ? "var(--teal)" : "var(--accent)"}" stroke="var(--surface)" stroke-width="1" ${tipAttr(`<b>${esc(d.drink)}</b><br>${esc(d.restaurant)} · ${money(d.price)}${d.zero ? " · zero-proof" : ""}`)}></circle>`).join("")}
           </svg></td>
           <td class="n">${x.z}</td></tr>`).join("")}</tbody></table></div>
       <div class="swatch-legend"><span><i class="dot" style="background:var(--accent)"></i>Cocktail</span><span><i class="dot" style="background:var(--teal)"></i>Zero-proof</span><span>$0–$48 scale · line marks median</span></div>
@@ -1850,7 +2010,7 @@ function renderOverview(ds, S) {
       <p class="hint">Share of all ingredient uses across the selected drinks.</p>
     </div>
     <div class="card span-4">
-      <div class="card-head"><h2>Worth a look</h2><span class="hint">all 5 restaurants</span></div>
+      <div class="card-head"><h2>Worth a look</h2><span class="hint">${esc(scopeLabel().toLowerCase())}</span></div>
       <div class="card-body">
       <div class="signal" data-go="prep" role="button" tabindex="0" ${tipAttr(tFresh)}><span class="sv">${fresh1.length}</span><span class="st">Fresh items used in one drink</span><span class="sd">${fresh1.slice(0, 4).map(r => esc(r.name)).join(", ")}${fresh1.length > 4 ? "…" : ""}</span></div>
       <div class="signal" data-go="price" role="button" tabindex="0" ${tipAttr(tZp)}><span class="sv">${money(zLo)}–${money(zHi)}</span><span class="st">Zero-proof price range</span><span class="sd">Cocktails run ${money(d3.min(cAll, d => d.price))}–${money(d3.max(cAll, d => d.price))}, median ${money(d3.median(cAll, d => d.price))}</span></div>
@@ -1920,9 +2080,10 @@ dEl("drawer").addEventListener("keydown", e => {
 function render() {
   const ds = current(), S = stats(ds);
   if (state.pair && !state.pair.every(p => S.cnt.has(p))) state.pair = null;
-  renderControls(); renderScope(ds); renderStrip(ds, S); renderOverview(ds, S); renderSearch(ds, S); renderMatrix(ds, S); renderChord(ds, S); renderOps(); renderCosts(ds);
+  renderControls(); renderScope(ds); renderStrip(ds, S); renderOverview(ds, S); renderSearch(ds, S); renderMatrix(ds, S); renderChord(ds, S); renderOps(); renderCosts(ds); renderGroups();
   if (!dEl("drawer").hidden) renderDrawer();
 }
+document.getElementById("about-sources").innerHTML = GROUPS.map(g => `<li><b>${esc(g)}</b>: ${RESTS.filter(r => REST_GROUP[r] === g).map(r => `${esc(r)} (${DRINKS.filter(d => d.restaurant === r).length})`).join(", ")}</li>`).join("");
 render();
 { let v0 = (location.hash || "").slice(1); if (!VIEWS[v0]) { try { v0 = localStorage.getItem("ja-view"); } catch (e) {} } setView(VIEWS[v0] ? v0 : "overview", { keepScroll: true }); }
 const mq = matchMedia("(prefers-color-scheme: dark)"); mq.addEventListener && mq.addEventListener("change", render);
