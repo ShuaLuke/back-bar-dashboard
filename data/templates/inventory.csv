@@ -1,0 +1,2 @@
+restaurant_id,period,ingredient_id,begin_qty,purchased_qty,end_qty,qty_unit
+OYA,2026-07,blanco-tequila,14.5,60,12.2,bottles

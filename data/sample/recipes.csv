@@ -1,0 +1,224 @@
+drink_id,ingredient_id,qty,unit
+oyamel-oyamel,salt-salt-air,1,rim
+oyamel-oyamel,blanco-tequila,2,fl oz
+oyamel-oyamel,orange-liqueur,0.75,fl oz
+oyamel-oyamel,lime,0.75,fl oz
+oyamel-classic,blanco-tequila,2,fl oz
+oyamel-classic,orange-liqueur,0.75,fl oz
+oyamel-classic,lime,0.75,fl oz
+oyamel-reposado-margarita,reposado-tequila,2,fl oz
+oyamel-reposado-margarita,orange-liqueur,0.75,fl oz
+oyamel-reposado-margarita,lime,0.75,fl oz
+oyamel-mezcal-margarita,mezcal,2,fl oz
+oyamel-mezcal-margarita,orange-liqueur,0.75,fl oz
+oyamel-mezcal-margarita,lime,0.75,fl oz
+oyamel-pepino-serrano-margarita,blanco-tequila,2,fl oz
+oyamel-pepino-serrano-margarita,orange-liqueur,0.75,fl oz
+oyamel-pepino-serrano-margarita,cucumber,1,fl oz
+oyamel-pepino-serrano-margarita,lime,0.75,fl oz
+oyamel-pepino-serrano-margarita,chile,1,each
+oyamel-daisy-de-grana,blanco-tequila,2,fl oz
+oyamel-daisy-de-grana,orange-liqueur,0.75,fl oz
+oyamel-daisy-de-grana,pomegranate,1,fl oz
+oyamel-daisy-de-grana,lime,0.75,fl oz
+oyamel-daisy-de-grana,salt-salt-air,1,rim
+oyamel-estilo-ron-cooper,blanco-tequila,1,fl oz
+oyamel-estilo-ron-cooper,orange-liqueur,0.75,fl oz
+oyamel-estilo-ron-cooper,lime,0.75,fl oz
+oyamel-estilo-ron-cooper,salt-salt-air,1,rim
+oyamel-estilo-ron-cooper,mezcal,1,fl oz
+oyamel-escribo,mezcal,2,fl oz
+oyamel-escribo,green-chartreuse,0.75,fl oz
+oyamel-escribo,leaf-hoja-santa-banana,1,each
+oyamel-escribo,lime,0.75,fl oz
+oyamel-escribo,tomato-tomatillo,1,fl oz
+oyamel-negroni-bourdain,mezcal,2,fl oz
+oyamel-negroni-bourdain,aperol,0.5,fl oz
+oyamel-negroni-bourdain,cynar,0.5,fl oz
+oyamel-negroni-bourdain,vermouth,1,fl oz
+oyamel-chixculub-punch,rum,2,fl oz
+oyamel-chixculub-punch,leaf-hoja-santa-banana,1,each
+oyamel-chixculub-punch,cherry-liqueur,0.5,fl oz
+oyamel-chixculub-punch,velvet-falernum,0.5,fl oz
+oyamel-chixculub-punch,lime,0.75,fl oz
+oyamel-el-mago,sotol,1,fl oz
+oyamel-el-mago,aperol,0.75,fl oz
+oyamel-el-mago,rum,1,fl oz
+oyamel-el-mago,pineapple,1,fl oz
+oyamel-el-mago,lime,0.75,fl oz
+oyamel-baja-gin-and-tonic,gin,2,fl oz
+oyamel-baja-gin-and-tonic,passion-fruit,1,fl oz
+oyamel-baja-gin-and-tonic,vermouth,1,fl oz
+oyamel-baja-gin-and-tonic,thyme,1,each
+oyamel-baja-gin-and-tonic,oregano-za-atar,1,each
+oyamel-baja-gin-and-tonic,tonic,3,fl oz
+oyamel-molito-old-fashioned,mezcal,2,fl oz
+oyamel-molito-old-fashioned,chocolate,1,each
+oyamel-molito-old-fashioned,other-bitters,2,dash
+oyamel-mojito-dorado,rum,2,fl oz
+oyamel-mojito-dorado,lime,0.75,fl oz
+oyamel-mojito-dorado,mint,1,each
+oyamel-amor-cafeinado,mezcal,2,fl oz
+oyamel-amor-cafeinado,cynar,0.75,fl oz
+oyamel-amor-cafeinado,baking-spice,1,each
+oyamel-amor-cafeinado,chocolate,1,each
+oyamel-amor-cafeinado,coffee,1,each
+oyamel-michelada-original,beer,2,fl oz
+oyamel-michelada-original,tomato-tomatillo,1,fl oz
+oyamel-michelada-original,lime,0.75,fl oz
+oyamel-michelada-cubano,beer,2,fl oz
+oyamel-michelada-cubano,tomato-tomatillo,1,fl oz
+oyamel-michelada-cubano,chile,1,each
+oyamel-michelada-cubano,lime,0.75,fl oz
+oyamel-michelada-el-baj-o,beer,2,fl oz
+oyamel-michelada-el-baj-o,savory-sauce,1,fl oz
+oyamel-michelada-el-baj-o,chile,1,each
+oyamel-michelada-el-baj-o,lime,0.75,fl oz
+oyamel-michelada-el-baj-o,salt-salt-air,1,rim
+oyamel-limonada,soda-water,3,fl oz
+oyamel-limonada,lime,0.75,fl oz
+jaleo-sangr-a-roja-la-sueca,red-wine,2,fl oz
+jaleo-sangr-a-de-cava,sparkling-wine,2,fl oz
+jaleo-sangr-a-rosada,ros,2,fl oz
+jaleo-carajillo-old-fashioned,rye-whiskey,1,fl oz
+jaleo-carajillo-old-fashioned,brandy,1,fl oz
+jaleo-carajillo-old-fashioned,licor-43,0.5,fl oz
+jaleo-carajillo-old-fashioned,coffee-liqueur,0.5,fl oz
+jaleo-cuba-libre,rum,2,fl oz
+jaleo-cuba-libre,cola,3,fl oz
+jaleo-cuba-libre,angostura-bitters,2,dash
+jaleo-cuba-libre,lime,0.75,fl oz
+jaleo-bee-s-knees-with-oloroso,gin,2,fl oz
+jaleo-bee-s-knees-with-oloroso,lemon,0.75,fl oz
+jaleo-bee-s-knees-with-oloroso,honey,0.5,fl oz
+jaleo-bee-s-knees-with-oloroso,sherry,1,fl oz
+jaleo-margarita-donostiarra,blanco-tequila,1,fl oz
+jaleo-margarita-donostiarra,mezcal,1,fl oz
+jaleo-margarita-donostiarra,bay-leaf,1,each
+jaleo-margarita-donostiarra,lime,0.75,fl oz
+jaleo-margarita-donostiarra,sherry,1,fl oz
+jaleo-el-compadre,bourbon,2,fl oz
+jaleo-el-compadre,aperol,0.75,fl oz
+jaleo-el-compadre,lemon,0.75,fl oz
+jaleo-jarana,sherry,1,fl oz
+jaleo-jarana,vermouth,1,fl oz
+jaleo-jarana,brandy,2,fl oz
+jaleo-jarana,campari,0.75,fl oz
+jaleo-sweet-bay,gin,2,fl oz
+jaleo-sweet-bay,green-chartreuse,0.75,fl oz
+jaleo-sweet-bay,bay-leaf,1,each
+jaleo-sweet-bay,lime,0.75,fl oz
+jaleo-media-combinaci-n,vermouth,1,fl oz
+jaleo-media-combinaci-n,cynar,0.75,fl oz
+jaleo-media-combinaci-n,gin,2,fl oz
+jaleo-media-combinaci-n,angostura-bitters,2,dash
+jaleo-adonis,sherry,1,fl oz
+jaleo-adonis,vermouth,1,fl oz
+jaleo-adonis,orange-bitters,2,dash
+jaleo-ultimate,gin,2,fl oz
+jaleo-ultimate,tonic,3,fl oz
+jaleo-ultimate,juniper,1,each
+jaleo-ultimate,lemon,0.75,fl oz
+jaleo-ultimate,lime,0.75,fl oz
+jaleo-mediterranean,gin,2,fl oz
+jaleo-mediterranean,tonic,3,fl oz
+jaleo-mediterranean,vermouth,1,fl oz
+jaleo-mediterranean,lemon,0.75,fl oz
+jaleo-mediterranean,lime,0.75,fl oz
+jaleo-mediterranean,thyme,1,each
+jaleo-triple-orange,gin,2,fl oz
+jaleo-triple-orange,tonic,3,fl oz
+jaleo-triple-orange,orange,0.75,fl oz
+jaleo-triple-orange,rosemary,1,each
+jaleo-triple-orange,orange-bitters,2,dash
+jaleo-del-norte,gin,2,fl oz
+jaleo-del-norte,tonic,3,fl oz
+jaleo-del-norte,blood-orange,0.75,fl oz
+jaleo-sangr-a-0-0,na-sangr-a,2,fl oz
+jaleo-la-seviy,passion-fruit,1,fl oz
+jaleo-la-seviy,thyme,1,each
+jaleo-la-fresita,strawberry,1,fl oz
+jaleo-la-fresita,lemon,0.75,fl oz
+jaleo-lemonade-bay-leaf-soda,lemon,0.75,fl oz
+jaleo-lemonade-bay-leaf-soda,bay-leaf,1,each
+jaleo-lemonade-bay-leaf-soda,soda-water,3,fl oz
+jaleo-clara-porr-n,beer,2,fl oz
+jaleo-clara-porr-n,soda-water,3,fl oz
+zaytinya-mediterranean-gin-and-tonic,gin,2,fl oz
+zaytinya-mediterranean-gin-and-tonic,vermouth,1,fl oz
+zaytinya-mediterranean-gin-and-tonic,tonic,3,fl oz
+zaytinya-mediterranean-gin-and-tonic,lemon,0.75,fl oz
+zaytinya-mediterranean-gin-and-tonic,lime,0.75,fl oz
+zaytinya-mediterranean-gin-and-tonic,thyme,1,each
+zaytinya-pomona,ouzo,2,fl oz
+zaytinya-pomona,lemon,0.75,fl oz
+zaytinya-pomona,pomegranate,1,fl oz
+zaytinya-pomona,mint,1,each
+zaytinya-3-pm-in-istanbul,vodka,2,fl oz
+zaytinya-3-pm-in-istanbul,lemon,0.75,fl oz
+zaytinya-3-pm-in-istanbul,aperol,0.75,fl oz
+zaytinya-3-pm-in-istanbul,vanilla,0.5,fl oz
+zaytinya-3-pm-in-istanbul,lime,0.75,fl oz
+zaytinya-3-pm-in-istanbul,grapefruit,0.75,fl oz
+zaytinya-pom-fili,red-wine,2,fl oz
+zaytinya-pom-fili,vodka,2,fl oz
+zaytinya-pom-fili,pomegranate,1,fl oz
+zaytinya-pom-fili,allspice-dram,0.75,fl oz
+zaytinya-za-atar-margarita,blanco-tequila,2,fl oz
+zaytinya-za-atar-margarita,lime,0.75,fl oz
+zaytinya-za-atar-margarita,orange-liqueur,0.75,fl oz
+zaytinya-za-atar-margarita,oregano-za-atar,1,each
+zaytinya-minoan-sour,tsipouro,2,fl oz
+zaytinya-minoan-sour,lemon,0.75,fl oz
+zaytinya-minoan-sour,egg-white,1,each
+zaytinya-minoan-sour,olive-oil,1,fl oz
+zaytinya-sidecar-to-tangier,brandy,2,fl oz
+zaytinya-sidecar-to-tangier,floral-rose-lavender,1,each
+zaytinya-sidecar-to-tangier,cardamom,1,each
+zaytinya-sidecar-to-tangier,cumin,1,each
+zaytinya-sidecar-to-tangier,honey,0.5,fl oz
+zaytinya-sidecar-to-tangier,lemon,0.75,fl oz
+zaytinya-dancing-tree-martini,gin,2,fl oz
+zaytinya-dancing-tree-martini,vermouth,1,fl oz
+zaytinya-dancing-tree-martini,other-bitters,2,dash
+zaytinya-ankara-rye-club,rye-whiskey,2,fl oz
+zaytinya-ankara-rye-club,thyme,1,each
+zaytinya-ankara-rye-club,cumin,1,each
+zaytinya-ankara-rye-club,vermouth,1,fl oz
+zaytinya-continental-sour,bourbon,2,fl oz
+zaytinya-continental-sour,sherry,1,fl oz
+zaytinya-continental-sour,citrus-mixed,0.75,fl oz
+zaytinya-continental-sour,red-wine,2,fl oz
+zaytinya-glykopikro,gin,2,fl oz
+zaytinya-glykopikro,vermouth,1,fl oz
+zaytinya-glykopikro,campari,0.75,fl oz
+zaytinya-glykopikro,salt-salt-air,1,rim
+zaytinya-melissa-old-fashioned,bourbon,2,fl oz
+zaytinya-melissa-old-fashioned,mastiha,0.75,fl oz
+zaytinya-melissa-old-fashioned,honey,0.5,fl oz
+zaytinya-melissa-old-fashioned,angostura-bitters,2,dash
+zaytinya-midnight-in-cyprus,brandy,1,fl oz
+zaytinya-midnight-in-cyprus,mavrodaphne,1,fl oz
+zaytinya-midnight-in-cyprus,amaro,0.75,fl oz
+zaytinya-midnight-in-cyprus,ouzo,1,fl oz
+zaytinya-midnight-in-cyprus,coffee,1,each
+zaytinya-manna,brandy,2,fl oz
+zaytinya-manna,b-n-dictine,0.5,fl oz
+zaytinya-manna,mastiha,0.5,fl oz
+zaytinya-manna,honey,0.5,fl oz
+zaytinya-magic-carpet,gin,2,fl oz
+zaytinya-magic-carpet,apricot-liqueur,0.5,fl oz
+zaytinya-magic-carpet,elderflower-liqueur,0.5,fl oz
+zaytinya-magic-carpet,vanilla,0.5,fl oz
+zaytinya-magic-carpet,dairy,1,fl oz
+zaytinya-aegean-sunset,cardamom,1,each
+zaytinya-aegean-sunset,lime,0.75,fl oz
+zaytinya-aegean-sunset,peach,1,fl oz
+zaytinya-aegean-sunset,cherry,1,fl oz
+zaytinya-cucumber-mint-cooler,cucumber,1,fl oz
+zaytinya-cucumber-mint-cooler,mint,1,each
+zaytinya-lemonatha,lemon,0.75,fl oz
+zaytinya-lemonatha,floral-rose-lavender,1,each
+zaytinya-ayran,dairy,1,fl oz
+zaytinya-ayran,salt-salt-air,1,rim
+zaytinya-ayran,lime,0.75,fl oz

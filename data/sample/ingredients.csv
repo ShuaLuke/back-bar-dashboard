@@ -1,0 +1,98 @@
+ingredient_id,ingredient_name,category,bottle_cost,bottle_size,bottle_unit,pour_size,pour_unit,yield_pct,pour_cost,upcharge,effective_date,restaurant_id,perishable,shelf_life_days,prep_steps,par_pours,abv_pct
+salt-salt-air,Salt / salt air,Savory,3,200,each,1,rim,100,,0,,,0,365,1,19,0
+blanco-tequila,Blanco tequila,Agave,31.39,750,ml,1,fl oz,98,,0,,,0,365,1,90,40
+orange-liqueur,Orange liqueur,Liqueurs & amari,20,750,ml,1,fl oz,98,,0,,,0,365,1,24,40
+lime,Lime,Citrus,9,1,qt,1,fl oz,92,,0,,,1,2,2,103,0
+reposado-tequila,Reposado tequila,Agave,30,750,ml,1,fl oz,98,,0,,,0,365,1,9,40
+mezcal,Mezcal,Agave,38,750,ml,1,fl oz,98,,0,,,0,365,1,39,45
+cucumber,Cucumber,Fruit,6,1,qt,1,fl oz,85,,0,,,1,2,3,10,0
+chile,Chile,Herbs & spices,5,40,each,1,each,90,,0,,,1,7,1,18,0
+pomegranate,Pomegranate,Fruit,12,1,qt,1,fl oz,100,,0,,,1,10,1,15,0
+green-chartreuse,Green Chartreuse,Liqueurs & amari,72,750,ml,1,fl oz,98,,0,,,0,365,1,7,55
+leaf-hoja-santa-banana,"Leaf (hoja santa, banana)",Herbs & spices,3.66,20,each,1,each,85,,0,,,1,4,1,9,0
+tomato-tomatillo,Tomato / tomatillo,Fruit,9,1,qt,1,fl oz,90,,0,,,1,2,3,16,0
+aperol,Aperol,Liqueurs & amari,25,750,ml,1,fl oz,98,,0,,,0,365,1,11,11
+cynar,Cynar,Liqueurs & amari,26,1000,ml,1,fl oz,98,,0,,,0,365,1,7,16.5
+vermouth,Vermouth,Vermouth & fortified,16,1000,ml,1,fl oz,95,,0,,,1,30,1,42,16
+rum,Rum,Rum & cane,20,750,ml,1,fl oz,98,,0,,,0,365,1,43,40
+cherry-liqueur,Cherry liqueur,Liqueurs & amari,25.36,750,ml,1,fl oz,98,,0,,,0,365,1,3,28
+velvet-falernum,Velvet Falernum,Liqueurs & amari,20,750,ml,1,fl oz,98,,0,,,0,365,1,3,11
+sotol,Sotol,Agave,36,750,ml,1,fl oz,98,,0,,,0,365,1,4,45
+pineapple,Pineapple,Fruit,8,1,qt,1,fl oz,90,,0,,,1,3,3,4,0
+gin,Gin,Gin,22,750,ml,1,fl oz,98,,0,,,0,365,1,117,43
+passion-fruit,Passion fruit,Fruit,19,1,qt,1,fl oz,100,,0,,,1,7,1,6,0
+thyme,Thyme,Herbs & spices,3,30,each,1,each,85,,0,,,1,5,1,18,0
+oregano-za-atar,Oregano / za'atar,Herbs & spices,3.97,20,each,1,each,85,,0,,,1,4,1,9,0
+tonic,Tonic,Mixers,1.9,6.8,fl oz,1,fl oz,100,,0,,,0,180,0,173,0
+chocolate,Chocolate,Herbs & spices,3.92,20,each,1,each,85,,0,,,1,4,1,5,0
+other-bitters,Other bitters,Bitters,22,300,dash,1,dash,100,,0,,,0,365,0,9,40
+mint,Mint,Herbs & spices,4,24,each,1,each,80,,0,,,1,3,1,15,0
+baking-spice,Baking spice,Herbs & spices,4.06,20,each,1,each,85,,0,,,1,4,1,2,0
+coffee,Coffee,Herbs & spices,4.08,20,each,1,each,85,,0,,,1,4,1,7,0
+beer,Beer,Wine & beer,2.2,12,fl oz,1,fl oz,100,,0,,,0,120,0,35,5
+savory-sauce,Savory sauce,Savory,7,16,fl oz,1,fl oz,100,,0,,,0,90,0,5,0
+soda-water,Soda water,Mixers,0.6,10,fl oz,1,fl oz,100,,0,,,0,180,0,188,0
+red-wine,Red wine,Wine & beer,12,750,ml,1,fl oz,92,,0,,,1,5,1,33,13.5
+sparkling-wine,Sparkling wine,Wine & beer,15,750,ml,1,fl oz,90,,0,,,1,2,1,15,11.5
+ros,Rosé,Wine & beer,12,750,ml,1,fl oz,92,,0,,,1,5,1,18,12
+rye-whiskey,Rye whiskey,Whiskey,28,750,ml,1,fl oz,98,,0,,,0,365,1,14,45
+brandy,Brandy,Brandy & pisco,34,750,ml,1,fl oz,98,,0,,,0,365,1,36,40
+licor-43,Licor 43,Liqueurs & amari,27,750,ml,1,fl oz,98,,0,,,0,365,1,3,31
+coffee-liqueur,Coffee liqueur,Liqueurs & amari,23.67,750,ml,1,fl oz,98,,0,,,0,365,1,3,28
+cola,Cola,Mixers,1.1,12,fl oz,1,fl oz,100,,0,,,0,180,0,38,0
+angostura-bitters,Angostura bitters,Bitters,19,480,dash,1,dash,100,,0,,,0,365,0,24,44.7
+lemon,Lemon,Citrus,8,1,qt,1,fl oz,92,,0,,,1,2,2,35,0
+honey,Honey,Sweeteners,8,1,qt,1,fl oz,100,,0,,,0,60,2,7,0
+sherry,Sherry,Vermouth & fortified,19,750,ml,1,fl oz,95,,0,,,1,21,1,26,17
+bay-leaf,Bay leaf,Herbs & spices,4.09,20,each,1,each,85,,0,,,1,4,1,16,0
+bourbon,Bourbon,Whiskey,26,750,ml,1,fl oz,98,,0,,,0,365,1,37,45
+campari,Campari,Liqueurs & amari,29,750,ml,1,fl oz,98,,0,,,0,365,1,10,24
+orange-bitters,Orange bitters,Bitters,16,300,dash,1,dash,100,,0,,,0,365,0,11,28
+juniper,Juniper,Herbs & spices,3.98,20,each,1,each,85,,0,,,1,4,1,3,0
+orange,Orange,Citrus,7,1,qt,1,fl oz,95,,0,,,1,3,2,2,0
+rosemary,Rosemary,Herbs & spices,3,30,each,1,each,85,,0,,,1,7,1,2,0
+blood-orange,Blood orange,Citrus,11,1,qt,1,fl oz,95,,0,,,1,3,2,3,0
+na-sangr-a,NA sangría,Zero-proof spirits,11,1,qt,1,fl oz,95,,0,,,1,5,3,3,0
+strawberry,Strawberry,Fruit,13.52,1,qt,1,fl oz,90,,0,,,1,3,3,3,0
+ouzo,Ouzo,Other spirits,26,750,ml,1,fl oz,98,,0,,,0,365,1,19,40
+vodka,Vodka,Vodka,19,750,ml,1,fl oz,98,,0,,,0,365,1,50,40
+vanilla,Vanilla,Sweeteners,12,1,qt,1,fl oz,100,,0,,,0,60,2,4,0
+grapefruit,Grapefruit,Citrus,8,1,qt,1,fl oz,95,,0,,,1,3,2,4,0
+allspice-dram,Allspice dram,Liqueurs & amari,29.51,750,ml,1,fl oz,98,,0,,,0,365,1,4,28
+tsipouro,Tsipouro,Brandy & pisco,33,700,ml,1,fl oz,98,,0,,,0,365,1,10,40
+egg-white,Egg white,Dairy & egg,5,36,each,1,each,100,,0,,,1,7,1,5,0
+olive-oil,Olive oil,Savory,18,32,fl oz,1,fl oz,100,,0,,,0,180,0,5,0
+floral-rose-lavender,"Floral (rose, lavender)",Herbs & spices,3.5,20,each,1,each,85,,0,,,1,4,1,4,0
+cardamom,Cardamom,Herbs & spices,3.92,20,each,1,each,85,,0,,,1,4,1,5,0
+cumin,Cumin,Herbs & spices,3.72,20,each,1,each,85,,0,,,1,4,1,6,0
+citrus-mixed,Citrus (mixed),Citrus,8,1,qt,1,fl oz,92,,0,,,1,2,2,4,0
+mastiha,Mastiha,Liqueurs & amari,34,700,ml,1,fl oz,98,,0,,,0,365,1,4,30
+mavrodaphne,Mavrodaphne,Vermouth & fortified,18,750,ml,1,fl oz,95,,0,,,1,21,1,4,15
+amaro,Amaro,Liqueurs & amari,32,750,ml,1,fl oz,98,,0,,,0,365,1,3,30
+b-n-dictine,Bénédictine,Liqueurs & amari,36,750,ml,1,fl oz,98,,0,,,0,365,1,2,40
+apricot-liqueur,Apricot liqueur,Liqueurs & amari,23.3,750,ml,1,fl oz,98,,0,,,0,365,1,1,28
+elderflower-liqueur,Elderflower liqueur,Liqueurs & amari,36,750,ml,1,fl oz,98,,0,,,0,365,1,1,20
+dairy,Dairy,Dairy & egg,5,32,fl oz,1,fl oz,100,,0,,,1,7,0,4,0
+peach,Peach,Fruit,13.64,1,qt,1,fl oz,90,,0,,,1,3,3,3,0
+cherry,Cherry,Fruit,14.49,1,qt,1,fl oz,90,,0,,,1,3,3,3,0
+casamigos-blanco,Casamigos Blanco,Agave,46,750,ml,1,fl oz,98,,4,,,0,365,1,12,40
+don-julio-reposado,Don Julio Reposado,Agave,52,750,ml,1,fl oz,98,,5,,,0,365,1,12,40
+del-maguey-vida,Del Maguey Vida mezcal,Agave,42,750,ml,1,fl oz,98,,4,,,0,365,1,12,42
+hendricks,Hendrick's gin,Gin,36,750,ml,1,fl oz,98,,3,,,0,365,1,12,41.4
+tanqueray-ten,Tanqueray No. Ten,Gin,38,750,ml,1,fl oz,98,,3.5,,,0,365,1,12,47.3
+grey-goose,Grey Goose vodka,Vodka,34,750,ml,1,fl oz,98,,3,,,0,365,1,12,40
+titos,Tito's vodka,Vodka,24,750,ml,1,fl oz,98,,1.5,,,0,365,1,12,40
+woodford-reserve,Woodford Reserve bourbon,Whiskey,36,750,ml,1,fl oz,98,,3.5,,,0,365,1,8,45.2
+rittenhouse-rye,Rittenhouse rye,Whiskey,26,750,ml,1,fl oz,98,,2,,,0,365,1,8,50
+diplomatico,Diplomático Reserva rum,Rum & cane,38,750,ml,1,fl oz,98,,4,,,0,365,1,12,40
+macchu-pisco,Macchu Pisco,Brandy & pisco,33,750,ml,1,fl oz,98,,3,,,0,365,1,7,40
+ginger,Ginger,Mixers,1.7,6.8,fl oz,1,fl oz,100,,0,,,0,180,0,38,0
+pisco,Pisco,Brandy & pisco,31,750,ml,1,fl oz,98,,0,,,0,365,1,5,41
+blanco-tequila,Blanco tequila,Agave,35.16,750,ml,1,fl oz,98,,0,2026-09-01,,0,365,1,,40
+mezcal,Mezcal,Agave,42.56,750,ml,1,fl oz,98,,0,2026-09-01,,0,365,1,,45
+casamigos-blanco,Casamigos Blanco,Agave,50.6,750,ml,1,fl oz,98,,4,2026-09-01,,0,365,1,,40
+don-julio-reposado,Don Julio Reposado,Agave,57.2,750,ml,1,fl oz,98,,5,2026-09-01,,0,365,1,,40
+del-maguey-vida,Del Maguey Vida mezcal,Agave,46.2,750,ml,1,fl oz,98,,4,2026-09-01,,0,365,1,,42
+lime,Lime,Citrus,10.35,1,qt,1,fl oz,92,,0,2026-09-01,,1,2,2,,0
+lemon,Lemon,Citrus,8.8,1,qt,1,fl oz,92,,0,2026-09-01,,1,2,2,,0
+sparkling-wine,Sparkling wine,Wine & beer,14.25,750,ml,1,fl oz,90,,0,2026-09-01,,1,2,1,,11.5

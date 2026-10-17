@@ -16,9 +16,17 @@ drinks = json.loads((root / "data" / "drinks.json").read_text())
 
 
 def shoot(url, out, w, h, scale):
-    subprocess.run([CHROME, "--headless=new", "--hide-scrollbars", "--disable-gpu", "--allow-file-access-from-files",
-                    f"--force-device-scale-factor={scale}", f"--window-size={w},{h}", "--virtual-time-budget=8000",
-                    f"--screenshot={out}", url], check=True, capture_output=True)
+    args = ["--headless=new", "--hide-scrollbars", "--disable-gpu", "--allow-file-access-from-files",
+            f"--force-device-scale-factor={scale}", f"--window-size={w},{h}", "--virtual-time-budget=8000", f"--screenshot={out}", url]
+    # Launched directly from the Anaconda interpreter, headless Chrome writes the screenshot and then never exits (a
+    # process-inheritance quirk on this Mac; the system Python and a plain shell are fine). Going through launchd with
+    # `open -W` avoids it, so that is the default on macOS; CHROME=... keeps the direct launch for other setups.
+    app = CHROME.split("/Contents/MacOS/")[0] if "/Contents/MacOS/" in CHROME else None
+    if app and app.endswith(".app") and os.path.exists("/usr/bin/open"):
+        subprocess.run(["open", "-n", "-W", "-a", app, "--args", *args], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
+    else:
+        subprocess.run([CHROME, *args], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
+    if not pathlib.Path(out).exists(): raise SystemExit(f"Chrome wrote no screenshot for {url}")
 
 
 with tempfile.TemporaryDirectory() as tmp:
@@ -28,7 +36,7 @@ with tempfile.TemporaryDirectory() as tmp:
     page_src = (root / "index.html").read_text()
     groups = list(dict.fromkeys(d["group"] for d in drinks))
     a, b = groups[0], (groups[2] if len(groups) > 2 else groups[-1])  # José Andrés vs STARR when both exist
-    hook = ('<script>window.__notour = true; addEventListener("load", () => { '
+    hook = ('<script>window.__notour = true; window.__noct = true; addEventListener("load", () => { '
             f'h2h.a = "g:" + {json.dumps(a)}; h2h.b = "g:" + {json.dumps(b)}; renderH2H(); setView("h2h"); }});</script>')
     snap = tmp / "snap.html"
     snap.write_text(page_src.replace("</body>", hook + "</body>"))

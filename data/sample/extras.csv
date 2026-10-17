@@ -1,0 +1,8 @@
+section,channel,cost
+Cocktails,in_house,0.38
+Cocktails,to_go,0.72
+Zero-proof,in_house,0.32
+Zero-proof,to_go,0.6
+Well & call,in_house,0.22
+Well & call,to_go,0.55
+all,all,0.12

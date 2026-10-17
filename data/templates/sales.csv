@@ -1,0 +1,2 @@
+order_id,line_id,restaurant_id,date,time,channel,daypart,drink_id,qty,net_price
+OYA-20260701-0042,1,OYA,2026-07-01,19:35,bar,dinner,WELL-CALL,1,16.00

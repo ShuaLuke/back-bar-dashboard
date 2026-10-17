@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 .claude/
+
+data/sample/sales.csv
+data/sample/modifiers.csv

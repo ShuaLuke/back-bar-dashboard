@@ -1,0 +1,1 @@
+Well & Call, offline build. Open index.html in any modern browser; it needs no internet connection and makes no network requests. Fonts and the D3 library are embedded. See docs/security-review.md in the source repository for the review notes.
